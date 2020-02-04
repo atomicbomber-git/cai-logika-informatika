@@ -2,20 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Permasalahan;
 use Illuminate\Http\Request;
 
 class PermasalahanController extends Controller
 {
-    const VIEW_DIR = "permasalahan";
-
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function index()
     {
-        return view("permasalahan.index");
+        $permasalahans = Permasalahan::query()
+            ->get();
+
+        return view("permasalahan.index", compact(
+            "permasalahans"
+        ));
     }
 
     /**
@@ -42,10 +46,10 @@ class PermasalahanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Permasalahan  $permasalahan
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Permasalahan $permasalahan)
     {
         //
     }
@@ -53,10 +57,10 @@ class PermasalahanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Permasalahan  $permasalahan
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Permasalahan $permasalahan)
     {
         //
     }
@@ -65,10 +69,10 @@ class PermasalahanController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Permasalahan  $permasalahan
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Permasalahan $permasalahan)
     {
         //
     }
@@ -76,10 +80,10 @@ class PermasalahanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Permasalahan  $permasalahan
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Permasalahan $permasalahan)
     {
         //
     }
