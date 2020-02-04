@@ -90,7 +90,7 @@ class MateriController extends Controller
         $materi->update($data);
 
         return redirect()
-            ->route("materi.index")
+            ->route("materi.edit", $materi->id)
             ->with("messages", [
                 [
                     "state" => MessageState::STATE_SUCCESS,
