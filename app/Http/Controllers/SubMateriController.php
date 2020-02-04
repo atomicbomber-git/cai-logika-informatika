@@ -63,7 +63,7 @@ class SubMateriController extends Controller
      */
     public function edit(Materi $materi, SubMateri $subMateri)
     {
-        //
+    //
     }
 
     /**

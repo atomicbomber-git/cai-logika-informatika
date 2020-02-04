@@ -11,9 +11,8 @@
 |
 */
 
-use App\Http\Controllers\PermasalahanController;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,5 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource("permasalahan", 'PermasalahanController');
+Route::resource("materi", "MateriController");
+Route::resource("materi.sub_materi", "SubMateriController");
 
 Route::get('/home', 'HomeController@index')->name('home');

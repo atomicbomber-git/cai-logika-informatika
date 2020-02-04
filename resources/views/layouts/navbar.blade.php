@@ -6,6 +6,14 @@
 
     <ul class="navbar-nav nav-pills flex-column">
         <li class="nav-item active">
+            <a class="nav-link" href="{{ route("materi.index") }}">
+                Materi
+                <span
+                    class="sr-only">
+                        (current)
+                </span>
+            </a>
+
             <a class="nav-link" href="{{ route("permasalahan.index") }}">
                 Permasalahan
                 <span

@@ -13,8 +13,9 @@ class CreateMaterisTable extends Migration
      */
     public function up()
     {
-        Schema::create('materis', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('materi', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('judul')->unique();
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateMaterisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materis');
+        Schema::dropIfExists('materi');
     }
 }

@@ -13,10 +13,10 @@ class CreatePermasalahansTable extends Migration
      */
     public function up()
     {
-        Schema::create('permasalahans', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('permasalahan', function (Blueprint $table) {
+            $table->increments('id');
             $table->text('judul');
-            $table->longText('teks');
+            $table->longText('konten');
             $table->timestamps();
         });
     }

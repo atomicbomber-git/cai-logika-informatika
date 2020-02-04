@@ -13,8 +13,12 @@ class CreateSubMaterisTable extends Migration
      */
     public function up()
     {
-        Schema::create('sub_materis', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('sub_materi', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('judul')->unique();
+            $table->longText('konten');
+            $table->unsignedInteger('materi_id');
+            $table->foreign('materi_id')->references('id')->on('materi');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateSubMaterisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sub_materis');
+        Schema::dropIfExists('sub_materi');
     }
 }

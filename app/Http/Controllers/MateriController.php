@@ -10,11 +10,20 @@ class MateriController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function index()
     {
-        //
+        $materis = Materi::query()
+            ->select([
+                "id",
+                "judul",
+            ])
+            ->get();
+
+        return view("materi.index", compact(
+            "materis"
+        ));
     }
 
     /**
@@ -76,10 +85,13 @@ class MateriController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Materi  $materi
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function destroy(Materi $materi)
     {
-        //
+        $materi->delete();
+
+        return redirect()
+            ->route("materi.index");
     }
 }

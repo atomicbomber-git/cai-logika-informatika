@@ -8,6 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(Permasalahan::class, function (Faker $faker) {
     return [
         "judul" => $faker->sentence,
-        "teks" => $faker->paragraph
+        "konten" => $faker->paragraph
     ];
 });
