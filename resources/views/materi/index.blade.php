@@ -15,7 +15,9 @@
                 <tr>
                     <th> # </th>
                     <th> Judul </th>
-                    <th> Kendali </th>
+                    <th class="text-center">
+                        Kendali
+                    </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -25,16 +27,18 @@
                         <td> {{ $materi->judul }} </td>
                         <td class="text-center">
                             <a class="btn btn-sm btn-outline-dark"
-                               href="">
+                               href="{{ route("materi.edit", $materi) }}">
                                 Ubah
                                 <i class="fas fa-pencil-alt"></i>
                             </a>
 
-                            <form class="d-inline-block" action="{{ route('materi.destroy', $materi) }}"
+                            <form class="d-inline-block"
+                                  action="{{ route("materi.destroy", $materi) }}"
                                   method="post">
                                 @csrf
                                 @method("DELETE")
-                                <button class="btn btn-outline-danger btn-sm" type="submit">
+                                <button class="btn btn-outline-danger btn-sm"
+                                        type="submit">
                                     Hapus
                                     <i class="fas fa-trash-alt"></i>
                                 </button>

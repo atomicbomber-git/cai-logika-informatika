@@ -2,34 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SubMateriController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Materi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SubMateri.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/MateriFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/SubMateriFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_080423_create_materis_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_081156_create_sub_materis_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/id/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/id/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/id/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/id/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/id/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/materi/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/messages.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.save" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Constants/MessageState.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/..env.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Permasalahan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Permasalahan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PermasalahanFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PermasalahanFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_063225_create_permasalahans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_063225_create_permasalahans_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Materi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Materi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/messages.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +152,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -214,7 +195,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580794682716</updated>
       <workItem from="1580794684997" duration="266000" />
-      <workItem from="1580794970969" duration="9414000" />
+      <workItem from="1580794970969" duration="9743000" />
+      <workItem from="1580807701237" duration="2461000" />
     </task>
     <servers />
   </component>
@@ -225,18 +207,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="1" width="1358" height="739" key="#Live_Templates" timestamp="1580805283174">
+    <state x="0" y="1" width="1358" height="739" key="#Live_Templates" timestamp="1580809236157">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="0" y="1" width="1358" height="739" key="#Live_Templates/0.0.1366.742@0.0.1366.742" timestamp="1580805283174" />
+    <state x="0" y="1" width="1358" height="739" key="#Live_Templates/0.0.1366.742@0.0.1366.742" timestamp="1580809236157" />
     <state x="278" y="33" width="802" height="676" key="#Plugins" timestamp="1580794944236">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="278" y="33" width="802" height="676" key="#Plugins/0.0.1366.742@0.0.1366.742" timestamp="1580794944236" />
-    <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1580805363775">
+    <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1580808563068">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.742@0.0.1366.742" timestamp="1580805363775" />
+    <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808563068" />
     <state x="418" y="0" width="522" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580798496308">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -253,38 +235,38 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="336" y="98" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1366.742@0.0.1366.742" timestamp="1580805587788" />
-    <state x="302" y="21" width="754" height="700" key="#phpunit.xml" timestamp="1580806796269">
+    <state x="302" y="21" width="768" height="700" key="#phpunit.xml" timestamp="1580808842277">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="302" y="21" width="754" height="700" key="#phpunit.xml/0.0.1366.742@0.0.1366.742" timestamp="1580806796269" />
+    <state x="302" y="21" width="768" height="700" key="#phpunit.xml/0.0.1366.742@0.0.1366.742" timestamp="1580808842277" />
     <state x="408" y="287" width="542" height="167" key="ComposerInitDialogKey" timestamp="1580798695718">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="408" y="287" width="542" height="167" key="ComposerInitDialogKey/0.0.1366.742@0.0.1366.742" timestamp="1580798695718" />
-    <state width="1322" height="177" key="GridCell.Tab.0.bottom" timestamp="1580795161762">
+    <state width="1322" height="177" key="GridCell.Tab.0.bottom" timestamp="1580807228257">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1322" height="177" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1580795161762" />
-    <state width="1322" height="177" key="GridCell.Tab.0.center" timestamp="1580795161759">
+    <state width="1322" height="177" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1580807228257" />
+    <state width="1322" height="177" key="GridCell.Tab.0.center" timestamp="1580807228252">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1322" height="177" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1580795161759" />
-    <state width="1322" height="177" key="GridCell.Tab.0.left" timestamp="1580795161756">
+    <state width="1322" height="177" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1580807228252" />
+    <state width="1322" height="177" key="GridCell.Tab.0.left" timestamp="1580807228251">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1322" height="177" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1580795161756" />
-    <state width="1322" height="177" key="GridCell.Tab.0.right" timestamp="1580795161760">
+    <state width="1322" height="177" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1580807228251" />
+    <state width="1322" height="177" key="GridCell.Tab.0.right" timestamp="1580807228255">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1322" height="177" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1580795161760" />
+    <state width="1322" height="177" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1580807228255" />
     <state x="530" y="306" width="298" height="129" key="Laravel.ExtractPartialViewDialog" timestamp="1580806199299">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="530" y="306" width="298" height="129" key="Laravel.ExtractPartialViewDialog/0.0.1366.742@0.0.1366.742" timestamp="1580806199299" />
-    <state x="291" y="187" width="776" height="367" key="NewPhpClassDialog" timestamp="1580799007342">
+    <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog" timestamp="1580808034800">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="291" y="187" width="776" height="367" key="NewPhpClassDialog/0.0.1366.742@0.0.1366.742" timestamp="1580799007342" />
+    <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808034800" />
     <state x="461" y="297" width="435" height="147" key="NewPhpFileDialog" timestamp="1580796708070">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -293,25 +275,29 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="418" y="179" width="522" height="383" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1366.742@0.0.1366.742" timestamp="1580798724649" />
-    <state x="164" y="6" key="SettingsEditor" timestamp="1580805373710">
+    <state x="164" y="6" key="SettingsEditor" timestamp="1580810161795">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="164" y="6" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1580805373710" />
+    <state x="164" y="6" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1580810161795" />
+    <state x="411" y="106" width="747" height="524" key="StructurePopup" timestamp="1580809621946">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state x="411" y="106" width="747" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1580809621946" />
     <state x="336" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1580794971094">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="336" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1580794971094" />
-    <state x="316" y="106" width="899" height="592" key="find.popup" timestamp="1580804560886">
+    <state x="316" y="106" width="899" height="592" key="find.popup" timestamp="1580809993096">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="316" y="106" width="899" height="592" key="find.popup/0.0.1366.742@0.0.1366.742" timestamp="1580804560886" />
-    <state x="346" y="163" key="run.anything.popup" timestamp="1580805836713">
+    <state x="316" y="106" width="899" height="592" key="find.popup/0.0.1366.742@0.0.1366.742" timestamp="1580809993096" />
+    <state x="346" y="163" key="run.anything.popup" timestamp="1580807718519">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="163" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1580805836713" />
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1580806865330">
+    <state x="346" y="163" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1580807718519" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1580809937455">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1580806865330" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1580809937455" />
   </component>
 </project>

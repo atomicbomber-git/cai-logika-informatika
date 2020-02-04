@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Constants\MessageState;
 use App\Materi;
 use Illuminate\Http\Request;
 
@@ -39,18 +40,18 @@ class MateriController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Materi  $materi
+     * @param \App\Materi $materi
      * @return \Illuminate\Http\Response
      */
     public function show(Materi $materi)
@@ -61,30 +62,47 @@ class MateriController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Materi  $materi
-     * @return \Illuminate\Http\Response
+     * @param \App\Materi $materi
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function edit(Materi $materi)
     {
-        //
+        return view("materi.edit", compact(
+            "materi"
+        ));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Materi  $materi
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Materi $materi
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function update(Request $request, Materi $materi)
     {
-        //
+        $data = $this->validate($request, [
+            "judul" => "required|unique:" . (new Materi)->getTable() .
+                ",judul,{$materi->id}"
+        ]);
+
+        $materi->update($data);
+
+        return redirect()
+            ->route("materi.index")
+            ->with("messages", [
+                [
+                    "state" => MessageState::STATE_SUCCESS,
+                    "content" => __("messages.update.success")
+                ]
+            ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Materi  $materi
+     * @param \App\Materi $materi
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function destroy(Materi $materi)
@@ -92,6 +110,12 @@ class MateriController extends Controller
         $materi->delete();
 
         return redirect()
-            ->route("materi.index");
+            ->route("materi.index")
+            ->with("messages", [
+                [
+                    "state" => MessageState::STATE_SUCCESS,
+                    "content" => __("messages.delete.success")
+                ]
+            ]);
     }
 }
