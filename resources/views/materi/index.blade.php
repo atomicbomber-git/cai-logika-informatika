@@ -18,7 +18,6 @@
         </div>
         <div class="card-body">
             @include('messages')
-
             <table class="table table-sm table-bordered table-striped table-inverse">
                 <thead class="thead-inverse">
                 <tr>
