@@ -4,7 +4,7 @@
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.env.save" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Constants/MessageState.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/..env.swp" beforeDir="false" />
+      <change beforePath="$USER_HOME$/projectsenv.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Materi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Materi.php" afterDir="false" />
@@ -283,21 +283,25 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="411" y="106" width="747" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1580809621946" />
-    <state x="336" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1580794971094">
+    <state x="336" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1580954819788">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="336" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1580794971094" />
+    <state x="336" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1580954819788" />
     <state x="316" y="106" width="899" height="592" key="find.popup" timestamp="1580809993096">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="316" y="106" width="899" height="592" key="find.popup/0.0.1366.742@0.0.1366.742" timestamp="1580809993096" />
+    <state x="280" y="164" width="805" height="413" key="git4idea.merge.GitPullDialog" timestamp="1580954878943">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state x="280" y="164" width="805" height="413" key="git4idea.merge.GitPullDialog/0.0.1366.742@0.0.1366.742" timestamp="1580954878943" />
     <state x="346" y="163" key="run.anything.popup" timestamp="1580807718519">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="346" y="163" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1580807718519" />
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1580809937455">
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1580954893677">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1580809937455" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1580954893677" />
   </component>
 </project>
