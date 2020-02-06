@@ -1,15 +1,23 @@
 @extends("layouts.app")
 
 @section("content")
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item"
+           href="">
+            {{ config("app.name") }}
+        </a>
+        <span class="breadcrumb-item active">
+            Materi
+        </span>
+    </nav>
+
     <div class="card">
         <div class="card-header">
             <i class="fas fa-list fa-sm"></i>
             Katalog Permasalahan
         </div>
-
         <div class="card-body">
             @include('messages')
-
             <table class="table table-sm table-bordered table-striped table-inverse">
                 <thead class="thead-inverse">
                 <tr>

@@ -15,7 +15,7 @@ class CreateSubMaterisTable extends Migration
     {
         Schema::create('sub_materi', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('judul')->unique();
+            $table->text('judul');
             $table->longText('konten');
             $table->unsignedInteger('materi_id');
             $table->foreign('materi_id')->references('id')->on('materi');

@@ -15806,3 +15806,18 @@ a.text-dark:focus {
   }
 }
 
+.table th:first-child,
+.table td:first-child {
+  text-align: center;
+}
+
+.table th:last-child,
+.table td:last-child {
+  text-align: center;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+

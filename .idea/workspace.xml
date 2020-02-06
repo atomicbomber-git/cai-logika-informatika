@@ -160,7 +160,7 @@
       <recent name="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.Artisan serve">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -303,9 +303,9 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="346" y="163" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1580807718519" />
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1580954913021">
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1580955102315">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1580954913021" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1580955102315" />
   </component>
 </project>

@@ -1,6 +1,19 @@
 @extends("layouts.app")
 
 @section("content")
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item">
+            {{ config("app.name") }}
+        </a>
+        <a class="breadcrumb-item"
+           href="{{ route("materi.index") }}">
+            Materi
+        </a>
+        <span class="breadcrumb-item active">
+            Ubah
+        </span>
+    </nav>
+
     <div class="card">
         <div class="card-header">
             <i class="fas fa-pencil-alt fa-sm"></i>

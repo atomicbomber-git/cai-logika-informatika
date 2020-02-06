@@ -9,3 +9,17 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.table {
+    th:first-child, td:first-child {
+        text-align: center;
+    }
+
+    th:last-child, td:last-child {
+        text-align: center;
+    }
+
+    td, th {
+        vertical-align: middle;
+    }
+}
