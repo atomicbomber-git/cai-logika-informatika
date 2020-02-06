@@ -9,7 +9,7 @@
     <meta name="csrf-token"
           content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name') }}</title>
+    <title>{{ config('app.name') }} | @yield("title") </title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"
@@ -27,88 +27,47 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-        <div class="container">
-            <a class="navbar-brand"
-               href="{{ url('/') }}">
-                {{ config('app.name') }}
-            </a>
-            <button class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="{{ __('Toggle navigation') }}">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse"
-                 id="navbarSupportedContent">
-                <!-- Left Side Of Navbar -->
-                <ul class="navbar-nav mr-auto">
-
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav ml-auto">
-                    <!-- Authentication Links -->
-                    @guest
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                   href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @endif
-                    @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown"
-                               class="nav-link dropdown-toggle"
-                               href="#"
-                               role="button"
-                               data-toggle="dropdown"
-                               aria-haspopup="true"
-                               aria-expanded="false"
-                               v-pre>
-                                {{ Auth::user()->name }}
-                                <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right"
-                                 aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item"
-                                   href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-
-                                <form id="logout-form"
-                                      action="{{ route('logout') }}"
-                                      method="POST"
-                                      style="display: none;">
-                                    @csrf
-                                </form>
-                            </div>
-                        </li>
-                    @endguest
-                </ul>
+    <header class="w-full bg-gray-700">
+        <nav class="flex justify-between container max-w-5xl mx-auto text-white">
+            <div class="py-6">
+                <span class="font-bold tracking-wide">
+                    {{ config("app.name") }}
+                </span>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main class="py-4 container">
-        <div class="row">
-            <div class="col-md-2">
-                @include('layouts.navbar')
+    <main class="container flex max-w-5xl mx-auto mt-5">
+        <nav class="px-10 bg-gray-100 py-5">
+            <h5 class="text-blue-700 uppercase tracking-wide font-bold">
+                Manajemen Data
+            </h5>
+
+            <ul class="pt-2 pl-2">
+                <li>
+                    <a
+                            class="block bg-gray-100 px-2 py-2 hover:bg-gray-300 text-gray-800 hover:text-gray-600"
+                            href="{{ route("materi.index") }}">
+                        <i class="fas fa-list-alt"></i>
+                        Materi
+                    </a>
+                </li>
+                <li>
+                    <a
+                            class="block bg-gray-100 px-2 py-2 hover:bg-gray-300 text-gray-800 hover:text-gray-600"
+                            href="">
+                        <i class="fas fa-list-alt"></i>
+                        Permasalahan
+                    </a>
+                </li>
+            </ul>
+
+            <div>
             </div>
-            <div class="col-md-10">
-                @yield('content')
-            </div>
+        </nav>
+
+        <div class="flex-1 py-5 px-5">
+            @yield("content")
         </div>
     </main>
 </div>

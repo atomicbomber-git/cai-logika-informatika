@@ -1,54 +1,50 @@
 @extends("layouts.app")
 
-@section("content")
-    <nav class="breadcrumb">
-        <a class="breadcrumb-item">
-            {{ config("app.name") }}
-        </a>
-        <a class="breadcrumb-item"
-           href="{{ route("materi.index") }}">
-            Materi
-        </a>
-        <span class="breadcrumb-item active">
-            Ubah
-        </span>
-    </nav>
+@section("title", "Ubah Materi")
 
-    <div class="card">
-        <div class="card-header">
-            <i class="fas fa-pencil-alt fa-sm"></i>
-            Edit Materi
+@section("content")
+    <div>
+        <div class="mb-5">
+            <h1 class="text-2xl font-bold">
+                Ubah Materi
+            </h1>
+            <hr>
         </div>
 
-        <form action="{{ route("materi.update", $materi) }}"
-              method="post">
-            @method("PATCH")
-            @csrf
-            <div class="card-body">
-                @include('messages')
+        @include("messages")
 
-                <div class="form-group">
-                    <label for="judul">
-                        Judul:
+        <div>
+            <form action="{{ route("materi.update", $materi) }}"
+                  method="post">
+                @csrf
+                @method("PATCH")
+
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2"
+                           for="judul">
+                        Judul
                     </label>
-                    <textarea
-                        class="form-control {{ $errors->has("judul") ? "is-invalid" : "" }}"
-                        name="judul"
-                        id="judul"
-                        cols="30"
-                        rows="10">{{ $materi->judul }}</textarea>
-                    <span class="invalid-feedback">
+
+                    <textarea class="{{ $errors->has("judul") ? "border-red-500" : "" }} shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                              id="judul"
+                              name="judul"
+                              placeholder="Judul"
+                              cols="30"
+                              rows="10">{{ $materi->judul }}</textarea>
+
+                    <p class="text-red-500 text-xs italic">
                         {{ $errors->first("judul") }}
-                    </span>
+                    </p>
+
                 </div>
 
-                <div class="d-flex justify-content-end">
-                    <button class="btn btn-primary"
+                <div class="flex justify-end">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             type="submit">
-                        Perbarui Data
+                        Ubah Data
                     </button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 @endsection

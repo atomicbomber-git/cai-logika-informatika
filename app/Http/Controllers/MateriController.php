@@ -30,11 +30,13 @@ class MateriController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
-        //
+        return view("materi.create", [
+            "materi" => new Materi,
+        ]);
     }
 
     /**
@@ -46,6 +48,18 @@ class MateriController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $this->validate($request, [
+            "judul" => "required|max:255",
+        ]);
+
+        Materi::create($data);
+
+        return redirect()
+            ->route("materi.index")
+            ->with("messages", [
+                "state" => MessageState::STATE_SUCCESS,
+                "content" => __("messages.create.success"),
+            ]);
     }
 
     /**
