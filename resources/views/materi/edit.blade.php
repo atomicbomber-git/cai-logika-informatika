@@ -46,7 +46,7 @@
 
             <div class="d-flex justify-content-end">
                 <button class="btn btn-outline-info btn-sm" type="submit">
-                    Perbarui Materi Baru
+                    Perbarui Materi
                     <i class="fas fa-check"></i>
                 </button>
             </div>

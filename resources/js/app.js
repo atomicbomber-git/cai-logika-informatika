@@ -14,3 +14,6 @@ require('./bootstrap');
  */
 
 require('./components/Example');
+
+// Load TinyMCE WYSIWYG Editor
+require('tinymce');

@@ -41,11 +41,14 @@
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $materi->judul }}  </td>
                             <td>
+                                <a class="btn btn-outline-info btn-sm" href="{{ route("materi.sub_materi.index", $materi) }}">
+                                    Sub Materi
+                                </a>
+
                                 <a class="btn btn-outline-info btn-sm" href="{{ route("materi.edit", $materi) }}">
                                     Ubah
                                     <i class="fas fa-pencil-alt"></i>
                                 </a>
-
 
                                 <form class="d-inline-block" action="{{ route("materi.destroy", $materi) }}" method="post">
                                     @csrf

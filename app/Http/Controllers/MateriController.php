@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Constants\MessageState;
 use App\Materi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MateriController extends Controller
 {
@@ -123,7 +124,10 @@ class MateriController extends Controller
      */
     public function destroy(Materi $materi)
     {
+        DB::beginTransaction();
+        $materi->sub_materi()->delete();
         $materi->delete();
+        DB::commit();
 
         return redirect()
             ->route("materi.index")
