@@ -69121,10 +69121,10 @@ if (document.getElementById('example')) {
 
 /***/ }),
 
-/***/ "./resources/postcss/app.pcss":
-/*!************************************!*\
-  !*** ./resources/postcss/app.pcss ***!
-  \************************************/
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69133,14 +69133,14 @@ if (document.getElementById('example')) {
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/postcss/app.pcss ***!
-  \****************************************************************/
+/*!*************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/atomicbomber/projects/cai-logika-informatika/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/atomicbomber/projects/cai-logika-informatika/resources/postcss/app.pcss */"./resources/postcss/app.pcss");
+module.exports = __webpack_require__(/*! /home/atomicbomber/projects/cai-logika-informatika/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -1,74 +1,68 @@
 @extends("layouts.app")
 
 @section("content")
-    {{--    <nav class="breadcrumb">--}}
-    {{--        <a class="breadcrumb-item"--}}
-    {{--           href="">--}}
-    {{--            {{ config("app.name") }}--}}
-    {{--        </a>--}}
-    {{--        <span class="breadcrumb-item active">--}}
-    {{--            Materi--}}
-    {{--        </span>--}}
-    {{--    </nav>--}}
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="">
+            {{ config("app.name") }}
+        </a>
+        <span class="breadcrumb-item active">
+            Materi
+        </span>
+    </nav>
 
     <div>
-        <div class="mb-5">
-            <h1 class="text-2xl  font-bold">
-                Materi
-            </h1>
-            <hr>
-        </div>
+        <h1 class="h1 mb-3">
+            Materi
+        </h1>
 
         @include("messages")
 
         <div>
-            <div class="flex justify-end my-2">
-                <a href="{{ route("materi.create") }}"
-                   class="inline-block bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 border border-blue-700 rounded"
-                >
-                    Tambah Data
+            <div class="d-flex justify-content-end my-3">
+                <a href="{{ route("materi.create") }}" class="btn btn-outline-info btn-sm">
+                    Materi Baru
                     <i class="fas fa-plus"></i>
                 </a>
             </div>
 
-            <table class="w-full">
-                <thead>
-                <tr>
-                    <th class="border px-2 py-1"> #</th>
-                    <th class="border px-2 py-1"> Nama</th>
-                    <th class="border px-2 py-1"> Kendali</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                @foreach($materis as $materi)
+            <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                    <thead>
                     <tr>
-                        <td class="border px-2 py-1"> {{ $loop->iteration }} </td>
-                        <td class="border px-2 py-1"> {{ $materi->judul }} </td>
-                        <td class="border px-2 py-1">
-
-                            <a
-                                    href="{{ route("materi.edit", $materi) }}"
-                                    class="inline-block bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 border border-blue-700 rounded">
-                                Ubah
-                                <i class="fas fa-pencil-alt"></i>
-                            </a>
-
-                            <form class="inline-block" action="{{ route("materi.destroy", $materi) }}"
-                                  method="post">
-                                @method("DELETE")
-                                @csrf
-
-                                <button class="bg-red-500 hover:bg-red-700 text-white py-1 px-2 border border-red-700 rounded">
-                                    Hapus
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                            </form>
-                        </td>
+                        <th> #</th>
+                        <th> Judul</th>
+                        <th> Kendali</th>
                     </tr>
-                @endforeach
-                </tbody>
-            </table>
+                    </thead>
+
+                    <tbody>
+                    @foreach($materis as $materi)
+                        <tr>
+                            <td> {{ $loop->iteration }}  </td>
+                            <td> {{ $materi->judul }}  </td>
+                            <td>
+                                <a class="btn btn-outline-info btn-sm" href="{{ route("materi.edit", $materi) }}">
+                                    Ubah
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+
+
+                                <form class="d-inline-block" action="{{ route("materi.destroy", $materi) }}" method="post">
+                                    @csrf
+                                    @method("DELETE")
+
+                                    <button class="btn btn-outline-danger btn-sm" type="submit">
+                                        Hapus
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
+
+                            </td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 @endsection

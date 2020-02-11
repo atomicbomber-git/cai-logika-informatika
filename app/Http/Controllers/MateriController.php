@@ -57,8 +57,10 @@ class MateriController extends Controller
         return redirect()
             ->route("materi.index")
             ->with("messages", [
-                "state" => MessageState::STATE_SUCCESS,
-                "content" => __("messages.create.success"),
+                [
+                    "state" => MessageState::STATE_SUCCESS,
+                    "content" => __("messages.create.success"),
+                ]
             ]);
     }
 
