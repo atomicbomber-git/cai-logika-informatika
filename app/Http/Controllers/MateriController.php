@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Constants\MessageState;
 use App\Materi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MateriController extends Controller
 {
@@ -57,8 +58,10 @@ class MateriController extends Controller
         return redirect()
             ->route("materi.index")
             ->with("messages", [
-                "state" => MessageState::STATE_SUCCESS,
-                "content" => __("messages.create.success"),
+                [
+                    "state" => MessageState::STATE_SUCCESS,
+                    "content" => __("messages.create.success"),
+                ]
             ]);
     }
 
@@ -121,7 +124,10 @@ class MateriController extends Controller
      */
     public function destroy(Materi $materi)
     {
+        DB::beginTransaction();
+        $materi->sub_materi()->delete();
         $materi->delete();
+        DB::commit();
 
         return redirect()
             ->route("materi.index")

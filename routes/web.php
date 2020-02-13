@@ -25,6 +25,6 @@ Auth::routes();
 
 Route::resource("permasalahan", class_basename(PermasalahanController::class));
 Route::resource("materi", class_basename(MateriController::class));
-Route::resource("materi.sub_materi", class_basename(SubMateriController::class));
+Route::resource("materi.sub_materi", class_basename(SubMateriController::class))->shallow();
 
 Route::get('/home', 'HomeController@index')->name('home');

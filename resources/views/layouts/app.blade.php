@@ -15,59 +15,23 @@
     <script src="{{ asset('js/app.js') }}"
             defer></script>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch"
-          href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito"
-          rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}"
           rel="stylesheet">
 </head>
 <body>
 <div id="app">
-    <header class="w-full bg-gray-700">
-        <nav class="flex justify-between container max-w-5xl mx-auto text-white">
-            <div class="py-6">
-                <span class="font-bold tracking-wide">
-                    {{ config("app.name") }}
-                </span>
-            </div>
-        </nav>
+    <header class="mb-4">
+        @include('layouts.navbar')
     </header>
 
-    <main class="container flex max-w-5xl mx-auto mt-5">
-        <nav class="px-10 bg-gray-100 py-5">
-            <h5 class="text-blue-700 uppercase tracking-wide font-bold">
-                Manajemen Data
-            </h5>
+    <main class="container">
+        <div class="row">
+            @include("layouts.sidebar")
 
-            <ul class="pt-2 pl-2">
-                <li>
-                    <a
-                            class="block bg-gray-100 px-2 py-2 hover:bg-gray-300 text-gray-800 hover:text-gray-600"
-                            href="{{ route("materi.index") }}">
-                        <i class="fas fa-list-alt"></i>
-                        Materi
-                    </a>
-                </li>
-                <li>
-                    <a
-                            class="block bg-gray-100 px-2 py-2 hover:bg-gray-300 text-gray-800 hover:text-gray-600"
-                            href="">
-                        <i class="fas fa-list-alt"></i>
-                        Permasalahan
-                    </a>
-                </li>
-            </ul>
-
-            <div>
+            <div class="col-md-9">
+                @yield("content")
             </div>
-        </nav>
-
-        <div class="flex-1 py-5 px-5">
-            @yield("content")
         </div>
     </main>
 </div>

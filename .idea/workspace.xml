@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubMateriController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubMateriController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Materi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Materi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SubMateri.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubMateri.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +151,7 @@
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XKVH9TZSDMutqHHE34KpeOgIxw" />
@@ -163,7 +172,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -218,6 +227,8 @@
       <workItem from="1580956352101" duration="2519000" />
       <workItem from="1580958907042" duration="4414000" />
       <workItem from="1580974093133" duration="2395000" />
+      <workItem from="1581391520482" duration="3618000" />
+      <workItem from="1581395801725" duration="5965000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -242,10 +253,10 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="0" y="1" width="1358" height="739" key="#Live_Templates/0.0.1366.742@0.0.1366.742" timestamp="1580809236157" />
-    <state x="278" y="33" width="802" height="676" key="#Plugins" timestamp="1580958866438">
+    <state x="278" y="33" width="802" height="676" key="#Plugins" timestamp="1581395762955">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="278" y="33" width="802" height="676" key="#Plugins/0.0.1366.742@0.0.1366.742" timestamp="1580958866438" />
+    <state x="278" y="33" width="802" height="676" key="#Plugins/0.0.1366.742@0.0.1366.742" timestamp="1581395762955" />
     <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1580808563068">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -282,26 +293,34 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="408" y="287" width="542" height="167" key="ComposerInitDialogKey/0.0.1366.742@0.0.1366.742" timestamp="1580798695718" />
-    <state width="1312" height="176" key="GridCell.Tab.0.bottom" timestamp="1580974212892">
+    <state width="1356" height="162" key="GridCell.Tab.0.bottom" timestamp="1581399878348">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1312" height="176" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1580974212892" />
-    <state width="1312" height="176" key="GridCell.Tab.0.center" timestamp="1580974212891">
+    <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581399878348" />
+    <state width="1356" height="162" key="GridCell.Tab.0.center" timestamp="1581399878345">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1312" height="176" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1580974212891" />
-    <state width="1312" height="176" key="GridCell.Tab.0.left" timestamp="1580974212888">
+    <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581399878345" />
+    <state width="1356" height="162" key="GridCell.Tab.0.left" timestamp="1581399878342">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1312" height="176" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1580974212888" />
-    <state width="1312" height="176" key="GridCell.Tab.0.right" timestamp="1580974212891">
+    <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581399878342" />
+    <state width="1356" height="162" key="GridCell.Tab.0.right" timestamp="1581399878347">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1312" height="176" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1580974212891" />
-    <state x="530" y="306" width="298" height="129" key="Laravel.ExtractPartialViewDialog" timestamp="1580806199299">
+    <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581399878347" />
+    <state x="530" y="306" width="314" height="131" key="Laravel.ExtractPartialViewDialog" timestamp="1581395552942">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="530" y="306" width="298" height="129" key="Laravel.ExtractPartialViewDialog/0.0.1366.742@0.0.1366.742" timestamp="1580806199299" />
+    <state x="530" y="306" width="314" height="131" key="Laravel.ExtractPartialViewDialog/0.0.1366.742@0.0.1366.742" timestamp="1581395552942" />
+    <state x="124" y="59" width="1094" height="622" key="MergeDialog" timestamp="1581392166939">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state x="124" y="59" width="1094" height="622" key="MergeDialog/0.0.1366.742@0.0.1366.742" timestamp="1581392166939" />
+    <state x="378" y="101" width="593" height="539" key="MultipleFileMergeDialog" timestamp="1581392166945">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state x="378" y="101" width="593" height="539" key="MultipleFileMergeDialog/0.0.1366.742@0.0.1366.742" timestamp="1581392166945" />
     <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog" timestamp="1580808034800">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -314,14 +333,14 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="418" y="179" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1366.742@0.0.1366.742" timestamp="1580976487942" />
-    <state x="164" y="6" key="SettingsEditor" timestamp="1580957947613">
+    <state x="164" y="6" width="1136" height="730" key="SettingsEditor" timestamp="1581399746455">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="164" y="6" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1580957947613" />
-    <state x="411" y="106" width="747" height="524" key="StructurePopup" timestamp="1580975112091">
+    <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
+    <state x="411" y="106" width="810" height="524" key="StructurePopup" timestamp="1581401322951">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="411" y="106" width="747" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1580975112091" />
+    <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1581401322951" />
     <state x="336" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1580974092373">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -334,14 +353,13 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="280" y="164" width="805" height="413" key="git4idea.merge.GitPullDialog/0.0.1366.742@0.0.1366.742" timestamp="1580954916634" />
-    <state x="346" y="163" key="run.anything.popup" timestamp="1580974932821">
+    <state x="346" y="163" width="672" height="677" key="run.anything.popup" timestamp="1581401815116">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="163" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1580974932821" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581558453972">
-      <screen x="0" y="0" width="1920" height="1053" />
+    <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581401815116" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1581401993500">
+      <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1580976440755" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581558453972" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581401993500" />
   </component>
 </project>
