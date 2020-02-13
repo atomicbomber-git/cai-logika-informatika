@@ -46,6 +46,11 @@
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $sub_materi->judul }}  </td>
                             <td>
+                                <a class="btn btn-outline-info btn-sm" href="{{ route("sub_materi.show", $sub_materi) }}">
+                                    Lihat
+                                    <i class="fas fa-eye"></i>
+                                </a>
+
                                 <a class="btn btn-outline-info btn-sm" href="{{ route("sub_materi.edit", $sub_materi) }}">
                                     Ubah
                                     <i class="fas fa-pencil-alt"></i>

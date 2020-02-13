@@ -69,9 +69,10 @@ class SubMateriController extends Controller
      * @param \App\SubMateri $subMateri
      * @return \Illuminate\Http\Response
      */
-    public function show(Materi $materi, SubMateri $subMateri)
+    public function show(SubMateri $sub_materi)
     {
-        //
+        return response()
+            ->view("sub_materi.show", compact("sub_materi"));
     }
 
     /**
