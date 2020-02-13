@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/file_picker_callback.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/file_picker_callback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/tinymce_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tinymce_settings.js" afterDir="false" />
-    </list>
+    <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -287,22 +282,22 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="408" y="287" width="542" height="167" key="ComposerInitDialogKey/0.0.1366.742@0.0.1366.742" timestamp="1580798695718" />
-    <state width="1356" height="162" key="GridCell.Tab.0.bottom" timestamp="1581399878348">
+    <state width="1356" height="162" key="GridCell.Tab.0.bottom" timestamp="1581589787675">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581399878348" />
-    <state width="1356" height="162" key="GridCell.Tab.0.center" timestamp="1581399878345">
+    <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581589787675" />
+    <state width="1356" height="162" key="GridCell.Tab.0.center" timestamp="1581589787674">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581399878345" />
-    <state width="1356" height="162" key="GridCell.Tab.0.left" timestamp="1581399878342">
+    <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
+    <state width="1356" height="162" key="GridCell.Tab.0.left" timestamp="1581589787674">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581399878342" />
-    <state width="1356" height="162" key="GridCell.Tab.0.right" timestamp="1581399878347">
+    <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
+    <state width="1356" height="162" key="GridCell.Tab.0.right" timestamp="1581589787674">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581399878347" />
+    <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
     <state x="530" y="306" width="314" height="131" key="Laravel.ExtractPartialViewDialog" timestamp="1581395552942">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
