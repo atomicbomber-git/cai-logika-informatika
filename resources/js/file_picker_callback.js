@@ -1,7 +1,13 @@
 module.exports = function(cb, value, meta) {
+    console.log([
+        cb,
+        value,
+        meta
+    ])
+
     var input = document.createElement("input");
     input.setAttribute("type", "file");
-    input.setAttribute("accept", "image/*");
+    input.setAttribute("accept", "image/*,video/*");
 
     /*
     Note: In modern browsers input[type="file"] is functional without
