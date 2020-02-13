@@ -35,7 +35,7 @@ class PermasalahanController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -46,7 +46,7 @@ class PermasalahanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Permasalahan  $permasalahan
+     * @param \App\Permasalahan $permasalahan
      * @return \Illuminate\Http\Response
      */
     public function show(Permasalahan $permasalahan)
@@ -57,7 +57,7 @@ class PermasalahanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Permasalahan  $permasalahan
+     * @param \App\Permasalahan $permasalahan
      * @return \Illuminate\Http\Response
      */
     public function edit(Permasalahan $permasalahan)
@@ -68,8 +68,8 @@ class PermasalahanController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Permasalahan  $permasalahan
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Permasalahan $permasalahan
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Permasalahan $permasalahan)
@@ -80,7 +80,7 @@ class PermasalahanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Permasalahan  $permasalahan
+     * @param \App\Permasalahan $permasalahan
      * @return \Illuminate\Http\Response
      */
     public function destroy(Permasalahan $permasalahan)

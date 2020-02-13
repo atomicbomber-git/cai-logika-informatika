@@ -46,7 +46,8 @@ class SubMateriController extends Controller
     public function store(Request $request, Materi $materi)
     {
         $data = $this->validate($request, [
-            "judul" => "required|string"
+            "judul" => "required|string",
+            "konten" => "required|string",
         ]);
 
         $materi->sub_materi()->create($data);
@@ -98,6 +99,7 @@ class SubMateriController extends Controller
     {
         $data = $this->validate($request, [
             "judul" => "required|string",
+            "konten" => "required|string",
         ]);
 
         $sub_materi->update($data);

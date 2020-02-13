@@ -15821,3 +15821,8 @@ a.text-dark:focus {
   vertical-align: middle;
 }
 
+.tinymce-editor {
+  background: #fff;
+  padding: 2rem;
+}
+

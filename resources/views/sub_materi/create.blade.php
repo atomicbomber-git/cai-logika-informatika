@@ -3,6 +3,25 @@
 @section("title", "Tambah Sub Materi")
 
 @section("content")
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="">
+            {{ config("app.name") }}
+        </a>
+        <span class="breadcrumb-item">
+            <a href="{{ route("materi.index") }}">
+                Materi
+            </a>
+        </span>
+        <span class="breadcrumb-item">
+            <a href="{{ route("materi.sub_materi.index", $materi) }}">
+                Sub Materi
+            </a>
+        </span>
+        <span class="breadcrumb-item active">
+            Sub Materi Baru
+        </span>
+    </nav>
+
     <div>
         <h1 class="h1 mb-3">
             Sub Materi Baru
@@ -11,7 +30,7 @@
         @include("messages")
 
         <div>
-            <form action="{{ route("materi.store") }}"
+            <form action="{{ route("materi.sub_materi.store", $materi->id) }}"
                   method="post">
                 @csrf
 
@@ -20,13 +39,30 @@
                         Judul:
                     </label>
                     <textarea
+                            placeholder="Judul"
                             class="form-control {{ $errors->has("judul") ? "is-invalid" : "" }}"
                             name="judul"
                             id="judul"
                             cols="30"
-                            rows="10"></textarea>
+                            rows="2"></textarea>
                     <span class="invalid-feedback">
                         {{ $errors->first("judul") }}
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label for="konten">
+                        Konten:
+                    </label>
+                    <textarea
+                            placeholder="Konten"
+                            class="form-control {{ $errors->has("konten") ? "is-invalid" : "" }}"
+                            name="konten"
+                            id="konten"
+                            cols="30"
+                            rows="10"></textarea>
+                    <span class="invalid-feedback">
+                        {{ $errors->first("konten") }}
                     </span>
                 </div>
 
@@ -39,4 +75,17 @@
             </form>
         </div>
     </div>
+@endsection
+
+@section('footer-script')
+    <script>
+        window.onload = function () {
+            tinyMCE.init(Object.assign(window.tinymce_settings, {
+                content_css: '{{ asset('css/app.css') }}',
+            }))
+            .then(editors => {
+                editors[0].setContent(`{!! old('konten') !!}`)
+            })
+        }
+    </script>
 @endsection

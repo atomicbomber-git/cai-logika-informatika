@@ -35,5 +35,6 @@
         </div>
     </main>
 </div>
+@yield("footer-script")
 </body>
 </html>

@@ -17,3 +17,5 @@ require('./components/Example');
 
 // Load TinyMCE WYSIWYG Editor
 require('tinymce');
+window.tinymce_settings = require("./tinymce_settings").default
+window.tinymce_file_picker_callback = require("./file_picker_callback")

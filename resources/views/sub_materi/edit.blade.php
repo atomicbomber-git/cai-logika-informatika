@@ -12,6 +12,11 @@
                 Materi
             </a>
         </span>
+        <span class="breadcrumb-item">
+            <a href="{{ route("materi.sub_materi.index", $sub_materi->materi_id) }}">
+                Sub Materi
+            </a>
+        </span>
         <span class="breadcrumb-item active">
             Ubah Sub Materi
         </span>
@@ -39,9 +44,25 @@
                             name="judul"
                             id="judul"
                             cols="30"
-                            rows="10">{{ old("judul", $sub_materi->judul) }}</textarea>
+                            rows="2">{{ old("judul", $sub_materi->judul) }}</textarea>
                     <span class="invalid-feedback">
                         {{ $errors->first("judul") }}
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label for="konten">
+                        Konten:
+                    </label>
+                    <textarea
+                            placeholder="Konten"
+                            class="form-control {{ $errors->has("konten") ? "is-invalid" : "" }}"
+                            name="konten"
+                            id="konten"
+                            cols="30"
+                            rows="10"></textarea>
+                    <span class="invalid-feedback">
+                        {{ $errors->first("konten") }}
                     </span>
                 </div>
 
@@ -54,4 +75,17 @@
             </form>
         </div>
     </div>
+@endsection
+
+@section('footer-script')
+    <script>
+        window.onload = function () {
+            tinyMCE.init(Object.assign(window.tinymce_settings, {
+                content_css: '{{ asset('css/app.css') }}',
+            }))
+                .then(editors => {
+                    editors[0].setContent(`{!! old('konten', $sub_materi->konten) !!}`)
+                })
+        }
+    </script>
 @endsection
