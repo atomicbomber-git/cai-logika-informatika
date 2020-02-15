@@ -18,15 +18,11 @@
             </a>
         </span>
         <span class="breadcrumb-item active">
-            Ubah Sub Materi
+            Lihat Sub Materi
         </span>
     </nav>
 
     <div>
-        <h1 class="h1 mb-3">
-            Ubah Sub Materi
-        </h1>
-
         @include("messages")
 
         <div>

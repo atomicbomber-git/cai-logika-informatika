@@ -40,6 +40,7 @@
                     </label>
                     <textarea
                             placeholder="Judul"
+                            value="{{ old("judul") }}"
                             class="form-control {{ $errors->has("judul") ? "is-invalid" : "" }}"
                             name="judul"
                             id="judul"
@@ -54,13 +55,16 @@
                     <label for="konten">
                         Konten:
                     </label>
-                    <textarea
-                            placeholder="Konten"
-                            class="form-control {{ $errors->has("konten") ? "is-invalid" : "" }}"
-                            name="konten"
-                            id="konten"
-                            cols="30"
-                            rows="10"></textarea>
+{{--                    <textarea--}}
+{{--                            placeholder="Konten"--}}
+{{--                            class="form-control {{ $errors->has("konten") ? "is-invalid" : "" }}"--}}
+{{--                            name="konten"--}}
+{{--                            id="konten"--}}
+{{--                            cols="30"--}}
+{{--                            rows="10"></textarea>--}}
+
+                    <input id="konten" type="hidden" name="konten">
+                    <trix-editor input="konten"></trix-editor>
                     <span class="invalid-feedback">
                         {{ $errors->first("konten") }}
                     </span>
@@ -79,13 +83,43 @@
 
 @section('footer-script')
     <script>
-        window.onload = function () {
-            tinyMCE.init(Object.assign(window.tinymce_settings, {
-                content_css: '{{ asset('css/app.css') }}',
-            }))
-            .then(editors => {
-                editors[0].setContent(`{!! old('konten') !!}`)
-            })
-        }
+
+        const toBase64 = file => new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = error => reject(error);
+        });
+
+        addEventListener("trix-attachment-add", function(event) {
+            console.log(event.attachment)
+            event.attachment.setUploadProgress(100)
+
+            // if (event.attachment.file) {
+            //     const file = event.attachment.file;
+            //     toBase64(file)
+            //         .then(base64 => {
+            //             console.log(event.attachment)
+            //
+            //             // event.attachment.setAttributes({
+            //             //     url: base64,
+            //             // });
+            //
+            //             event.attachment.setUploadProgress(100)
+            //         })
+            //         .catch(error => {
+            //             console.log(error)
+            //         })
+            // }
+        })
+
+        {{--window.onload = function () {--}}
+        {{--    tinyMCE.init(Object.assign(window.tinymce_settings, {--}}
+        {{--        content_css: '{{ asset('css/app.css') }}',--}}
+        {{--    }))--}}
+        {{--    .then(editors => {--}}
+        {{--        editors[0].setContent(`{!! old('konten') !!}`)--}}
+        {{--    })--}}
+        {{--}--}}
     </script>
 @endsection
