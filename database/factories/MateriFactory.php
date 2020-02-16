@@ -8,5 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(Materi::class, function (Faker $faker) {
     return [
         "judul" => $faker->sentence,
+        "deskripsi" => $faker->paragraph,
     ];
 });

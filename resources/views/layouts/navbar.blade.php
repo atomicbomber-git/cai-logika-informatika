@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-dark"
+    style="background-color: {{ auth()->check() ? "#7a3b3b" : "#3490dc"  }};"
+    >
     <div class="container">
         <a class="navbar-brand"
            href="#">
@@ -25,7 +27,7 @@
                       action="{{ route("logout") }}">
                     @csrf
 
-                    <button class="btn btn-sm btn-outline-danger">
+                    <button class="btn btn-sm btn-outline-warning">
                         Log Out
                         <i class="fas fa-sign-out-alt"></i>
                     </button>
@@ -34,7 +36,7 @@
 
             @guest
                 <a href="{{ route("login") }}"
-                   class="btn btm-sm btn-outline-primary">
+                   class="btn btm-sm btn-outline-light">
                     Log In
                     <i class="fas fa-sign-in-alt"></i>
                 </a>

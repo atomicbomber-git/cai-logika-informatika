@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\DB;
 
 class MateriController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware("auth");
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -20,6 +25,7 @@ class MateriController extends Controller
             ->select([
                 "id",
                 "judul",
+                "deskripsi",
             ])
             ->get();
 
@@ -51,6 +57,7 @@ class MateriController extends Controller
     {
         $data = $this->validate($request, [
             "judul" => "required|max:255",
+            "deskripsi" => "required|max:255",
         ]);
 
         Materi::create($data);
@@ -100,8 +107,8 @@ class MateriController extends Controller
     public function update(Request $request, Materi $materi)
     {
         $data = $this->validate($request, [
-            "judul" => "required|unique:" . (new Materi)->getTable() .
-                ",judul,{$materi->id}"
+            "judul" => "required|unique:" . (new Materi)->getTable() . ",judul,{$materi->id}",
+            "deskripsi" => "required|string",
         ]);
 
         $materi->update($data);

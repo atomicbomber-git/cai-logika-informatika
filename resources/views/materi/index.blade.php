@@ -33,6 +33,7 @@
                     <tr>
                         <th> #</th>
                         <th> Judul</th>
+                        <th> Deskripsi</th>
                         <th> Kendali</th>
                     </tr>
                     </thead>
@@ -42,6 +43,7 @@
                         <tr>
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $materi->judul }}  </td>
+                            <td style="width: 15rem;"> {{ $materi->deskripsi }}  </td>
                             <td>
                                 <div class="mb-2">
                                     <a class="btn btn-outline-info btn-sm"

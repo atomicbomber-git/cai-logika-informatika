@@ -11,20 +11,16 @@
 |
 */
 
+use App\Http\Controllers\FrontPageController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\SoalController;
 use App\Http\Controllers\SubMateriController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
+Route::get('/', class_basename(FrontPageController::class));
 Route::resource("materi", class_basename(MateriController::class));
 Route::resource("materi.sub_materi", class_basename(SubMateriController::class))->shallow();
 Route::resource("materi.soal", class_basename(SoalController::class))->shallow();
-
-Route::get('/home', 'HomeController@index')->name('home');

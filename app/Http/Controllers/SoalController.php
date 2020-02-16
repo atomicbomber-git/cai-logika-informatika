@@ -6,7 +6,6 @@ use App\Http\Constants\MessageState;
 use App\Materi;
 use App\Soal;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 /**
  * Class SoalController
@@ -14,6 +13,11 @@ use Illuminate\Support\Facades\DB;
  */
 class SoalController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware("auth");
+    }
+
     /**
      * Display a listing of the resource.
      *

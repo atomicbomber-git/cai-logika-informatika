@@ -14,7 +14,13 @@ class MateriSeeder extends Seeder
     {
         DB::beginTransaction();
 
-        $materis = factory(App\Materi::class, 10)->create();
+        $materis = factory(App\Materi::class, 10)
+            ->create()
+            ->each(function ($materi, $index) {
+                $materi->update([
+                    "judul" => "Materi " . ($index + 1)
+                ]);
+            });
 
         foreach ($materis as $materi) {
             $soals = factory(\App\Soal::class, 10)

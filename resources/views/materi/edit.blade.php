@@ -44,6 +44,22 @@
                 </span>
             </div>
 
+            <div class="form-group">
+                <label for="deskripsi">
+                    Deskripsi:
+                </label>
+                <textarea
+                    placeholder="deskripsi"
+                    class="form-control {{ $errors->has("deskripsi") ? "is-invalid" : "" }}"
+                    name="deskripsi"
+                    id="deskripsi"
+                    cols="30"
+                    rows="10">{{ old("deskripsi", $materi->deskripsi) }}</textarea>
+                <span class="invalid-feedback">
+                    {{ $errors->first("deskripsi") }}
+                </span>
+            </div>
+
             <div class="d-flex justify-content-end">
                 <button class="btn btn-outline-info btn-sm" type="submit">
                     Perbarui Materi
