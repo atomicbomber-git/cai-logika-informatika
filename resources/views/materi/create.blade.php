@@ -3,6 +3,21 @@
 @section("title", "Tambah Materi")
 
 @section("content")
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item"
+           href="">
+            {{ config("app.name") }}
+        </a>
+        <span class="breadcrumb-item">
+            <a href="{{ route("materi.index") }}">
+                Materi
+            </a>
+        </span>
+        <span class="breadcrumb-item active">
+            Materi Baru
+        </span>
+    </nav>
+
     <div>
         <h1 class="h1 mb-3">
             Materi Baru

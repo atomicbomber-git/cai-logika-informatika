@@ -59,7 +59,7 @@
                         sourceElement.setAttribute("src", attachmentData.url);
                         videoElement.appendChild(sourceElement);
 
-                        return videoElement
+                        return videoElement;
                     default:
                         throw new Error(`Unknown media type: ${attachmentData.contentType}`);
                 }
