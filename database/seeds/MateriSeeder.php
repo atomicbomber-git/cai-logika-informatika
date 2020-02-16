@@ -1,6 +1,5 @@
 <?php
 
-use App\Materi;
 use Illuminate\Database\Seeder;
 use const Illuminate\Support\Facades\DB;
 
@@ -16,7 +15,6 @@ class MateriSeeder extends Seeder
         DB::beginTransaction();
 
         $materis = factory(App\Materi::class, 10)->create();
-        $soals = [];
 
         foreach ($materis as $materi) {
             $soals = factory(\App\Soal::class, 10)

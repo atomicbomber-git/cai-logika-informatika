@@ -121,13 +121,11 @@ class MateriController extends Controller
      *
      * @param \App\Materi $materi
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(Materi $materi)
     {
-        DB::beginTransaction();
-        $materi->sub_materi()->delete();
         $materi->delete();
-        DB::commit();
 
         return redirect()
             ->route("materi.index")

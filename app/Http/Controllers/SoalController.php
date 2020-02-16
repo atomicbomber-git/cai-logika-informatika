@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Constants\MessageState;
 use App\Materi;
 use App\Soal;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
+/**
+ * Class SoalController
+ * @package App\Http\Controllers
+ */
 class SoalController extends Controller
 {
     /**
@@ -16,31 +22,52 @@ class SoalController extends Controller
      */
     public function index(Materi $materi)
     {
-        dd($materi->toArray());
-        return view("materi.soal.index");
+        $materi->load("soal");
+
+        return response()->view("soal.index", compact(
+            "materi"
+        ));
     }
 
     /**
      * Show the form for creating a new resource.
      *
      * @param  \App\Materi  $materi
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create(Materi $materi)
     {
-        //
+        return view("soal.create", compact(
+            "materi"
+        ));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Materi  $materi
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Materi $materi
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request, Materi $materi)
     {
-        //
+        $data = $this->validate($request, [
+            "konten" => "required|string",
+        ]);
+
+        Soal::create(array_merge($data, [
+            "materi_id" => $materi->id,
+        ]));
+
+        return redirect()
+            ->route("materi.soal.index", $materi)
+            ->with("messages", [
+                [
+                    "state" => MessageState::STATE_SUCCESS,
+                    "content" => __("messages.create.success"),
+                ]
+            ]);
     }
 
     /**
@@ -80,15 +107,23 @@ class SoalController extends Controller
         //
     }
 
+
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Materi  $materi
-     * @param  \App\Soal  $soal
-     * @return \Illuminate\Http\Response
+     * @param Soal $soal
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(Materi $materi, Soal $soal)
+    public function destroy(Soal $soal)
     {
-        //
+        $materi_id = $soal->materi_id;
+        $soal->forceDelete();
+
+        return redirect()
+            ->route("materi.soal.index", $materi_id)
+            ->with("messages", [
+                [
+                    "state" => MessageState::STATE_SUCCESS,
+                    "content" => __("messages.delete.success")
+                ]
+            ]);
     }
 }

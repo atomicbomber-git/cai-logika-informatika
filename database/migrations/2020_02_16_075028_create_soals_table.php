@@ -18,7 +18,8 @@ class CreateSoalsTable extends Migration
             $table->longText("konten");
             $table->unsignedInteger('materi_id')->index();
             $table->timestamps();
-            $table->foreign('materi_id')->references('id')->on('materi');
+            $table->foreign('materi_id')->references('id')->on('materi')
+                ->onDelete("CASCADE");
         });
     }
 

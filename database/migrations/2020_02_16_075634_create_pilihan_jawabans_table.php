@@ -19,7 +19,8 @@ class CreatePilihanJawabansTable extends Migration
             $table->unsignedInteger('soal_id')->index();
             $table->timestamps();
 
-            $table->foreign('soal_id')->references('id')->on('soal');
+            $table->foreign('soal_id')->references('id')->on('soal')
+                ->onDelete("CASCADE");
         });
     }
 

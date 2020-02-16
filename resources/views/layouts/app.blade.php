@@ -27,9 +27,11 @@
 
     <main class="container">
         <div class="row">
-            @include("layouts.sidebar")
+            @auth
+                @include("layouts.sidebar")
+            @endauth
 
-            <div class="col-md-9">
+            <div class="col-md">
                 @yield("content")
             </div>
         </div>

@@ -10,6 +10,5 @@ use Illuminate\Database\Eloquent\Factory;
 $factory->define(Soal::class, function (Faker $faker) {
     return [
         "konten" => $faker->paragraph,
-        "materi_id" => factory(Materi::class)->create()->id,
     ];
 });

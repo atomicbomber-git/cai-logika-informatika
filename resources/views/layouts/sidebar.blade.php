@@ -11,10 +11,5 @@
                 <span class="sr-only">(current)</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link"
-               href="#">Link
-            </a>
-        </li>
     </ul>
 </nav>

@@ -19,12 +19,26 @@
 
             </ul>
 
-            <button class="btn btn-sm btn-outline-danger">
-                Log Out
-                <i class="fas fa-sign-out-alt"></i>
-            </button>
+            @auth
+                <form class="d-inline-block"
+                      method="post"
+                      action="{{ route("logout") }}">
+                    @csrf
 
+                    <button class="btn btn-sm btn-outline-danger">
+                        Log Out
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </form>
+            @endauth
 
+            @guest
+                <a href="{{ route("login") }}"
+                   class="btn btm-sm btn-outline-primary">
+                    Log In
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+            @endguest
         </div>
     </div>
 </nav>

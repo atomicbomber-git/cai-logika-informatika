@@ -15,7 +15,9 @@ class AddJawabanBenarIdToSoal extends Migration
     {
         Schema::table('soal', function (Blueprint $table) {
             $table->unsignedInteger('jawaban_benar_id')->nullable()->index();
-            $table->foreign('jawaban_benar_id')->references('id')->on('pilihan_jawaban');
+            $table->foreign('jawaban_benar_id')->references('id')
+                ->on('pilihan_jawaban')
+                ->onDelete("SET NULL");
         });
     }
 
