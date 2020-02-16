@@ -11,7 +11,7 @@
 |
 */
 
-use App\Http\Controllers\FrontPageController;
+use App\Http\Controllers\GuestMateriIndexController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\SoalController;
 use App\Http\Controllers\SubMateriController;
@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', class_basename(FrontPageController::class));
+Route::get('/', class_basename(GuestMateriIndexController::class));
 Route::resource("materi", class_basename(MateriController::class));
 Route::resource("materi.sub_materi", class_basename(SubMateriController::class))->shallow();
 Route::resource("materi.soal", class_basename(SoalController::class))->shallow();

@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontPageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_16_102035_add_deskripsi_field_to_materi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestSubMateriIndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MateriController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubMateriController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubMateriController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/MateriFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/MateriFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front_page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestMateriIndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,14 +206,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/sub_materi" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/guest/materi" />
       <recent name="$PROJECT_DIR$/resources/postcss" />
       <recent name="$PROJECT_DIR$/resources/sass" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/sub_materi" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Artisan serve">
@@ -278,7 +270,7 @@
       <workItem from="1581755663551" duration="2150000" />
       <workItem from="1581757829090" duration="11108000" />
       <workItem from="1581786382617" duration="1445000" />
-      <workItem from="1581821300433" duration="17658000" />
+      <workItem from="1581821300433" duration="18364000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -330,11 +322,11 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="768" y="244" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1581842242549" />
-    <state x="588" y="0" width="522" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581846219112">
+    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581849258954">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="418" y="0" width="522" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.742@0.0.1366.742" timestamp="1580798496308" />
-    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581846219112" />
+    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581849258954" />
     <state x="416" y="121" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580806134192">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -442,15 +434,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581847857713">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581849207058">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581847857713" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581848846907">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581849207058" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581849234978">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581848846907" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581849234978" />
   </component>
 </project>

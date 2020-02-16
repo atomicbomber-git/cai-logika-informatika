@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Materi;
 use Illuminate\Http\Request;
 
-class FrontPageController extends Controller
+class GuestMateriIndexController extends Controller
 {
     /**
      * Handle the incoming request.
@@ -18,7 +18,7 @@ class FrontPageController extends Controller
         $materis = Materi::get();
 
         return response()
-            ->view("front_page", compact(
+            ->view("guest.materi.index", compact(
                 "materis"
             ));
     }
