@@ -57,7 +57,6 @@
                                     </a>
                                 </div>
 
-
                                 <div>
                                     <a class="btn btn-outline-info btn-sm"
                                        href="{{ route("materi.edit", $materi) }}">

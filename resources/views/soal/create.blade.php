@@ -9,7 +9,7 @@
             {{ config("app.name") }}
         </a>
         <span class="breadcrumb-item">
-            <a href="{{ route("materi.index") }}">
+            <a href="{{ route("materi.soal.index", $materi) }}">
                 Soal
             </a>
         </span>
@@ -40,7 +40,7 @@
                         name="konten"
                         id="konten"
                         cols="30"
-                        rows="2"></textarea>
+                        rows="2">{{ old("konten") }}</textarea>
                     <span class="invalid-feedback">
                         {{ $errors->first("konten") }}
                     </span>

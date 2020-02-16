@@ -24,15 +24,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     public static function getHomeRoute()
     {
-        auth()->check() ?
+        return auth()->check() ?
             route("materi.index") :
-            route("");
-
-        if (auth()->check()) {
-            return ;
-        }
-
-
+            route("guest.materi.index");
     }
 
     /**

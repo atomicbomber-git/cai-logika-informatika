@@ -11,25 +11,21 @@
             </a>
         </span>
         <span class="breadcrumb-item active">
-            Soal
+            Pilihan Jawaban
     </span>
     </nav>
 
     <div>
         <h1 class="h1 mb-3">
-            Soal
+            Pilihan Jawaban
         </h1>
-
-        <p class="lead">
-            "{{ $materi->judul }}"
-        </p>
 
         @include("messages")
 
         <div>
             <div class="d-flex justify-content-end my-3">
-                <a href="{{ route("materi.soal.create", $materi) }}" class="btn btn-outline-info btn-sm">
-                    Soal Baru
+                <a href="{{ route("soal.pilihan_jawaban.create", $soal) }}" class="btn btn-outline-info btn-sm">
+                    Pilihan Jawaban Baru
                     <i class="fas fa-plus"></i>
                 </a>
             </div>
@@ -46,7 +42,7 @@
                     </thead>
 
                     <tbody>
-                    @foreach($materi->soal as $soal)
+                    @foreach($soal->pilihan_jawaban as $pilihan_jawaban)
                         <tr>
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $soal->konten }}  </td>

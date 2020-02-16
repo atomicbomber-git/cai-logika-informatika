@@ -26,7 +26,9 @@ class SoalController extends Controller
      */
     public function index(Materi $materi)
     {
-        $materi->load("soal");
+        $materi->load([
+            "soal.jawaban_benar",
+        ]);
 
         return response()->view("soal.index", compact(
             "materi"
@@ -93,22 +95,38 @@ class SoalController extends Controller
      * @param  \App\Soal  $soal
      * @return \Illuminate\Http\Response
      */
-    public function edit(Materi $materi, Soal $soal)
+    public function edit(Soal $soal)
     {
-        //
+        return response()->view("soal.edit", compact(
+            "soal"
+        ));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Materi  $materi
-     * @param  \App\Soal  $soal
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Materi $materi
+     * @param \App\Soal $soal
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
+     * @throws \Illuminate\Validation\ValidationException
      */
-    public function update(Request $request, Materi $materi, Soal $soal)
+    public function update(Request $request, Soal $soal)
     {
-        //
+        $data = $this->validate($request, [
+            "konten" => "required|string",
+        ]);
+
+        $soal->update($data);
+
+        return redirect()
+            ->route("soal.edit", $soal)
+            ->with("messages", [
+                [
+                    "state" => MessageState::STATE_SUCCESS,
+                    "content" => __("messages.update.success")
+                ]
+            ]);
     }
 
 

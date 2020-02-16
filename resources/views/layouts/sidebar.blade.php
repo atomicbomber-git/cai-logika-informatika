@@ -1,4 +1,4 @@
-<nav class="nav navbar-light col-md-3 flex-column">
+<nav class="nav navbar-light col-md-2 flex-column">
     <div class="navbar-text">
         MANAJEMEN DATA
     </div>

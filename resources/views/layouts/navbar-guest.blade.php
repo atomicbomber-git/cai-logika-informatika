@@ -3,7 +3,7 @@
     >
     <div class="container">
         <a class="navbar-brand"
-           href="#">
+           href="{{ \App\Providers\RouteServiceProvider::getHomeRoute() }}">
             {{ config("app.name") }}
         </a>
         <button class="navbar-toggler d-lg-none"

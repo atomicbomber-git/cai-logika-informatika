@@ -7,6 +7,6 @@ use Faker\Generator as Faker;
 
 $factory->define(PilihanJawaban::class, function (Faker $faker) {
     return [
-        "konten" => $faker->paragraph,
+        "konten" => implode(" ", $faker->words),
     ];
 });

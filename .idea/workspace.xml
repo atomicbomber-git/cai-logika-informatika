@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app-guest.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Soal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Soal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PilihanJawabanFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PilihanJawabanFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/soal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/soal/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +207,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/soal" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -213,6 +215,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/soal" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/resources/views/sub_materi" />
     </key>
@@ -247,7 +250,10 @@
     </option>
   </component>
   <component name="StructuralSearchPlugin">
-    <replaceConfiguration name="user defined" created="1580805587801" text="$Object$-&gt;bigIncrements()" recursive="false" caseInsensitive="true" type="PHP" scope_type="PROJECT" scope_descriptor="" reformatAccordingToStyle="false" shortenFQN="false" replacement="$Object$-&gt;increments()" history="1">
+    <replaceConfiguration name="user defined" created="1581869588432" text="RouteServiceProvider::HOME" recursive="false" caseInsensitive="true" type="PHP" scope_type="PROJECT" scope_descriptor="" reformatAccordingToStyle="false" shortenFQN="false" replacement="RouteServiceProvider::getHomeRoute()" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </replaceConfiguration>
+    <replaceConfiguration name="user defined" created="1581869538827" text="$Object$-&gt;bigIncrements()" recursive="false" caseInsensitive="true" type="PHP" scope_type="PROJECT" scope_descriptor="" reformatAccordingToStyle="false" shortenFQN="false" replacement="$Object$-&gt;increments()" history="1">
       <constraint name="__context__" within="" contains="" />
       <constraint name="Object" within="" contains="" />
     </replaceConfiguration>
@@ -282,7 +288,7 @@
       <workItem from="1581865328285" duration="137000" />
       <workItem from="1581865480859" duration="187000" />
       <workItem from="1581865682954" duration="338000" />
-      <workItem from="1581866036253" duration="2336000" />
+      <workItem from="1581866036253" duration="5149000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -303,11 +309,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="1" width="1358" height="739" key="#Live_Templates" timestamp="1581756166939">
+    <state x="0" y="1" width="1529" height="921" key="#Live_Templates" timestamp="1581872314574">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="0" y="1" width="1358" height="739" key="#Live_Templates/0.0.1366.742@0.0.1366.742" timestamp="1580809236157" />
-    <state x="0" y="1" key="#Live_Templates/0.0.1920.1053@0.0.1920.1053" timestamp="1581756166939" />
+    <state x="0" y="1" width="1529" height="921" key="#Live_Templates/0.0.1920.1053@0.0.1920.1053" timestamp="1581872314574" />
     <state x="391" y="47" width="1223" height="675" key="#Plugins" timestamp="1581866019032">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -437,11 +443,11 @@
     </state>
     <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
     <state x="231" y="9" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1581865866680" />
-    <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1581869288202">
+    <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1581872205290">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1581401322951" />
-    <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1581869288202" />
+    <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1581872205290" />
     <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1581866036546">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -460,15 +466,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581849207058">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581870092223">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581849207058" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581869558283">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581870092223" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581873262753">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581869558283" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581873262753" />
   </component>
 </project>
