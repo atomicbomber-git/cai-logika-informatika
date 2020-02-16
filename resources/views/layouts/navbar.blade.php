@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-sm navbar-dark"
-    style="background-color: {{ auth()->check() ? "#7a3b3b" : "#3490dc"  }};"
+    style="background-color: #7a3b3b"
     >
     <div class="container">
         <a class="navbar-brand"
-           href="#">
+           href="{{ \App\Providers\RouteServiceProvider::getHomeRoute() }}">
             {{ config("app.name") }}
         </a>
         <button class="navbar-toggler d-lg-none"

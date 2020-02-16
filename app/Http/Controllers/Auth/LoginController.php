@@ -33,7 +33,7 @@ class LoginController extends Controller
 
     public function redirectTo()
     {
-        return route("materi.index");
+        return RouteServiceProvider::getHomeRoute();
     }
 
     public function loggedOut()

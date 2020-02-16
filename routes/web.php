@@ -20,7 +20,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', class_basename(GuestMateriIndexController::class));
+Route::prefix("guest.")->group(function () {
+    Route::get('/', class_basename(GuestMateriIndexController::class));
+});
+
 Route::resource("materi", class_basename(MateriController::class));
 Route::resource("materi.sub_materi", class_basename(SubMateriController::class))->shallow();
 Route::resource("materi.soal", class_basename(SoalController::class))->shallow();

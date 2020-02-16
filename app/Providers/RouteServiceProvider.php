@@ -16,12 +16,24 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected $namespace = 'App\Http\Controllers';
 
+
     /**
-     * The path to the "home" route for your application.
+     * Gets the default home route
      *
-     * @var string
+     * @return string
      */
-    public const HOME = '/home';
+    public static function getHomeRoute()
+    {
+        auth()->check() ?
+            route("materi.index") :
+            route("");
+
+        if (auth()->check()) {
+            return ;
+        }
+
+
+    }
 
     /**
      * Define your route model bindings, pattern filters, etc.
