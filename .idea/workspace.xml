@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sub_materi/footer_script.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/footer_script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/footer_script.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +229,7 @@
       <workItem from="1581755663551" duration="2150000" />
       <workItem from="1581757829090" duration="11108000" />
       <workItem from="1581786382617" duration="1445000" />
-      <workItem from="1581821300433" duration="3860000" />
+      <workItem from="1581821300433" duration="6732000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
