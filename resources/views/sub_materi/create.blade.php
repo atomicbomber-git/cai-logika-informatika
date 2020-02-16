@@ -63,7 +63,7 @@
 {{--                            cols="30"--}}
 {{--                            rows="10"></textarea>--}}
 
-                    <input id="konten" type="hidden" name="konten">
+                    <input id="konten" value="{{ old("konten") }}" type="hidden" name="konten">
                     <trix-editor input="konten"></trix-editor>
                     <span class="invalid-feedback">
                         {{ $errors->first("konten") }}
@@ -92,25 +92,22 @@
         });
 
         addEventListener("trix-attachment-add", function(event) {
-            console.log(event.attachment)
-            event.attachment.setUploadProgress(100)
 
-            // if (event.attachment.file) {
-            //     const file = event.attachment.file;
-            //     toBase64(file)
-            //         .then(base64 => {
-            //             console.log(event.attachment)
-            //
-            //             // event.attachment.setAttributes({
-            //             //     url: base64,
-            //             // });
-            //
-            //             event.attachment.setUploadProgress(100)
-            //         })
-            //         .catch(error => {
-            //             console.log(error)
-            //         })
-            // }
+            if (event.attachment.file) {
+                const file = event.attachment.file;
+                toBase64(file)
+                    .then(base64 => {
+
+                        event.attachment.setAttributes({
+                            url: base64,
+                        });
+
+                        event.attachment.setUploadProgress(100)
+                    })
+                    .catch(error => {
+                        console.log(error)
+                    })
+            }
         })
 
         {{--window.onload = function () {--}}

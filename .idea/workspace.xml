@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cai-logika-informatika.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cai-logika-informatika.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/file_picker_callback.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/file_picker_callback.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/tinymce_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tinymce_settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +160,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/sub_materi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../informatika-newssite" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -241,7 +228,9 @@
       <workItem from="1581755409538" duration="146000" />
       <workItem from="1581755584497" duration="69000" />
       <workItem from="1581755663551" duration="2150000" />
-      <workItem from="1581757829090" duration="10798000" />
+      <workItem from="1581757829090" duration="11108000" />
+      <workItem from="1581786382617" duration="1445000" />
+      <workItem from="1581821300433" duration="1532000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -309,30 +298,30 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="408" y="287" width="542" height="167" key="ComposerInitDialogKey/0.0.1366.742@0.0.1366.742" timestamp="1580798695718" />
-    <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl" timestamp="1581755849412">
+    <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl" timestamp="1581786445903">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1581755849412" />
-    <state width="1920" height="263" key="GridCell.Tab.0.bottom" timestamp="1581757513208">
+    <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1581786445903" />
+    <state width="1920" height="263" key="GridCell.Tab.0.bottom" timestamp="1581821341728">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581589787675" />
-    <state width="1920" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1581757513208" />
-    <state width="1920" height="263" key="GridCell.Tab.0.center" timestamp="1581757513207">
+    <state width="1920" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1581821341728" />
+    <state width="1920" height="263" key="GridCell.Tab.0.center" timestamp="1581821341727">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1920" height="263" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1581757513207" />
-    <state width="1920" height="263" key="GridCell.Tab.0.left" timestamp="1581757513206">
+    <state width="1920" height="263" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1581821341727" />
+    <state width="1920" height="263" key="GridCell.Tab.0.left" timestamp="1581821341727">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1920" height="263" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1581757513206" />
-    <state width="1920" height="263" key="GridCell.Tab.0.right" timestamp="1581757513208">
+    <state width="1920" height="263" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1581821341727" />
+    <state width="1920" height="263" key="GridCell.Tab.0.right" timestamp="1581821341728">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1920" height="263" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1581757513208" />
+    <state width="1920" height="263" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1581821341728" />
     <state x="530" y="306" width="314" height="131" key="Laravel.ExtractPartialViewDialog" timestamp="1581395552942">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -369,11 +358,11 @@
     </state>
     <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1581401322951" />
     <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1581609522905" />
-    <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1581757881003">
+    <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1581821300954">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="336" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1580974092373" />
-    <state x="472" y="282" key="com.intellij.ide.util.TipDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581757881003" />
+    <state x="472" y="282" key="com.intellij.ide.util.TipDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581821300954" />
     <state x="444" y="150" width="1264" height="841" key="find.popup" timestamp="1581765235437">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -392,10 +381,10 @@
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
     <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581756878082" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581768458903">
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581786928166">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581768458903" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581786928166" />
   </component>
 </project>
