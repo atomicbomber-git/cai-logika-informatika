@@ -1,5 +1,6 @@
 <?php
 
+use App\Materi;
 use Illuminate\Database\Seeder;
 use const Illuminate\Support\Facades\DB;
 
@@ -14,8 +15,24 @@ class MateriSeeder extends Seeder
     {
         DB::beginTransaction();
 
-        factory(App\Materi::class, 10)
-            ->create();
+        $materis = factory(App\Materi::class, 10)->create();
+        $soals = [];
+
+        foreach ($materis as $materi) {
+            $soals = factory(\App\Soal::class, 10)
+                ->create([
+                    "materi_id" => $materi->id,
+                ]);
+
+            foreach ($soals as $soal) {
+                $pilihan_jawabans = factory(\App\PilihanJawaban::class, 4)
+                    ->create([ "soal_id" => $soal->id ]);
+
+                $soal->update([
+                    "jawaban_benar_id" => $pilihan_jawabans->random()->id,
+                ]);
+            }
+        }
 
         DB::commit();
     }

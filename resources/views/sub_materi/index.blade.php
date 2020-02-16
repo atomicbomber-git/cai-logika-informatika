@@ -20,6 +20,10 @@
             Sub Materi
         </h1>
 
+        <p class="lead">
+            "{{ $materi->judul }}"
+        </p>
+
         @include("messages")
 
         <div>

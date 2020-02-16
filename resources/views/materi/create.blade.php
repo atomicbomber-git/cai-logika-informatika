@@ -35,18 +35,20 @@
                         Judul:
                     </label>
                     <textarea
-                            class="form-control {{ $errors->has("judul") ? "is-invalid" : "" }}"
-                            name="judul"
-                            id="judul"
-                            cols="30"
-                            rows="10"></textarea>
+                        placeholder="Judul"
+                        class="form-control {{ $errors->has("judul") ? "is-invalid" : "" }}"
+                        name="judul"
+                        id="judul"
+                        cols="30"
+                        rows="2"></textarea>
                     <span class="invalid-feedback">
                         {{ $errors->first("judul") }}
                     </span>
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-outline-info">
+                    <button type="submit"
+                            class="btn btn-outline-info">
                         Tambahkan
                         <i class="fas fa-check"></i>
                     </button>

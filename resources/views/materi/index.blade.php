@@ -2,7 +2,8 @@
 
 @section("content")
     <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="">
+        <a class="breadcrumb-item"
+           href="">
             {{ config("app.name") }}
         </a>
         <span class="breadcrumb-item active">
@@ -19,7 +20,8 @@
 
         <div>
             <div class="d-flex justify-content-end my-3">
-                <a href="{{ route("materi.create") }}" class="btn btn-outline-info btn-sm">
+                <a href="{{ route("materi.create") }}"
+                   class="btn btn-outline-info btn-sm">
                     Materi Baru
                     <i class="fas fa-plus"></i>
                 </a>
@@ -41,25 +43,39 @@
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $materi->judul }}  </td>
                             <td>
-                                <a class="btn btn-outline-info btn-sm" href="{{ route("materi.sub_materi.index", $materi) }}">
-                                    Sub Materi
-                                </a>
+                                <div class="mb-2">
+                                    <a class="btn btn-outline-info btn-sm"
+                                       href="{{ route("materi.sub_materi.index", $materi) }}">
+                                        Sub Materi
+                                    </a>
 
-                                <a class="btn btn-outline-info btn-sm" href="{{ route("materi.edit", $materi) }}">
-                                    Ubah
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
+                                    <a class="btn btn-outline-info btn-sm"
+                                       href="{{ route("materi.soal.index", $materi) }}">
+                                        Soal Latihan
+                                    </a>
+                                </div>
 
-                                <form class="d-inline-block" action="{{ route("materi.destroy", $materi) }}" method="post">
-                                    @csrf
-                                    @method("DELETE")
 
-                                    <button class="btn btn-outline-danger btn-sm" type="submit">
-                                        Hapus
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </form>
+                                <div>
+                                    <a class="btn btn-outline-info btn-sm"
+                                       href="{{ route("materi.edit", $materi) }}">
+                                        Ubah
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
 
+                                    <form class="d-inline-block"
+                                          action="{{ route("materi.destroy", $materi) }}"
+                                          method="post">
+                                        @csrf
+                                        @method("DELETE")
+
+                                        <button class="btn btn-outline-danger btn-sm"
+                                                type="submit">
+                                            Hapus
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     @endforeach

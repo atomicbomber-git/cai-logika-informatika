@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/PilihanJawaban.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Soal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/PilihanJawabanFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/SoalFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_16_073356_remove_permasalahan_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_16_075028_create_soals_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_16_075634_create_pilihan_jawabans_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_16_075917_add_jawaban_benar_id_to_soal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PilihanJawabanSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/SoalSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/footer_script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/footer_script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PermasalahanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PilihanJawabanController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Materi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Materi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Permasalahan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PermasalahanFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PermasalahanSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/permasalahan/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/permasalahan/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/permasalahan/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +55,37 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="pilihan_jawaban: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="soal: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -156,6 +213,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -229,7 +287,7 @@
       <workItem from="1581755663551" duration="2150000" />
       <workItem from="1581757829090" duration="11108000" />
       <workItem from="1581786382617" duration="1445000" />
-      <workItem from="1581821300433" duration="6732000" />
+      <workItem from="1581821300433" duration="11106000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -265,6 +323,10 @@
     </state>
     <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808563068" />
     <state x="565" y="322" width="1036" height="473" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581756297988" />
+    <state x="555" y="187" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581840497942">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="555" y="187" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581840497942" />
     <state x="370" y="177" width="639" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580956385451">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -348,11 +410,11 @@
     </state>
     <state x="418" y="179" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1366.742@0.0.1366.742" timestamp="1580976487942" />
     <state x="588" y="254" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1920.1053@0.0.1920.1053" timestamp="1581757542457" />
-    <state x="231" y="9" width="1449" height="986" key="SettingsEditor" timestamp="1581823560832">
+    <state x="231" y="9" width="1449" height="986" key="SettingsEditor" timestamp="1581840590014">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
-    <state x="231" y="9" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1581823560832" />
+    <state x="231" y="9" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1581840590014" />
     <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1581609522905">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -376,15 +438,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581827259395">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581839675024">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581827259395" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581827632864">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581839675024" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581841686380">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581827632864" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581841686380" />
   </component>
 </project>

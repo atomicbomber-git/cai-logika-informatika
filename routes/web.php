@@ -12,7 +12,7 @@
 */
 
 use App\Http\Controllers\MateriController;
-use App\Http\Controllers\PermasalahanController;
+use App\Http\Controllers\SoalController;
 use App\Http\Controllers\SubMateriController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -23,8 +23,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource("permasalahan", class_basename(PermasalahanController::class));
 Route::resource("materi", class_basename(MateriController::class));
 Route::resource("materi.sub_materi", class_basename(SubMateriController::class))->shallow();
+Route::resource("materi.soal", class_basename(SoalController::class))->shallow();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -13,13 +13,13 @@
             </a>
         </span>
         <span class="breadcrumb-item active">
-            Edit
+            Ubah
         </span>
     </nav>
 
     <div>
         <h1 class="h1 mb-3">
-            Materi Baru
+            Ubah Materi
         </h1>
 
         @include("messages")
@@ -38,7 +38,7 @@
                         name="judul"
                         id="judul"
                         cols="30"
-                        rows="10">{{ old("judul", $materi->judul) }}</textarea>
+                        rows="2">{{ old("judul", $materi->judul) }}</textarea>
                 <span class="invalid-feedback">
                     {{ $errors->first("judul", $materi->judul) }}
                 </span>
