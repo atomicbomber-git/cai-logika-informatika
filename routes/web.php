@@ -12,6 +12,7 @@
 */
 
 use App\Http\Controllers\GuestMateriIndexController;
+use App\Http\Controllers\GuestSubMateriShowController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\PilihanJawabanController;
 use App\Http\Controllers\SoalController;
@@ -26,6 +27,7 @@ Route::redirect("/", "guest/materi");
 
 Route::group(["prefix" => "guest/", "as" => "guest."], function () {
     Route::get('materi', class_basename(GuestMateriIndexController::class))->name("materi.index");
+    Route::get('sub_materi/{sub_materi}', class_basename(GuestSubMateriShowController::class))->name("sub_materi.show");
 });
 
 Route::resource("materi", class_basename(MateriController::class));

@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TandaiJawabanBenarController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_17_055849_add_urutan_field_to_sub_materi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/guest/sub_materi/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PilihanJawabanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PilihanJawabanController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/PilihanJawaban.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PilihanJawaban.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestMateriIndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestMateriIndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestSubMateriIndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestSubMateriShowController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/SubMateri.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubMateri.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SubMateriFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SubMateriFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pilihan_jawaban/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pilihan_jawaban/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pilihan_jawaban/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pilihan_jawaban/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pilihan_jawaban/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pilihan_jawaban/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +91,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
@@ -210,20 +213,20 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/soal" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
-      <recent name="$PROJECT_DIR$/resources/views/sub_materi" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/guest/sub_materi" />
       <recent name="$PROJECT_DIR$/resources/views/guest/materi" />
       <recent name="$PROJECT_DIR$/resources/postcss" />
       <recent name="$PROJECT_DIR$/resources/sass" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/soal" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+      <recent name="$PROJECT_DIR$/resources/views/sub_materi" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Artisan serve">
@@ -288,7 +291,7 @@
       <workItem from="1581865480859" duration="187000" />
       <workItem from="1581865682954" duration="338000" />
       <workItem from="1581866036253" duration="8529000" />
-      <workItem from="1581905834801" duration="4193000" />
+      <workItem from="1581905834801" duration="8680000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -340,11 +343,11 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="768" y="244" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1581869143184" />
-    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581849258954">
+    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581910566496">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="418" y="0" width="522" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.742@0.0.1366.742" timestamp="1580798496308" />
-    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581849258954" />
+    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581910566496" />
     <state x="416" y="121" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580806134192">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -429,20 +432,21 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808034800" />
-    <state x="461" y="297" width="435" height="147" key="NewPhpFileDialog" timestamp="1580796708070">
-      <screen x="0" y="0" width="1366" height="742" />
+    <state x="648" y="421" width="435" height="147" key="NewPhpFileDialog" timestamp="1581919572527">
+      <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="461" y="297" width="435" height="147" key="NewPhpFileDialog/0.0.1366.742@0.0.1366.742" timestamp="1580796708070" />
+    <state x="648" y="421" key="NewPhpFileDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581919572527" />
     <state x="588" y="254" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey" timestamp="1581757542457">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="418" y="179" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1366.742@0.0.1366.742" timestamp="1580976487942" />
     <state x="588" y="254" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1920.1053@0.0.1920.1053" timestamp="1581757542457" />
-    <state x="231" y="9" width="1449" height="986" key="SettingsEditor" timestamp="1581865866680">
+    <state x="273" y="67" width="1449" height="986" key="SettingsEditor" timestamp="1581920353189">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
-    <state x="231" y="9" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1581865866680" />
+    <state x="273" y="67" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1581920353189" />
     <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1581908307223">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -466,15 +470,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581910208197">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581920822949">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581910208197" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581910316125">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581920822949" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581921258718">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581910316125" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581921258718" />
   </component>
 </project>

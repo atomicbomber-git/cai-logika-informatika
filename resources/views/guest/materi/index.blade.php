@@ -18,7 +18,7 @@
                             </div>
 
                             <div class="d-flex justify-content-end">
-                                <a href="#" class="btn btn-outline-info btn-sm">
+                                <a href="{{ route("guest.sub_materi.show", $materi->first_sub_materi_id) }}" class="btn btn-outline-info btn-sm">
                                     Belajar
                                     <i class="fas fa-book-open"></i>
                                 </a>

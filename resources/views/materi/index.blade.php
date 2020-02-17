@@ -33,7 +33,7 @@
                 <table class="table table-striped table-sm">
                     <thead>
                     <tr>
-                        <th> #</th>
+                        <th> # </th>
                         <th> Judul</th>
                         <th> Deskripsi</th>
                         <th> Kendali</th>
@@ -43,7 +43,7 @@
                     <tbody>
                     @foreach($materis as $materi)
                         <tr>
-                            <td> {{ $loop->iteration }}  </td>
+                            <td> {{ $materi->urutan }}  </td>
                             <td> {{ $materi->judul }}  </td>
                             <td style="width: 15rem;"> {{ $materi->deskripsi }}  </td>
                             <td>

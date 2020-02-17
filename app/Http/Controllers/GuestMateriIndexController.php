@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Materi;
+use App\SubMateri;
 use Illuminate\Http\Request;
 
 class GuestMateriIndexController extends Controller
@@ -15,11 +16,18 @@ class GuestMateriIndexController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $materis = Materi::get();
-
         return response()
-            ->view("guest.materi.index", compact(
-                "materis"
-            ));
+            ->view("guest.materi.index", [
+                "materis" =>
+                    Materi::query()
+                        ->addSelect([
+                            "first_sub_materi_id" =>
+                                SubMateri::query()
+                                    ->select("id")
+                                    ->whereColumn("sub_materi.materi_id", "=", "materi.id")
+                                    ->limit(1)
+                        ])
+                        ->get()
+            ]);
     }
 }
