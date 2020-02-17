@@ -16,6 +16,7 @@ use App\Http\Controllers\MateriController;
 use App\Http\Controllers\PilihanJawabanController;
 use App\Http\Controllers\SoalController;
 use App\Http\Controllers\SubMateriController;
+use App\Http\Controllers\TandaiJawabanBenarController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -31,3 +32,5 @@ Route::resource("materi", class_basename(MateriController::class));
 Route::resource("materi.sub_materi", class_basename(SubMateriController::class))->shallow();
 Route::resource("materi.soal", class_basename(SoalController::class))->shallow();
 Route::resource("soal.pilihan_jawaban", class_basename(PilihanJawabanController::class))->shallow();
+Route::put("/pilihan_jawaban/{pilihan_jawaban}/tandai_jawaban_benar", class_basename(TandaiJawabanBenarController::class))
+    ->name("pilihan_jawaban.tandai_jawaban_benar");

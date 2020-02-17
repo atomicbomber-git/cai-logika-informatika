@@ -2,8 +2,10 @@
   <dictionary name="atomicbomber">
     <words>
       <w>baru</w>
+      <w>benar</w>
       <w>hapus</w>
       <w>jawaban</w>
+      <w>jawabans</w>
       <w>judul</w>
       <w>kendali</w>
       <w>konten</w>
@@ -12,6 +14,7 @@
       <w>pilihan</w>
       <w>soal</w>
       <w>tambahkan</w>
+      <w>tandai</w>
       <w>ubah</w>
     </words>
   </dictionary>

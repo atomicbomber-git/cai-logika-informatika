@@ -1,6 +1,6 @@
 @extends("layouts.app")
 
-@section("title", "Tambah Sub Materi")
+@section("title", "Sub Materi Baru")
 
 @section("content")
     <nav class="breadcrumb">

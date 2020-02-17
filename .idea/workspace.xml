@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TandaiJawabanBenarController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Soal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Soal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PilihanJawabanFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PilihanJawabanFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PilihanJawabanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PilihanJawabanController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PilihanJawaban.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PilihanJawaban.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pilihan_jawaban/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pilihan_jawaban/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pilihan_jawaban/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pilihan_jawaban/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pilihan_jawaban/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pilihan_jawaban/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/soal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -288,7 +287,8 @@
       <workItem from="1581865328285" duration="137000" />
       <workItem from="1581865480859" duration="187000" />
       <workItem from="1581865682954" duration="338000" />
-      <workItem from="1581866036253" duration="5149000" />
+      <workItem from="1581866036253" duration="8529000" />
+      <workItem from="1581905834801" duration="4193000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -391,26 +391,26 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1581869216003" />
-    <state width="1920" height="263" key="GridCell.Tab.0.bottom" timestamp="1581867888109">
+    <state width="1920" height="263" key="GridCell.Tab.0.bottom" timestamp="1581905926521">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581589787675" />
-    <state width="1920" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1581867888109" />
-    <state width="1920" height="263" key="GridCell.Tab.0.center" timestamp="1581867888109">
+    <state width="1920" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1581905926521" />
+    <state width="1920" height="263" key="GridCell.Tab.0.center" timestamp="1581905926521">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1920" height="263" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1581867888109" />
-    <state width="1920" height="263" key="GridCell.Tab.0.left" timestamp="1581867888109">
+    <state width="1920" height="263" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1581905926521" />
+    <state width="1920" height="263" key="GridCell.Tab.0.left" timestamp="1581905926520">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1920" height="263" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1581867888109" />
-    <state width="1920" height="263" key="GridCell.Tab.0.right" timestamp="1581867888109">
+    <state width="1920" height="263" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1581905926520" />
+    <state width="1920" height="263" key="GridCell.Tab.0.right" timestamp="1581905926521">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1920" height="263" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1581867888109" />
+    <state width="1920" height="263" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1581905926521" />
     <state x="745" y="434" width="314" height="131" key="Laravel.ExtractPartialViewDialog" timestamp="1581827353594">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -443,11 +443,11 @@
     </state>
     <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
     <state x="231" y="9" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1581865866680" />
-    <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1581872205290">
+    <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1581908307223">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1581401322951" />
-    <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1581872205290" />
+    <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1581908307223" />
     <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1581866036546">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -466,15 +466,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581870092223">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1581910208197">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581870092223" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581873262753">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581910208197" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1581910187805">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581873262753" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581910187804" />
   </component>
 </project>

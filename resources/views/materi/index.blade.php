@@ -1,5 +1,7 @@
 @extends("layouts.app")
 
+@section('title', 'Materi Baru')
+
 @section("content")
     <nav class="breadcrumb">
         <a class="breadcrumb-item"
