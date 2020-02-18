@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayQuizController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StartQuizController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/VerifyQuizController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Quiz.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/guest/quiz/play.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +281,7 @@
       <workItem from="1581866036253" duration="8529000" />
       <workItem from="1581905834801" duration="9524000" />
       <workItem from="1581987987901" duration="1795000" />
-      <workItem from="1582013631658" duration="8651000" />
+      <workItem from="1582013631658" duration="8933000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -482,10 +474,10 @@
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
     <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582025148541" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582029350350">
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582029844358">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582029350350" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582029844358" />
   </component>
 </project>

@@ -5,4 +5,5 @@
     git pull origin master
     composer install
     composer dump-autoload -o
+    php artisan migrate
 @endtask
