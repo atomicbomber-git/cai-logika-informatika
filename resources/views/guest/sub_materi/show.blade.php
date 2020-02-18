@@ -5,8 +5,9 @@
         <div class="card">
             <div class="card-body">
                 <h2 class="h5 text-primary mb-1">
-                    {{ $sub_materi->materi->judul }}
-                    <br/>
+                    <a class="text-decoration-none" href="{{ route("guest.materi.index") }}">
+                        {{ $sub_materi->materi->judul }}
+                    </a>
                 </h2>
 
                 <h1 class="h2">

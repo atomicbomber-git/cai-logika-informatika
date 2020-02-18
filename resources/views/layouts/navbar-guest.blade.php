@@ -18,6 +18,12 @@
         <div class="collapse navbar-collapse"
              id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ route("guest.materi.index")  }}">
+                        <i class="fas fa-book"></i>
+                        Materi
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

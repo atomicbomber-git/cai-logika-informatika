@@ -2,7 +2,8 @@
 
 @section("content")
     <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="">
+        <a class="breadcrumb-item"
+           href="">
             {{ config("app.name") }}
         </a>
         <span class="breadcrumb-item">
@@ -28,7 +29,8 @@
 
         <div>
             <div class="d-flex justify-content-end my-3">
-                <a href="{{ route("materi.sub_materi.create", $materi) }}" class="btn btn-outline-info btn-sm">
+                <a href="{{ route("materi.sub_materi.create", $materi) }}"
+                   class="btn btn-outline-info btn-sm">
                     Sub Materi Baru
                     <i class="fas fa-plus"></i>
                 </a>
@@ -38,9 +40,10 @@
                 <table class="table table-striped table-sm">
                     <thead>
                     <tr>
-                        <th> # </th>
-                        <th> Judul </th>
-                        <th> Kendali </th>
+                        <th> #</th>
+                        <th> Judul</th>
+                        <th> Urutan</th>
+                        <th> Kendali</th>
                     </tr>
                     </thead>
 
@@ -49,22 +52,28 @@
                         <tr>
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $sub_materi->judul }}  </td>
+                            <td> {{ $sub_materi->urutan }}  </td>
                             <td>
-                                <a class="btn btn-outline-info btn-sm" href="{{ route("sub_materi.show", $sub_materi) }}">
+                                <a class="btn btn-outline-info btn-sm"
+                                   href="{{ route("sub_materi.show", $sub_materi) }}">
                                     Lihat
                                     <i class="fas fa-eye"></i>
                                 </a>
 
-                                <a class="btn btn-outline-info btn-sm" href="{{ route("sub_materi.edit", $sub_materi) }}">
+                                <a class="btn btn-outline-info btn-sm"
+                                   href="{{ route("sub_materi.edit", $sub_materi) }}">
                                     Ubah
                                     <i class="fas fa-pencil-alt"></i>
                                 </a>
 
-                                <form class="d-inline-block" action="{{ route("sub_materi.destroy", $sub_materi) }}" method="post">
+                                <form class="d-inline-block"
+                                      action="{{ route("sub_materi.destroy", $sub_materi) }}"
+                                      method="post">
                                     @csrf
                                     @method("DELETE")
 
-                                    <button class="btn btn-outline-danger btn-sm" type="submit">
+                                    <button class="btn btn-outline-danger btn-sm"
+                                            type="submit">
                                         Hapus
                                         <i class="fas fa-trash-alt"></i>
                                     </button>

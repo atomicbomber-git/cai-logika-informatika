@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Constants\MessageState;
 use App\Materi;
 use App\SubMateri;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Query\Builder;
 use Illuminate\Http\Request;
 
 class SubMateriController extends Controller
@@ -22,6 +24,19 @@ class SubMateriController extends Controller
      */
     public function index(Materi $materi)
     {
+        $materi->load([
+            "sub_materi" => function (HasMany $query) {
+                $query
+                    ->select(
+                        "id",
+                        "materi_id",
+                        "judul",
+                        "urutan"
+                    )
+                    ->orderBy("urutan");
+            },
+        ]);
+
         return response()->view("sub_materi.index", compact(
             "materi"
         ));
@@ -35,8 +50,13 @@ class SubMateriController extends Controller
      */
     public function create(Materi $materi)
     {
+        $nextUrutan = ($materi->sub_materi()
+            ->selectRaw("MAX(urutan) AS max_urutan")
+            ->value("max_urutan") ?? 0) + 1;
+
         return response()->view("sub_materi.create", compact(
-            "materi"
+            "materi",
+            "nextUrutan",
         ));
     }
 
@@ -53,6 +73,7 @@ class SubMateriController extends Controller
         $data = $this->validate($request, [
             "judul" => "required|string",
             "konten" => "required|string",
+            "urutan" => "required|numeric|gte:1",
         ]);
 
         $materi->sub_materi()->create($data);

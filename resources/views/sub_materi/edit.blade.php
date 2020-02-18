@@ -52,6 +52,23 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="urutan"> Urutan:</label>
+                    <input
+                        id="urutan"
+                        type="text"
+                        placeholder="Urutan"
+                        class="form-control {{ $errors->has("urutan") ? "is-invalid" : "" }}"
+                        name="urutan"
+                        value="{{ old("urutan", $sub_materi->urutan) }}"
+                    />
+                    @foreach($errors->get("urutan") ?? [] as $feedback)
+                        <span class="invalid-feedback">
+                        {{ $feedback }}
+                    </span>
+                    @endforeach
+                </div>
+
+                <div class="form-group">
                     <label for="konten">
                         Konten:
                     </label>
