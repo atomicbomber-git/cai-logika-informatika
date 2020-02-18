@@ -21,6 +21,7 @@ use App\Http\Controllers\StartQuizController;
 use App\Http\Controllers\SoalController;
 use App\Http\Controllers\SubMateriController;
 use App\Http\Controllers\TandaiJawabanBenarController;
+use App\Http\Controllers\VerifyQuizController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +35,7 @@ Route::group(["prefix" => "guest/", "as" => "guest."], function () {
     Route::get('soal/{soal}', class_basename(GuestSoalController::class))->name("soal.show");
     Route::get('quiz/{materi}/start', class_basename(StartQuizController::class))->name("quiz.start");
     Route::get('quiz/play', class_basename(PlayQuizController::class))->name("quiz.play");
+    Route::get('quiz/verify', class_basename(VerifyQuizController::class))->name("quiz.verify");
 });
 
 Route::resource("materi", class_basename(MateriController::class));

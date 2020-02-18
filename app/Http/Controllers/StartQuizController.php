@@ -18,6 +18,8 @@ class StartQuizController extends Controller
     public function __invoke(Request $request, Materi $materi)
     {
         Quiz::init($materi);
-        return redirect()->route("guest.quiz.play");
+
+        return redirect()
+            ->route("guest.quiz.play");
     }
 }

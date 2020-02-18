@@ -21,8 +21,10 @@ class PlayQuizController extends Controller
         }
 
         $quiz_data = Session::get("current_quiz");
+
         return response()->view("guest.quiz.play", [
             "quiz_data" => $quiz_data,
+            "soal" => $quiz_data["soals"][$quiz_data["current_soal_index"]],
         ]);
     }
 }
