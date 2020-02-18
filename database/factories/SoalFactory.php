@@ -9,6 +9,6 @@ use Illuminate\Database\Eloquent\Factory;
 
 $factory->define(Soal::class, function (Faker $faker) {
     return [
-        "konten" => $faker->paragraph,
+        "konten" => $faker->realText(1000),
     ];
 });

@@ -40,6 +40,7 @@
                     <tr>
                         <th> # </th>
                         <th style="width: 30rem"> Konten </th>
+                        <th> Urutan </th>
                         <th> Jawaban </th>
                         <th style="width: 10rem"> Kendali </th>
                     </tr>
@@ -50,6 +51,7 @@
                         <tr>
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $soal->konten }}  </td>
+                            <td> {{ $soal->urutan }}  </td>
                             <td> {{ $soal->jawaban_benar->konten ?? '-' }}  </td>
                             <td>
                                 <div class="my-2">

@@ -30,6 +30,7 @@ class GuestMateriIndexController extends Controller
                 Soal::query()
                     ->select("id")
                     ->whereColumn("soal.materi_id", "=", "materi.id")
+                    ->orderBy("urutan")
                     ->limit(1)
             ])
             ->get();

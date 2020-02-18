@@ -46,6 +46,23 @@
                     </span>
                 </div>
 
+                <div class="form-group">
+                    <label for="urutan"> Urutan: </label>
+                    <input
+                        id="urutan"
+                        type="text"
+                        placeholder="Urutan"
+                        class="form-control {{ $errors->has("urutan") ? "is-invalid" : "" }}"
+                        name="urutan"
+                        value="{{ old("urutan", $nextUrutan) }}"
+                    />
+                    @foreach($errors->get("urutan") ?? [] as $feedback)
+                        <span class="invalid-feedback">
+                        {{ $feedback }}
+                    </span>
+                    @endforeach
+                </div>
+
                 <div class="d-flex justify-content-end">
                     <button type="submit"
                             class="btn btn-outline-info">

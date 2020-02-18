@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="d-flex justify-content-end">
-                                <a href=""
+                                <a href="{{ route("guest.soal.show", $materi->first_soal_id) }}"
                                    class="btn btn-outline-info btn-sm mr-2">
                                     Contoh Soal
                                 </a>

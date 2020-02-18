@@ -55,7 +55,7 @@
 
                                     <a class="btn btn-outline-info btn-sm"
                                        href="{{ route("materi.soal.index", $materi) }}">
-                                        Soal Latihan
+                                        Soal
                                     </a>
                                 </div>
 

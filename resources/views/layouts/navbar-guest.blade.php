@@ -3,7 +3,7 @@
     >
     <div class="container">
         <a class="navbar-brand"
-           href="{{ \App\Providers\RouteServiceProvider::getHomeRoute() }}">
+           href="{{ route("guest.materi.index") }}">
             {{ config("app.name") }}
         </a>
         <button class="navbar-toggler d-lg-none"

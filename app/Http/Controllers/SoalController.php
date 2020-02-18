@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Constants\MessageState;
 use App\Materi;
 use App\Soal;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Http\Request;
 
 /**
@@ -27,6 +28,9 @@ class SoalController extends Controller
     public function index(Materi $materi)
     {
         $materi->load([
+            "soal" => function (HasMany $hasMany) {
+                $hasMany->orderBy("urutan");
+            },
             "soal.jawaban_benar",
         ]);
 
@@ -43,8 +47,13 @@ class SoalController extends Controller
      */
     public function create(Materi $materi)
     {
+        $nextUrutan = $materi->soal()
+            ->selectRaw("MAX(urutan) AS next_urutan")
+            ->value("next_urutan");
+
         return view("soal.create", compact(
-            "materi"
+            "materi",
+            "nextUrutan"
         ));
     }
 
@@ -60,6 +69,7 @@ class SoalController extends Controller
     {
         $data = $this->validate($request, [
             "konten" => "required|string",
+            "urutan" => "required|numeric|gte:1",
         ]);
 
         Soal::create(array_merge($data, [
