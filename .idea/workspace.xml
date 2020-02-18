@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/guest/soal/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayQuizController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StartQuizController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/VerifyQuizController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Quiz.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/guest/quiz/play.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestContohSoalShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestSoalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestMateriIndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestMateriIndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Soal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Soal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/SoalFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SoalFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MateriSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +203,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/guest/soal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/guest/quiz" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -218,6 +211,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/guest/quiz" />
       <recent name="$PROJECT_DIR$/resources/views/guest/soal" />
       <recent name="$PROJECT_DIR$/resources/views/soal" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
@@ -295,7 +289,7 @@
       <workItem from="1581866036253" duration="8529000" />
       <workItem from="1581905834801" duration="9524000" />
       <workItem from="1581987987901" duration="1795000" />
-      <workItem from="1582013631658" duration="5104000" />
+      <workItem from="1582013631658" duration="8651000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -347,11 +341,11 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="768" y="244" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1581869143184" />
-    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582021237090">
+    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582027835388">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="418" y="0" width="522" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.742@0.0.1366.742" timestamp="1580798496308" />
-    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582021237090" />
+    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582027835388" />
     <state x="416" y="121" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580806134192">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -370,10 +364,18 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="798" y="405" width="313" height="239" key="#com.intellij.strucuturalsearch.plugin.replace.ReplacementPreviewDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581869599598" />
-    <state x="693" y="283" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581842158174">
+    <state x="693" y="283" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582029116131">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="693" y="283" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581842158174" />
+    <state x="693" y="283" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582029116131" />
+    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1582027805682">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1053@0.0.1920.1053" timestamp="1582027805682" />
+    <state x="704" y="49" width="501" height="950" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1582027688858">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="704" y="49" width="501" height="950" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1053@0.0.1920.1053" timestamp="1582027688858" />
     <state x="302" y="21" width="768" height="700" key="#phpunit.xml" timestamp="1580808842277">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -432,10 +434,11 @@
     </state>
     <state x="378" y="101" width="593" height="539" key="MultipleFileMergeDialog/0.0.1366.742@0.0.1366.742" timestamp="1581392166945" />
     <state x="531" y="143" key="MultipleFileMergeDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581608290044" />
-    <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog" timestamp="1580808034800">
-      <screen x="0" y="0" width="1366" height="742" />
+    <state x="409" y="265" width="830" height="367" key="NewPhpClassDialog" timestamp="1582029051378">
+      <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808034800" />
+    <state x="409" y="265" key="NewPhpClassDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582029051378" />
     <state x="648" y="421" width="435" height="147" key="NewPhpFileDialog" timestamp="1581919572527">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -474,15 +477,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582024416545">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582025148541">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582024416545" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582025055280">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582025148541" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582029350350">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582025055280" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582029350350" />
   </component>
 </project>

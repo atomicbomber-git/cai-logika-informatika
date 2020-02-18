@@ -24,6 +24,11 @@
                                     Contoh Soal
                                 </a>
 
+                                <a href="{{ route("guest.quiz.start", $materi) }}"
+                                   class="btn btn-outline-info btn-sm mr-2">
+                                    Quiz
+                                </a>
+
                                 <a href="{{ route("guest.sub_materi.show", $materi->first_sub_materi_id) }}"
                                    class="btn btn-outline-info btn-sm">
                                     Belajar
