@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BantuanController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/bantuan.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlayQuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayQuizController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VerifyQuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VerifyQuizController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guest/quiz/play.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/quiz/play.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/tinymce_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tinymce_settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar-guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +197,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mikrotik-monitoring-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -472,10 +477,10 @@
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1581582311229" />
     <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582032901894" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582076174761">
-      <screen x="0" y="0" width="1920" height="1053" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1582089391349">
+      <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1581585083289" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1582089391349" />
     <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582076174761" />
   </component>
 </project>

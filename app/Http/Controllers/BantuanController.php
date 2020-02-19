@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class BantuanController extends Controller
 {
     /**
      * Handle the incoming request.
@@ -14,6 +14,6 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return response()->view("home");
+        return response()->view("bantuan");
     }
 }

@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h1 class="h2">
-            Selamat Datang
+            Bantuan
         </h1>
 
         <p>

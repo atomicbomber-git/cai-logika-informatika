@@ -11,9 +11,11 @@
 |
 */
 
+use App\Http\Controllers\BantuanController;
 use App\Http\Controllers\GuestSoalController;
 use App\Http\Controllers\GuestMateriIndexController;
 use App\Http\Controllers\GuestSubMateriShowController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\PilihanJawabanController;
 use App\Http\Controllers\PlayQuizController;
@@ -27,9 +29,11 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::redirect("/", "guest/materi");
+Route::redirect("/", "home");
 
 Route::group(["prefix" => "guest/", "as" => "guest."], function () {
+    Route::get('home', class_basename(HomeController::class))->name('home');
+    Route::get('bantuan', class_basename(BantuanController::class))->name('bantuan');
     Route::get('materi', class_basename(GuestMateriIndexController::class))->name("materi.index");
     Route::get('sub_materi/{sub_materi}', class_basename(GuestSubMateriShowController::class))->name("sub_materi.show");
     Route::get('soal/{soal}', class_basename(GuestSoalController::class))->name("soal.show");
