@@ -38,5 +38,7 @@ class VerifyQuizController extends Controller
 
         Quiz::advanceCurrentSoal();
         return response(["status" => "correct_answer"]);
+
+        // TODO: MAKE THE PLAY PAGE CHECK FOR THE STATUS FIELD IN THE RETURNED JSON AND ACT ACCORDINGLY
     }
 }
