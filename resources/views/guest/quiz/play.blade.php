@@ -5,7 +5,8 @@
         <div class="card">
             <div class="card-body">
                 <h2 class="h5 text-primary mb-1">
-                    <a class="text-decoration-none" href="{{ route("guest.materi.index") }}">
+                    <a class="text-decoration-none"
+                       href="{{ route("guest.materi.index") }}">
                         {{ $soal->materi->judul }}
                     </a>
                 </h2>
@@ -22,12 +23,15 @@
             </div>
 
             <div class="card-footer d-flex justify-content-between">
-                <a class="btn btn-warning" href="{{ route("guest.quiz.start", $quiz_data["materi"]->id)  }}">
+                <a class="btn btn-warning"
+                   href="{{ route("guest.quiz.start", $quiz_data["materi"]->id)  }}">
                     Ulangi Progress
                     <i class="fas fa-retweet"></i>
                 </a>
 
-                <button id="check-button" type="button" class="btn btn-info">
+                <button id="check-button"
+                        type="button"
+                        class="btn btn-info">
                     Periksa
                     <i class="fas fa-question"></i>
                 </button>
@@ -39,10 +43,18 @@
 @section("footer-script")
     <script>
         window.onload = function () {
-            fetch("/quiz/verify")
-                .then(ok => {
-                // TODO: REFRESH THIS PAGE, CHECK IF VERIFICATION WORKED
-                })
+            const checkButton = document.querySelector("#check-button")
+
+            checkButton.onclick = function () {
+                fetch("/guest/quiz/verify")
+                    .then(response => {
+                        if (!response.ok) return
+                        window.location.reload()
+                    })
+                    .catch(error => {
+                        console.error(error)
+                    })
+            }
         }
     </script>
 @endsection
