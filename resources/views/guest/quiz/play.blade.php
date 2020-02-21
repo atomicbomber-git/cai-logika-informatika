@@ -19,6 +19,36 @@
                     <p class="lead">
                         {{ $soal->konten }}
                     </p>
+
+                    <div
+                        class="row"
+                        x-data="{ pilihan_jawaban_id: null }"
+                    >
+                        @foreach($soal->pilihan_jawaban as $pilihan_jawaban)
+                            <div class="col-md-6 px-3">
+                                <div class="alert"
+                                     :class="{
+                                        'alert-primary': {{ $pilihan_jawaban->id }} === pilihan_jawaban_id,
+                                        'alert-dark': {{ $pilihan_jawaban->id }} !== pilihan_jawaban_id
+                                     }"
+                                     @click="this. "
+                                >
+                                    {{ $pilihan_jawaban->konten }}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+
+                    {{--                    <div x-data="{ show: false }">--}}
+                    {{--                        <p x-show="!show">--}}
+                    {{--                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam at consequatur eos esse illum iure nemo, nihil, nobis obcaecati officiis porro provident quae quas rem sed soluta suscipit?--}}
+                    {{--                        </p>--}}
+                    {{--                        <button @click="show = !show" type="button">--}}
+                    {{--                            Click--}}
+                    {{--                        </button>--}}
+                    {{--                    </div>--}}
+
                 </article>
             </div>
 
@@ -46,10 +76,17 @@
             const checkButton = document.querySelector("#check-button")
 
             checkButton.onclick = function () {
-                fetch("/guest/quiz/verify")
+                fetch("/guest/quiz/verify", {
+                    headers: {
+                        'Accept': 'application/json',
+                    }
+                })
                     .then(response => {
                         if (!response.ok) return
-                        window.location.reload()
+                        return response.json()
+                    })
+                    .then(data => {
+                        console.log(data)
                     })
                     .catch(error => {
                         console.error(error)

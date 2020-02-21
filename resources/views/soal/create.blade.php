@@ -50,7 +50,7 @@
                     <label for="urutan"> Urutan: </label>
                     <input
                         id="urutan"
-                        type="text"
+                        type="number"
                         placeholder="Urutan"
                         class="form-control {{ $errors->has("urutan") ? "is-invalid" : "" }}"
                         name="urutan"

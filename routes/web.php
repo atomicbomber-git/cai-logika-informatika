@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::redirect("/", "home");
+Route::redirect("/", "/guest/home");
 
 Route::group(["prefix" => "guest/", "as" => "guest."], function () {
     Route::get('home', class_basename(HomeController::class))->name('home');

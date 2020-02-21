@@ -57,7 +57,7 @@ class MateriController extends Controller
     {
         $data = $this->validate($request, [
             "judul" => "required|max:255",
-            "deskripsi" => "required|max:255",
+            "deskripsi" => "required|string",
         ]);
 
         Materi::create($data);

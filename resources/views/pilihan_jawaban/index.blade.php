@@ -55,7 +55,7 @@
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $pilihan_jawaban->konten }}  </td>
                             <td class="text-center">
-                                @if($soal->jawaban_benar->id === $pilihan_jawaban->id)
+                                @if(($soal->jawaban_benar->id ?? null) === $pilihan_jawaban->id)
                                     <span class="badge badge-success"> Jawaban Benar </span>
                                 @endif
                             </td>
