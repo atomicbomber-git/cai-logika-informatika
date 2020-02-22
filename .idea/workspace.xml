@@ -18,7 +18,6 @@
   <component name="DatabaseLocalColorSettings">
     <colors>
       <entry key="75282689-26bf-4ada-a086-66008830c52e" value="DeepPurple" />
-      <entry key="91bf0926-945d-4c07-a0a2-afb033b0ce1b" value="Amber" />
     </colors>
   </component>
   <component name="DatabaseView">
@@ -295,7 +294,7 @@
       <workItem from="1582263749294" duration="927000" />
       <workItem from="1582340424893" duration="3110000" />
       <workItem from="1582343551579" duration="9035000" />
-      <workItem from="1582359294583" duration="6010000" />
+      <workItem from="1582359294583" duration="6810000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -408,26 +407,26 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1582033842086" />
-    <state width="1854" height="828" key="GridCell.Tab.0.bottom" timestamp="1582360175237">
+    <state width="1854" height="828" key="GridCell.Tab.0.bottom" timestamp="1582376566695">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581589787675" />
-    <state width="1854" height="828" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175237" />
-    <state width="1854" height="828" key="GridCell.Tab.0.center" timestamp="1582360175237">
+    <state width="1854" height="828" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1582376566695" />
+    <state width="1854" height="828" key="GridCell.Tab.0.center" timestamp="1582376566694">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="828" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175237" />
-    <state width="1854" height="828" key="GridCell.Tab.0.left" timestamp="1582360175236">
+    <state width="1854" height="828" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1582376566694" />
+    <state width="1854" height="828" key="GridCell.Tab.0.left" timestamp="1582376566693">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="828" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175236" />
-    <state width="1854" height="828" key="GridCell.Tab.0.right" timestamp="1582360175237">
+    <state width="1854" height="828" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1582376566693" />
+    <state width="1854" height="828" key="GridCell.Tab.0.right" timestamp="1582376566694">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="828" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175237" />
+    <state width="1854" height="828" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1582376566694" />
     <state width="220" height="539" key="HiddenNamespacesPopup" timestamp="1582351264706">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
