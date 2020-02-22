@@ -12,6 +12,7 @@
 */
 
 use App\Http\Controllers\BantuanController;
+use App\Http\Controllers\FinishedQuizController;
 use App\Http\Controllers\GuestSoalController;
 use App\Http\Controllers\GuestMateriIndexController;
 use App\Http\Controllers\GuestSubMateriShowController;
@@ -39,7 +40,8 @@ Route::group(["prefix" => "guest/", "as" => "guest."], function () {
     Route::get('soal/{soal}', class_basename(GuestSoalController::class))->name("soal.show");
     Route::get('quiz/{materi}/start', class_basename(StartQuizController::class))->name("quiz.start");
     Route::get('quiz/play', class_basename(PlayQuizController::class))->name("quiz.play");
-    Route::get('quiz/verify', class_basename(VerifyQuizController::class))->name("quiz.verify");
+    Route::post('quiz/verify', class_basename(VerifyQuizController::class))->name("quiz.verify");
+    Route::get('quiz/finished', class_basename(FinishedQuizController::class))->name("quiz.finished");
 });
 
 Route::resource("materi", class_basename(MateriController::class));

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Materi extends Model
 {
@@ -17,5 +18,11 @@ class Materi extends Model
     public function soal()
     {
         return $this->hasMany(Soal::class);
+    }
+
+    public function first_sub_materi(): HasOne
+    {
+        return $this->hasOne(SubMateri::class)
+            ->orderBy("urutan");
     }
 }

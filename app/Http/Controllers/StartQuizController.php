@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Materi;
-use App\Quiz;
+use App\QuizEngine;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -17,7 +17,7 @@ class StartQuizController extends Controller
      */
     public function __invoke(Request $request, Materi $materi)
     {
-        Quiz::init($materi);
+        QuizEngine::init($materi);
 
         return redirect()
             ->route("guest.quiz.play");

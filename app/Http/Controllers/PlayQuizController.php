@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Quiz;
+use App\QuizEngine;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -16,8 +16,13 @@ class PlayQuizController extends Controller
      */
     public function __invoke(Request $request)
     {
-        if (!Quiz::dataIsValid()) {
+        if (!QuizEngine::dataIsValid()) {
             return redirect()->route("guest.materi.index");
+        }
+
+        if (QuizEngine::isFinished()) {
+            return redirect()
+                ->route("guest.quiz.finished");
         }
 
         $quiz_data = Session::get("current_quiz");

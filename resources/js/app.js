@@ -22,3 +22,6 @@ require('./components/Example');
 require('tinymce');
 window.tinymce_settings = require("./tinymce_settings").default
 window.tinymce_file_picker_callback = require("./file_picker_callback")
+
+import Swal from "sweetalert2";
+window.Swal = Swal;
