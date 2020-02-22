@@ -11,6 +11,7 @@
                     <div class="form-group">
                         <label for="nip"> NIP:</label>
                         <input
+                            data-cy="nip_field"
                             id="nip"
                             type="text"
                             placeholder="NIP"
@@ -26,8 +27,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password"> Password:</label>
+                        <label for="password_field"> Password:</label>
                         <input
+                            data-cy="password_field"
                             id="password"
                             type="password"
                             placeholder="Password"
@@ -43,7 +45,7 @@
                     </div>
 
                     <div class="d-flex justify-content-end">
-                        <button class="btn btn-outline-primary">
+                        <button data-cy="login_button" class="btn btn-outline-primary">
                             Log In
                             <i class="fas fa-sign-in-alt"></i>
                         </button>

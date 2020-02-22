@@ -7,5 +7,11 @@
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mariadb://localhost:3306/cai_logika_informatika</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="cai_logika_informatika_acceptance@localhost" uuid="75282689-26bf-4ada-a086-66008830c52e">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306/cai_logika_informatika_acceptance</jdbc-url>
+    </data-source>
   </component>
 </project>

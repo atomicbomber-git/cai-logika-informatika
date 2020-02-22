@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FinishedQuizController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/guest/quiz/finished.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.acceptance" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlayQuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayQuizController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StartQuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StartQuizController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VerifyQuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VerifyQuizController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Materi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Materi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QuizEngine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guest/quiz/play.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/quiz/play.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_063945_add_level_and_username_field_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_063945_add_level_and_username_field_to_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +23,12 @@
       <executable path="composer" />
     </execution>
   </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="75282689-26bf-4ada-a086-66008830c52e" value="DeepPurple" />
+      <entry key="91bf0926-945d-4c07-a0a2-afb033b0ce1b" value="Amber" />
+    </colors>
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -40,37 +40,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="materi: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="soal: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -198,31 +168,32 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DatabaseDriversLRU" value="sqlite&#10;mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/guest/quiz" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/guest/quiz" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/resources/views/guest/soal" />
-      <recent name="$PROJECT_DIR$/resources/views/soal" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/integration" />
       <recent name="$PROJECT_DIR$/resources/views/guest/sub_materi" />
       <recent name="$PROJECT_DIR$/resources/views/guest/materi" />
       <recent name="$PROJECT_DIR$/resources/postcss" />
       <recent name="$PROJECT_DIR$/resources/sass" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources/views/guest/quiz" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/guest/soal" />
+      <recent name="$PROJECT_DIR$/resources/views/soal" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Artisan serve">
@@ -293,7 +264,7 @@
       <workItem from="1582075218730" duration="1436000" />
       <workItem from="1582263749294" duration="927000" />
       <workItem from="1582340424893" duration="3110000" />
-      <workItem from="1582343551579" duration="2354000" />
+      <workItem from="1582343551579" duration="9035000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -309,6 +280,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
@@ -329,14 +301,15 @@
     </state>
     <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808563068" />
     <state x="565" y="322" width="1036" height="473" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581756297988" />
-    <state x="555" y="187" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581840497942">
+    <state x="555" y="187" width="852" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582351497179">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="187" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581840497942" />
-    <state x="370" y="177" width="639" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580956385451">
-      <screen x="0" y="0" width="1366" height="742" />
+    <state x="555" y="187" width="852" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582351497179" />
+    <state x="520" y="251" width="639" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582349146135">
+      <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="370" y="177" width="639" height="388" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.742@0.0.1366.742" timestamp="1580956385451" />
+    <state x="520" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1582349146135" />
     <state x="598" y="296" width="714" height="456" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1581846439517">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -424,6 +397,10 @@
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
     <state width="1854" height="828" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1582343580165" />
+    <state width="220" height="539" key="HiddenNamespacesPopup" timestamp="1582351264706">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="220" height="539" key="HiddenNamespacesPopup/0.0.1920.1053@0.0.1920.1053" timestamp="1582351264706" />
     <state x="745" y="434" width="314" height="131" key="Laravel.ExtractPartialViewDialog" timestamp="1581827353594">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -453,26 +430,26 @@
     </state>
     <state x="418" y="179" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1366.742@0.0.1366.742" timestamp="1580976487942" />
     <state x="588" y="254" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1920.1053@0.0.1920.1053" timestamp="1581757542457" />
-    <state x="273" y="67" width="1449" height="986" key="SettingsEditor" timestamp="1582340839661">
+    <state x="273" y="67" width="1449" height="986" key="SettingsEditor" timestamp="1582349596024">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
-    <state x="273" y="67" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1582340839661" />
+    <state x="273" y="67" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1582349596024" />
     <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1582020970851">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1581401322951" />
     <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1582020970851" />
-    <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1582343551427">
+    <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1582359324769">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="336" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1582263772281" />
-    <state x="472" y="282" key="com.intellij.ide.util.TipDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582343551427" />
-    <state x="444" y="150" width="1264" height="841" key="find.popup" timestamp="1581869525914">
+    <state x="472" y="282" key="com.intellij.ide.util.TipDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582359324769" />
+    <state x="444" y="150" width="1264" height="841" key="find.popup" timestamp="1582355442035">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="316" y="106" width="899" height="592" key="find.popup/0.0.1366.742@0.0.1366.742" timestamp="1580958811258" />
-    <state x="444" y="150" width="1264" height="841" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581869525914" />
+    <state x="444" y="150" width="1264" height="841" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582355442035" />
     <state x="280" y="164" width="805" height="413" key="git4idea.merge.GitPullDialog" timestamp="1580954916634">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -481,15 +458,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582345413641">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582356677926">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093021749" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582345413641" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582347668242">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582356677926" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582356869563">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093660443" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582347668242" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582356869563" />
   </component>
 </project>

@@ -25,10 +25,24 @@ use App\Http\Controllers\SoalController;
 use App\Http\Controllers\SubMateriController;
 use App\Http\Controllers\TandaiJawabanBenarController;
 use App\Http\Controllers\VerifyQuizController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Auth::routes();
+if (App::environment() === "acceptance") {
+    Route::get("__testing__/create/{model}", function (Request $request, $model) {
+        factory("{$model}::class")
+            ->create($request->all());
+    });
+}
+
+Auth::routes([
+    "register" => false,
+    "reset" => false,
+    "confirm" => false,
+    "verify" => false,
+]);
 
 Route::redirect("/", "/guest/home");
 

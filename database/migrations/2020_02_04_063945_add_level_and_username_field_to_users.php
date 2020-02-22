@@ -14,8 +14,8 @@ class AddLevelAndUsernameFieldToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('username')->unique();
-            $table->string('level');
+            $table->string('username')->unique()->nullable();
+            $table->string('level')->nullable();
         });
     }
 
