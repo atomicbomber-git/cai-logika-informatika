@@ -72,7 +72,7 @@
                                         @csrf
                                         @method("DELETE")
 
-                                        <button class="btn btn-outline-danger btn-sm"
+                                        <button data-cy="button_delete" class="btn btn-outline-danger btn-sm"
                                                 type="submit">
                                             Hapus
                                             <i class="fas fa-trash-alt"></i>

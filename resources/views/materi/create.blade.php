@@ -35,6 +35,7 @@
                         Judul:
                     </label>
                     <textarea
+                        data-cy="judul_field"
                         placeholder="Judul"
                         class="form-control {{ $errors->has("judul") ? "is-invalid" : "" }}"
                         name="judul"
@@ -51,6 +52,7 @@
                         Deskripsi:
                     </label>
                     <textarea
+                        data-cy="deskripsi_field"
                         placeholder="Deskripsi"
                         class="form-control {{ $errors->has("deskripsi") ? "is-invalid" : "" }}"
                         name="deskripsi"
@@ -63,7 +65,9 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="submit"
+                    <button
+                        data-cy="submit_button"
+                        type="submit"
                             class="btn btn-outline-info">
                         Tambahkan
                         <i class="fas fa-check"></i>

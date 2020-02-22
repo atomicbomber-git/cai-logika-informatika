@@ -2,14 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.acceptance" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/materi.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Dapat Mengakses Halaman Log In (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Dapat Mengakses Halaman Log In (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Dapat Mengakses Halaman Log In.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Error Ketika User Menginput Identitas Salah Saat Log In (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Error Ketika User Menginput Identitas Salah Saat Log In (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/screenshots/login.spec.js/Error Ketika User Menginput Identitas Salah Saat Log In.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/videos/login.spec.js.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.acceptance" beforeDir="false" afterPath="$PROJECT_DIR$/.env.acceptance" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_063945_add_level_and_username_field_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_063945_add_level_and_username_field_to_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/actions.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/aliasing.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/assertions.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/connectors.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/cookies.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/cypress_api.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/files.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/local_storage.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/location.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/misc.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/navigation.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/network_requests.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/querying.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/spies_stubs_clocks.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/traversal.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/utilities.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/viewport.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/waiting.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/examples/window.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/login.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/login.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/materi/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +67,45 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="materi: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika_acceptance@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika_acceptance@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cai_logika_informatika_acceptance@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cai_logika_informatika_acceptance: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -265,6 +330,7 @@
       <workItem from="1582263749294" duration="927000" />
       <workItem from="1582340424893" duration="3110000" />
       <workItem from="1582343551579" duration="9035000" />
+      <workItem from="1582359294583" duration="5513000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -305,11 +371,11 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="555" y="187" width="852" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582351497179" />
-    <state x="520" y="251" width="639" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582349146135">
+    <state x="520" y="251" width="533" height="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582372643980">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="370" y="177" width="639" height="388" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.742@0.0.1366.742" timestamp="1580956385451" />
-    <state x="520" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1582349146135" />
+    <state x="520" y="251" width="533" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1582372643980" />
     <state x="598" y="296" width="714" height="456" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1581846439517">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -377,26 +443,26 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1582033842086" />
-    <state width="1854" height="828" key="GridCell.Tab.0.bottom" timestamp="1582343580166">
+    <state width="1854" height="828" key="GridCell.Tab.0.bottom" timestamp="1582360175237">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581589787675" />
-    <state width="1854" height="828" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1582343580166" />
-    <state width="1854" height="828" key="GridCell.Tab.0.center" timestamp="1582343580165">
+    <state width="1854" height="828" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175237" />
+    <state width="1854" height="828" key="GridCell.Tab.0.center" timestamp="1582360175237">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="828" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1582343580165" />
-    <state width="1854" height="828" key="GridCell.Tab.0.left" timestamp="1582343580165">
+    <state width="1854" height="828" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175237" />
+    <state width="1854" height="828" key="GridCell.Tab.0.left" timestamp="1582360175236">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="828" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1582343580165" />
-    <state width="1854" height="828" key="GridCell.Tab.0.right" timestamp="1582343580165">
+    <state width="1854" height="828" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175236" />
+    <state width="1854" height="828" key="GridCell.Tab.0.right" timestamp="1582360175237">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="828" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1582343580165" />
+    <state width="1854" height="828" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1582360175237" />
     <state width="220" height="539" key="HiddenNamespacesPopup" timestamp="1582351264706">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -445,11 +511,11 @@
     </state>
     <state x="336" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1582263772281" />
     <state x="472" y="282" key="com.intellij.ide.util.TipDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582359324769" />
-    <state x="444" y="150" width="1264" height="841" key="find.popup" timestamp="1582355442035">
+    <state x="444" y="150" width="1264" height="841" key="find.popup" timestamp="1582374682462">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="316" y="106" width="899" height="592" key="find.popup/0.0.1366.742@0.0.1366.742" timestamp="1580958811258" />
-    <state x="444" y="150" width="1264" height="841" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582355442035" />
+    <state x="444" y="150" width="1264" height="841" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582374682462" />
     <state x="280" y="164" width="805" height="413" key="git4idea.merge.GitPullDialog" timestamp="1580954916634">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -458,15 +524,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582356677926">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582372788501">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093021749" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582356677926" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582356869563">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582372788501" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582374666120">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093660443" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582356869563" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582374666120" />
   </component>
 </project>
