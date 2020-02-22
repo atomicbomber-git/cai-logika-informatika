@@ -10,7 +10,7 @@ class GuestSoalController extends Controller
     /**
      * Handle the incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function __invoke(Request $request, Soal $soal)
@@ -27,10 +27,6 @@ class GuestSoalController extends Controller
             ->orderByDesc("urutan")
             ->first();
 
-        return response()->view("guest.soal.show", compact(
-            "soal",
-            "next_soal",
-            "prev_soal",
-        ));
+        return response()->view("guest.soal.show", ['soal' => $soal, 'next_soal' => $next_soal, 'prev_soal' => $prev_soal]);
     }
 }

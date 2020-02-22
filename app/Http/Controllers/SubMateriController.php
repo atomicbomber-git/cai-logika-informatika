@@ -37,9 +37,7 @@ class SubMateriController extends Controller
             },
         ]);
 
-        return response()->view("sub_materi.index", compact(
-            "materi"
-        ));
+        return response()->view("sub_materi.index", ['materi' => $materi]);
     }
 
     /**
@@ -54,10 +52,7 @@ class SubMateriController extends Controller
             ->selectRaw("MAX(urutan) AS max_urutan")
             ->value("max_urutan") ?? 0) + 1;
 
-        return response()->view("sub_materi.create", compact(
-            "materi",
-            "nextUrutan",
-        ));
+        return response()->view("sub_materi.create", ['materi' => $materi, 'nextUrutan' => $nextUrutan]);
     }
 
     /**
@@ -98,7 +93,7 @@ class SubMateriController extends Controller
     public function show(SubMateri $sub_materi)
     {
         return response()
-            ->view("sub_materi.show", compact("sub_materi"));
+            ->view("sub_materi.show", ['sub_materi' => $sub_materi]);
     }
 
     /**
@@ -110,7 +105,7 @@ class SubMateriController extends Controller
      */
     public function edit(SubMateri $sub_materi)
     {
-        return response()->view("sub_materi.edit", compact("sub_materi"));
+        return response()->view("sub_materi.edit", ['sub_materi' => $sub_materi]);
     }
 
     /**

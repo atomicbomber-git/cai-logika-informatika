@@ -10,7 +10,7 @@ class GuestSubMateriShowController extends Controller
     /**
      * Handle the incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function __invoke(Request $request, SubMateri $sub_materi)
@@ -27,10 +27,6 @@ class GuestSubMateriShowController extends Controller
             ->orderByDesc("urutan")
             ->first();
 
-        return response()->view("guest.sub_materi.show", compact(
-            "next_sub_materi",
-            "prev_sub_materi",
-            "sub_materi"
-        ));
+        return response()->view("guest.sub_materi.show", ['next_sub_materi' => $next_sub_materi, 'prev_sub_materi' => $prev_sub_materi, 'sub_materi' => $sub_materi]);
     }
 }

@@ -22,7 +22,7 @@ class SoalController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param  \App\Materi  $materi
+     * @param \App\Materi  $materi
      * @return \Illuminate\Http\Response
      */
     public function index(Materi $materi)
@@ -34,15 +34,13 @@ class SoalController extends Controller
             "soal.jawaban_benar",
         ]);
 
-        return response()->view("soal.index", compact(
-            "materi"
-        ));
+        return response()->view("soal.index", ['materi' => $materi]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param  \App\Materi  $materi
+     * @param \App\Materi  $materi
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create(Materi $materi)
@@ -51,10 +49,7 @@ class SoalController extends Controller
             ->selectRaw("MAX(urutan) AS next_urutan")
             ->value("next_urutan");
 
-        return view("soal.create", compact(
-            "materi",
-            "nextUrutan"
-        ));
+        return view("soal.create", ['materi' => $materi, 'nextUrutan' => $nextUrutan]);
     }
 
     /**
@@ -89,8 +84,8 @@ class SoalController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Materi  $materi
-     * @param  \App\Soal  $soal
+     * @param \App\Materi  $materi
+     * @param \App\Soal  $soal
      * @return \Illuminate\Http\Response
      */
     public function show(Materi $materi, Soal $soal)
@@ -101,15 +96,13 @@ class SoalController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Materi  $materi
-     * @param  \App\Soal  $soal
+     * @param \App\Materi  $materi
+     * @param \App\Soal  $soal
      * @return \Illuminate\Http\Response
      */
     public function edit(Soal $soal)
     {
-        return response()->view("soal.edit", compact(
-            "soal"
-        ));
+        return response()->view("soal.edit", ['soal' => $soal]);
     }
 
     /**

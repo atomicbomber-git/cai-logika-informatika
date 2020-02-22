@@ -29,9 +29,7 @@ class MateriController extends Controller
             ])
             ->get();
 
-        return view("materi.index", compact(
-            "materis"
-        ));
+        return view("materi.index", ['materis' => $materis]);
     }
 
     /**
@@ -91,9 +89,7 @@ class MateriController extends Controller
      */
     public function edit(Materi $materi)
     {
-        return view("materi.edit", compact(
-            "materi"
-        ));
+        return view("materi.edit", ['materi' => $materi]);
     }
 
     /**

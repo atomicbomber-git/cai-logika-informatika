@@ -36,10 +36,10 @@ class QuizEngine
     public static function dataIsValid()
     {
         return
-            !(null === Session::get(self::QUIZ_DATA_KEY . '.' . self::MATERI_KEY)) &&
-            !(null === Session::get(self::QUIZ_DATA_KEY . '.' . self::SOALS_KEY)) &&
-            !(null === Session::get(self::QUIZ_DATA_KEY . '.' . self::CURRENT_SOAL_INDEX_KEY)) &&
-            !(null === Session::get(self::QUIZ_DATA_KEY . '.' . self::TOTAL_CORRECT_KEY));
+            null !== Session::get(self::QUIZ_DATA_KEY . '.' . self::MATERI_KEY) &&
+            null !== Session::get(self::QUIZ_DATA_KEY . '.' . self::SOALS_KEY) &&
+            null !== Session::get(self::QUIZ_DATA_KEY . '.' . self::CURRENT_SOAL_INDEX_KEY) &&
+            null !== Session::get(self::QUIZ_DATA_KEY . '.' . self::TOTAL_CORRECT_KEY);
     }
 
     public static function incrementTotalCorrect()

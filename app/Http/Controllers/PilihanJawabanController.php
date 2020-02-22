@@ -19,7 +19,7 @@ class PilihanJawabanController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param  \App\Soal  $soal
+     * @param \App\Soal  $soal
      * @return \Illuminate\Http\Response
      */
     public function index(Soal $soal)
@@ -30,22 +30,18 @@ class PilihanJawabanController extends Controller
         ]);
 
         return response()
-            ->view("pilihan_jawaban.index", compact(
-                "soal"
-            ));
+            ->view("pilihan_jawaban.index", ['soal' => $soal]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param  \App\Soal  $soal
+     * @param \App\Soal  $soal
      * @return \Illuminate\Http\Response
      */
     public function create(Soal $soal)
     {
-        return response()->view("pilihan_jawaban.create", compact(
-            "soal"
-        ));
+        return response()->view("pilihan_jawaban.create", ['soal' => $soal]);
     }
 
     /**
@@ -79,8 +75,8 @@ class PilihanJawabanController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Soal  $soal
-     * @param  \App\PilihanJawaban  $pilihanJawaban
+     * @param \App\Soal  $soal
+     * @param \App\PilihanJawaban  $pilihanJawaban
      * @return \Illuminate\Http\Response
      */
     public function show(Soal $soal, PilihanJawaban $pilihanJawaban)
@@ -97,7 +93,7 @@ class PilihanJawabanController extends Controller
     public function edit(PilihanJawaban $pilihan_jawaban)
     {
         return response()
-            ->view("pilihan_jawaban.edit", compact("pilihan_jawaban"));
+            ->view("pilihan_jawaban.edit", ['pilihan_jawaban' => $pilihan_jawaban]);
     }
 
     /**
