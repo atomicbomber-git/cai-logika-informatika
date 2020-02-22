@@ -13,3 +13,5 @@ npm-debug.log
 yarn-error.log
 Envoy.blade.php
 _ide_helper_models.php
+
+.env.acceptance
