@@ -34,7 +34,7 @@
             <div class="card-footer d-flex justify-content-around">
                 <div>
                     <a class="btn btn-warning"
-                       href="{{ route("guest.quiz.start", $quiz_data["materi"]->id)  }}">
+                       href="{{ route("guest.quiz.start", $quiz_data["materi"])  }}">
                         Ulangi Quiz
                         <i class="fas fa-retweet"></i>
                     </a>
@@ -42,7 +42,7 @@
 
                 <div>
                     <a class="btn btn-primary"
-                       href="{{ route("guest.sub_materi.show", $quiz_data["materi"]->first_sub_materi->id) }}">
+                       href="{{ route("guest.belajar_materi", $quiz_data["materi"]) }}">
                         Belajar Materi
                         <i class="fas fa-book"></i>
                     </a>

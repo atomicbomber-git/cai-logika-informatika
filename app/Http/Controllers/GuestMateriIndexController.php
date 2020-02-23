@@ -18,21 +18,6 @@ class GuestMateriIndexController extends Controller
     public function __invoke(Request $request)
     {
         $materis = Materi::query()
-            ->addSelect([
-                "first_sub_materi_id" =>
-                    SubMateri::query()
-                        ->select("id")
-                        ->whereColumn("sub_materi.materi_id", "=", "materi.id")
-                        ->orderBy("urutan")
-                        ->limit(1)
-            ])
-            ->addSelect(["first_soal_id" =>
-                Soal::query()
-                    ->select("id")
-                    ->whereColumn("soal.materi_id", "=", "materi.id")
-                    ->orderBy("urutan")
-                    ->limit(1)
-            ])
             ->get();
 
         return response()

@@ -25,4 +25,10 @@ class Materi extends Model
         return $this->hasOne(SubMateri::class)
             ->orderBy("urutan");
     }
+
+    public function first_soal(): HasOne
+    {
+        return $this->hasOne(Soal::class)
+            ->orderBy("urutan");
+    }
 }

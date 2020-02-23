@@ -12,11 +12,13 @@
 */
 
 use App\Http\Controllers\BantuanController;
+use App\Http\Controllers\BelajarMateriController;
 use App\Http\Controllers\FinishedQuizController;
 use App\Http\Controllers\GuestSoalController;
 use App\Http\Controllers\GuestMateriIndexController;
 use App\Http\Controllers\GuestSubMateriShowController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LatihanSoalController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\PilihanJawabanController;
 use App\Http\Controllers\PlayQuizController;
@@ -73,6 +75,8 @@ Route::group(["prefix" => "guest/", "as" => "guest."], function () {
     Route::get('home', class_basename(HomeController::class))->name('home');
     Route::get('bantuan', class_basename(BantuanController::class))->name('bantuan');
     Route::get('materi', class_basename(GuestMateriIndexController::class))->name("materi.index");
+    Route::get('materi/{materi}/belajar', class_basename(BelajarMateriController::class))->name('belajar_materi');
+    Route::get('materi/{materi}/latihan_soal', class_basename(LatihanSoalController::class))->name('latihan_soal');
     Route::get('sub_materi/{sub_materi}', class_basename(GuestSubMateriShowController::class))->name("sub_materi.show");
     Route::get('soal/{soal}', class_basename(GuestSoalController::class))->name("soal.show");
     Route::get('quiz/{materi}/start', class_basename(StartQuizController::class))->name("quiz.start");
