@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
@@ -50,7 +51,9 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
-        //
+        if (App::environment() === "acceptance") {
+            $this->mapTestingRoutes();
+        }
     }
 
     /**
@@ -80,5 +83,12 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware('api')
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
+    }
+
+    public function mapTestingRoutes(): void
+    {
+        Route::middleware("web")
+            ->namespace($this->namespace)
+            ->group(base_path("routes/testing.php"));
     }
 }

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atomicbomber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestMateriIndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestMateriIndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Materi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Materi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/materi/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/guest/quiz/finished.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/guest/quiz/finished.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,6 +232,7 @@
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -326,7 +323,7 @@
       <workItem from="1582343551579" duration="9035000" />
       <workItem from="1582359294583" duration="6810000" />
       <workItem from="1582396481651" duration="1725000" />
-      <workItem from="1582424999352" duration="1111000" />
+      <workItem from="1582424999352" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -407,10 +404,10 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="693" y="283" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582426257697" />
-    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1582027805682">
+    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1582426646695">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1053@0.0.1920.1053" timestamp="1582027805682" />
+    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1053@0.0.1920.1053" timestamp="1582426646695" />
     <state x="704" y="49" width="501" height="950" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1582027688858">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -419,6 +416,10 @@
       <screen x="0" y="0" width="1366" height="742" />
     </state>
     <state x="302" y="21" width="768" height="700" key="#phpunit.xml/0.0.1366.742@0.0.1366.742" timestamp="1580808842277" />
+    <state x="693" y="349" width="503" height="348" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582426563488">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="693" y="349" width="503" height="348" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1053@0.0.1920.1053" timestamp="1582426563488" />
     <state x="212" y="0" width="933" height="741" key="CommitChangelistDialog2" timestamp="1580955141372">
       <screen x="0" y="0" width="1366" height="742" />
     </state>
@@ -482,11 +483,11 @@
     </state>
     <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808034800" />
     <state x="409" y="265" key="NewPhpClassDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582029051378" />
-    <state x="648" y="421" width="435" height="147" key="NewPhpFileDialog" timestamp="1581919572527">
+    <state x="648" y="421" width="349" height="154" key="NewPhpFileDialog" timestamp="1582426508107">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="461" y="297" width="435" height="147" key="NewPhpFileDialog/0.0.1366.742@0.0.1366.742" timestamp="1580796708070" />
-    <state x="648" y="421" key="NewPhpFileDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581919572527" />
+    <state x="648" y="421" width="349" height="154" key="NewPhpFileDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582426508107" />
     <state x="588" y="254" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey" timestamp="1581757542457">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -520,15 +521,15 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582425920583">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1582426461251">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093021749" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582425920583" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582426131295">
+    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582426461251" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582426573321">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093660443" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582426131295" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582426573321" />
   </component>
 </project>
