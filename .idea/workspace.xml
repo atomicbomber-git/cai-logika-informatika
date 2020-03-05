@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,6 +324,7 @@
       <workItem from="1582359294583" duration="6810000" />
       <workItem from="1582396481651" duration="1725000" />
       <workItem from="1582424999352" duration="1648000" />
+      <workItem from="1583392630737" duration="985000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -498,10 +499,10 @@
     </state>
     <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
     <state x="273" y="67" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1582374998181" />
-    <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1582020970851">
-      <screen x="0" y="0" width="1920" height="1053" />
+    <state x="411" y="106" width="810" height="524" key="StructurePopup" timestamp="1583394496542">
+      <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1581401322951" />
+    <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1583394496542" />
     <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1582020970851" />
     <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1582424998906">
       <screen x="0" y="0" width="1920" height="1053" />
@@ -526,10 +527,10 @@
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093021749" />
     <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582426461251" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1582426573321">
-      <screen x="0" y="0" width="1920" height="1053" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1583394493462">
+      <screen x="0" y="0" width="1366" height="742" />
     </state>
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093660443" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1583394493462" />
     <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582426573321" />
   </component>
 </project>
