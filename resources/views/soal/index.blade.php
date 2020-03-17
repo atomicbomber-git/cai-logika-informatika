@@ -43,7 +43,7 @@
                         <th> #</th>
                         <th> Urutan</th>
                         <th> Jawaban</th>
-                        <th style="width: 10rem"> Kendali</th>
+                        <th style="width: 15rem"> Kendali</th>
                     </tr>
                     </thead>
 
@@ -56,18 +56,18 @@
                             <td>
                                 <div class="my-2">
                                     <a class="btn btn-outline-info btn-sm"
+                                       href="{{ route("soal.show", $soal) }}">
+                                        Lihat
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+
+                                    <a class="btn btn-outline-info btn-sm"
                                        href="{{ route("soal.pilihan_jawaban.index", $soal) }}">
                                         Pilihan Jawaban
                                     </a>
                                 </div>
 
                                 <div class="my-2">
-                                    <a class="btn btn-outline-info btn-sm"
-                                       href="{{ route("soal.show", $soal) }}">
-                                        Lihat
-                                        <i class="fas fa-eye"></i>
-                                    </a>
-
                                     <a class="btn btn-outline-info btn-sm"
                                        href="{{ route("soal.edit", $soal) }}">
                                         Ubah

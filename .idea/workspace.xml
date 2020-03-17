@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SoalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/soal/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/soal/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sub_materi/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub_materi/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -340,7 +333,7 @@
       <workItem from="1582452692972" duration="605000" />
       <workItem from="1583253034465" duration="11000" />
       <workItem from="1583662396227" duration="867000" />
-      <workItem from="1584467553625" duration="842000" />
+      <workItem from="1584467553625" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -543,10 +536,10 @@
     </state>
     <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093021749" />
     <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1584468019825" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1584468266071">
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1584468572876">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093660443" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1584468266071" />
+    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1584468572876" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 @extends("layouts.app")
 
-@section("title", "Lihat Sub Materi")
+@section("title", "Lihat Soal")
 
 @section("content")
     <nav class="breadcrumb">
@@ -13,24 +13,25 @@
             </a>
         </span>
         <span class="breadcrumb-item">
-            <a href="{{ route("materi.sub_materi.index", $sub_materi->materi_id) }}">
-                Sub Materi
+            <a href="{{ route("materi.soal.index", $soal->materi_id) }}">
+                Soal
             </a>
         </span>
         <span class="breadcrumb-item active">
-            Lihat Sub Materi
+            Lihat Soal
         </span>
     </nav>
 
     <div>
         @include("messages")
 
-        <div>
-            <h1> {{ $sub_materi->judul }} </h1>
-            <hr>
+        <div class="mb-4">
+            {!! $soal->konten !!}
+        </div>
 
-            {!! $sub_materi->konten !!}
-
+        <div class="alert alert-success">
+            <div class="font-weight-bolder"> Jawaban: </div>
+            {{ $soal->jawaban_benar->konten }}
         </div>
     </div>
 
