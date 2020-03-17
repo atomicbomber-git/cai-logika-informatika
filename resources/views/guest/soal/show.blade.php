@@ -16,7 +16,7 @@
 
                 <article>
                     <p class="lead">
-                        {{ $soal->konten }}
+                        {!! $soal->konten !!}
                     </p>
 
                     <div data-toggle-answer class="d-flex justify-content-end">
@@ -63,12 +63,12 @@
 @section("footer-script")
     <script>
         window.onload = function () {
-            const toggleAnswerButton = document.querySelector("[data-toggle-answer]")
-            const answerDisplay = document.querySelector("[data-answer]")
-            const toggleAnswerLabel = document.querySelector("[data-toggle-answer-label]")
+            const toggleAnswerButton = document.querySelector("[data-toggle-answer]");
+            const answerDisplay = document.querySelector("[data-answer]");
+            const toggleAnswerLabel = document.querySelector("[data-toggle-answer-label]");
 
             toggleAnswerButton.onclick = function () {
-                answerDisplay.classList.toggle("d-none")
+                answerDisplay.classList.toggle("d-none");
 
                 if (answerDisplay.classList.contains("d-none")) {
                     toggleAnswerLabel.textContent = "Tampilkan Jawaban"
@@ -76,7 +76,9 @@
                 else {
                     toggleAnswerLabel.textContent = "Sembunyikan Jawaban"
                 }
-            }
+            };
+
+            window.displayTrixAttachments()
         }
     </script>
 @endsection

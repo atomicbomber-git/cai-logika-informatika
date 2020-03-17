@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use App\SubMateri;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class GuestSubMateriShowController extends Controller
 {
     /**
      * Handle the incoming request.
      *
-     * @param \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param SubMateri $sub_materi
+     * @return Response
      */
     public function __invoke(Request $request, SubMateri $sub_materi)
     {

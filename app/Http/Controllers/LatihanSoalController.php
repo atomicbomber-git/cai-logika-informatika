@@ -26,6 +26,6 @@ class LatihanSoalController extends Controller
         }
 
         return redirect()
-            ->route("guest.sub_materi.show", $materi->first_soal);
+            ->route("guest.soal.show", $materi->first_soal);
     }
 }
