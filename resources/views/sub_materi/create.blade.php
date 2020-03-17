@@ -77,7 +77,7 @@
                            value="{{ old("konten") }}"
                            type="hidden"
                            name="konten">
-                    <trix-editor class="{{ $errors->has("judul") ? "is-invalid" : "" }}"
+                    <trix-editor class="{{ $errors->has("konten") ? "is-invalid" : "" }}"
                                  input="konten"></trix-editor>
                     <span class="invalid-feedback">
                         {{ $errors->first("konten") }}

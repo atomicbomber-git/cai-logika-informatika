@@ -20,8 +20,9 @@ require('./components/Example');
 
 // Load TinyMCE WYSIWYG Editor
 require('tinymce');
-window.tinymce_settings = require("./tinymce_settings").default
-window.tinymce_file_picker_callback = require("./file_picker_callback")
+window.tinymce_settings = require("./tinymce_settings").default;
+window.tinymce_file_picker_callback = require("./file_picker_callback");
+window.displayTrixAttachments = require("./trix_helpers").displayTrixAttachments;
 
 import Swal from "sweetalert2";
 window.Swal = Swal;

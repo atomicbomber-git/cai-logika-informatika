@@ -5,8 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Constants\MessageState;
 use App\Materi;
 use App\Soal;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Validation\ValidationException;
+use Illuminate\View\View;
 
 /**
  * Class SoalController
@@ -22,8 +27,8 @@ class SoalController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param \App\Materi  $materi
-     * @return \Illuminate\Http\Response
+     * @param Materi $materi
+     * @return Response
      */
     public function index(Materi $materi)
     {
@@ -40,8 +45,8 @@ class SoalController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @param \App\Materi  $materi
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
+     * @param Materi $materi
+     * @return Factory|Response|View
      */
     public function create(Materi $materi)
     {
@@ -55,10 +60,10 @@ class SoalController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Materi $materi
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
-     * @throws \Illuminate\Validation\ValidationException
+     * @param Request $request
+     * @param Materi $materi
+     * @return RedirectResponse|Response
+     * @throws ValidationException
      */
     public function store(Request $request, Materi $materi)
     {
@@ -67,7 +72,7 @@ class SoalController extends Controller
             "urutan" => "required|numeric|gte:1",
         ]);
 
-        Soal::create(array_merge($data, [
+        Soal::query()->create(array_merge($data, [
             "materi_id" => $materi->id,
         ]));
 
@@ -84,21 +89,21 @@ class SoalController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Materi  $materi
-     * @param \App\Soal  $soal
-     * @return \Illuminate\Http\Response
+     * @param Soal $soal
+     * @return Response
      */
-    public function show(Materi $materi, Soal $soal)
+    public function show(Soal $soal)
     {
-        //
+        return response()
+            ->view("soal.show", compact("soal"));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Materi  $materi
-     * @param \App\Soal  $soal
-     * @return \Illuminate\Http\Response
+     * @param Materi $materi
+     * @param Soal $soal
+     * @return Response
      */
     public function edit(Soal $soal)
     {
@@ -108,11 +113,11 @@ class SoalController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Materi $materi
-     * @param \App\Soal $soal
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
-     * @throws \Illuminate\Validation\ValidationException
+     * @param Request $request
+     * @param Materi $materi
+     * @param Soal $soal
+     * @return RedirectResponse|Response
+     * @throws ValidationException
      */
     public function update(Request $request, Soal $soal)
     {
@@ -135,7 +140,7 @@ class SoalController extends Controller
 
     /**
      * @param Soal $soal
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function destroy(Soal $soal)
     {

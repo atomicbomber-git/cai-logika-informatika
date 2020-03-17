@@ -2,7 +2,8 @@
 
 @section("content")
     <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="">
+        <a class="breadcrumb-item"
+           href="">
             {{ config("app.name") }}
         </a>
         <span class="breadcrumb-item">
@@ -28,7 +29,8 @@
 
         <div>
             <div class="d-flex justify-content-end my-3">
-                <a href="{{ route("materi.soal.create", $materi) }}" class="btn btn-outline-info btn-sm">
+                <a href="{{ route("materi.soal.create", $materi) }}"
+                   class="btn btn-outline-info btn-sm">
                     Soal Baru
                     <i class="fas fa-plus"></i>
                 </a>
@@ -38,11 +40,10 @@
                 <table class="table table-striped table-sm">
                     <thead>
                     <tr>
-                        <th> # </th>
-                        <th style="width: 30rem"> Konten </th>
-                        <th> Urutan </th>
-                        <th> Jawaban </th>
-                        <th style="width: 10rem"> Kendali </th>
+                        <th> #</th>
+                        <th> Urutan</th>
+                        <th> Jawaban</th>
+                        <th style="width: 10rem"> Kendali</th>
                     </tr>
                     </thead>
 
@@ -50,27 +51,37 @@
                     @foreach($materi->soal as $soal)
                         <tr>
                             <td> {{ $loop->iteration }}  </td>
-                            <td> {{ $soal->konten }}  </td>
                             <td> {{ $soal->urutan }}  </td>
                             <td> {{ $soal->jawaban_benar->konten ?? '-' }}  </td>
                             <td>
                                 <div class="my-2">
-                                    <a class="btn btn-outline-info btn-sm" href="{{ route("soal.pilihan_jawaban.index", $soal) }}">
+                                    <a class="btn btn-outline-info btn-sm"
+                                       href="{{ route("soal.pilihan_jawaban.index", $soal) }}">
                                         Pilihan Jawaban
                                     </a>
                                 </div>
 
                                 <div class="my-2">
-                                    <a class="btn btn-outline-info btn-sm" href="{{ route("soal.edit", $soal) }}">
+                                    <a class="btn btn-outline-info btn-sm"
+                                       href="{{ route("soal.show", $soal) }}">
+                                        Lihat
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+
+                                    <a class="btn btn-outline-info btn-sm"
+                                       href="{{ route("soal.edit", $soal) }}">
                                         Ubah
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
 
-                                    <form class="d-inline-block" action="{{ route("soal.destroy", $soal) }}" method="post">
+                                    <form class="d-inline-block"
+                                          action="{{ route("soal.destroy", $soal) }}"
+                                          method="post">
                                         @csrf
                                         @method("DELETE")
 
-                                        <button class="btn btn-outline-danger btn-sm" type="submit">
+                                        <button class="btn btn-outline-danger btn-sm"
+                                                type="submit">
                                             Hapus
                                             <i class="fas fa-trash-alt"></i>
                                         </button>

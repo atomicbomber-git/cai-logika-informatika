@@ -35,13 +35,13 @@
                     <label for="konten">
                         Konten:
                     </label>
-                    <textarea
-                        placeholder="Konten"
-                        class="form-control {{ $errors->has("konten") ? "is-invalid" : "" }}"
-                        name="konten"
-                        id="konten"
-                        cols="30"
-                        rows="2">{{ old("konten", $soal->konten) }}</textarea>
+
+                    <input id="konten"
+                           value="{{ old("konten", $soal->konten) }}"
+                           type="hidden"
+                           name="konten">
+                    <trix-editor class="{{ $errors->has("konten") ? "is-invalid" : "" }}"
+                                 input="konten"></trix-editor>
                     <span class="invalid-feedback">
                         {{ $errors->first("konten") }}
                     </span>
