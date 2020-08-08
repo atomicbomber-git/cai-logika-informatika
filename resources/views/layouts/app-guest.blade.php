@@ -19,18 +19,15 @@
     <link href="{{ asset('css/app.css') }}"
           rel="stylesheet">
 </head>
-<body>
+<body style="height: 100%">
 <div id="app">
-    <header class="mb-4">
-        @include('layouts.navbar-guest')
+    <header>
+        @include("layouts.navbar-guest")
     </header>
 
-    <main class="container">
-        <div class="row">
-            <div class="col-md">
-                @yield("content")
-            </div>
-        </div>
+    <main
+            class="container my-5 d-flex justify-content-center align-items-center">
+        @yield("content")
     </main>
 </div>
 @yield("footer-script")

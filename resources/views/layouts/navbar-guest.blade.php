@@ -21,21 +21,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ route("guest.home")  }}">
                         <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ route("guest.bantuan")  }}">
-                        <i class="fas fa-question"></i>
-                        Bantuan
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ route("guest.materi.index")  }}">
-                        <i class="fas fa-book"></i>
-                        Materi
+                        Depan
                     </a>
                 </li>
             </ul>
