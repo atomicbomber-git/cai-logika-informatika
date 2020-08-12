@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Materi;
 use App\QuizEngine;
 use Illuminate\Http\Request;
 
@@ -15,8 +16,18 @@ class FinishedQuizController extends Controller
      */
     public function __invoke(Request $request)
     {
+        $currentMateri = QuizEngine::getAttribute(QuizEngine::MATERI_KEY);
+
+        $nextMateri = Materi::query()
+            ->where("urutan", ">=", $currentMateri->urutan)
+            ->where("id", "<>", $currentMateri->id)
+            ->orderBy('urutan')
+            ->orderBy('id')
+            ->first();
+
         return response()->view("guest.quiz.finished", [
-            "quiz_data" => QuizEngine::getAllData()
+            "quiz_data" => QuizEngine::getAllData(),
+            "next_materi" => $nextMateri,
         ]);
     }
 }

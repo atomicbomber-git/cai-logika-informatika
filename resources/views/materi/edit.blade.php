@@ -60,6 +60,23 @@
                 </span>
             </div>
 
+            <div class="form-group">
+                <label for="urutan"> Urutan: </label>
+                <input
+                        id="urutan"
+                        type="text"
+                        placeholder="Urutan"
+                        class="form-control @error("urutan") is-invalid @enderror"
+                        name="urutan"
+                        value="{{ old("urutan", $materi->urutan) }}"
+                />
+                @error("urutan")
+                <span class="invalid-feedback">
+                    {{ $message }}
+                </span>
+                @enderror
+            </div>
+
             <div class="d-flex justify-content-end">
                 <button class="btn btn-outline-info btn-sm" type="submit">
                     Perbarui Materi

@@ -18,6 +18,8 @@ class GuestMateriIndexController extends Controller
     public function __invoke(Request $request)
     {
         $materis = Materi::query()
+            ->orderBy("urutan")
+            ->orderBy("id")
             ->get();
 
         return response()

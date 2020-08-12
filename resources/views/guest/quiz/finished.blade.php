@@ -41,11 +41,16 @@
                 </div>
 
                 <div>
-                    <a class="btn btn-primary"
-                       href="{{ route("guest.belajar_materi", $quiz_data["materi"]) }}">
-                        Belajar Materi
-                        <i class="fas fa-book"></i>
-                    </a>
+                    @if($next_materi)
+                        <a class="btn btn-primary"
+                           href="{{ route("guest.belajar_materi", $quiz_data["materi"]) }}">
+                            Materi Selanjutnya
+                            <i class="fas fa-book"></i>
+                        </a>
+                    @else
+
+
+                    @endif
                 </div>
             </div>
         </div>

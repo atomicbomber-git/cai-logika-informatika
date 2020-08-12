@@ -26,7 +26,9 @@ class MateriController extends Controller
                 "id",
                 "judul",
                 "deskripsi",
+                "urutan",
             ])
+            ->orderBy("urutan")
             ->get();
 
         return view("materi.index", ['materis' => $materis]);
@@ -56,6 +58,7 @@ class MateriController extends Controller
         $data = $this->validate($request, [
             "judul" => "required|max:255",
             "deskripsi" => "required|string",
+            "urutan" => ["required", "numeric", "gte:1"],
         ]);
 
         Materi::create($data);
@@ -105,6 +108,7 @@ class MateriController extends Controller
         $data = $this->validate($request, [
             "judul" => "required|unique:" . (new Materi)->getTable() . ",judul,{$materi->id}",
             "deskripsi" => "required|string",
+            "urutan" => ["required", "numeric", "gte:1"],
         ]);
 
         $materi->update($data);

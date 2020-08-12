@@ -34,7 +34,7 @@
                     <thead>
                     <tr>
                         <th> # </th>
-                        <th> Judul</th>
+                        <th> Judul </th>
                         <th> Deskripsi</th>
                         <th> Kendali</th>
                     </tr>
