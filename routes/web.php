@@ -22,6 +22,7 @@ use App\Http\Controllers\LatihanSoalController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\PilihanJawabanController;
 use App\Http\Controllers\PlayQuizController;
+use App\Http\Controllers\RingkasanController;
 use App\Http\Controllers\SoalController;
 use App\Http\Controllers\StartQuizController;
 use App\Http\Controllers\SubMateriController;
@@ -52,6 +53,10 @@ Route::group(["prefix" => "guest/", "as" => "guest."], function () {
     Route::post('quiz/verify', class_basename(VerifyQuizController::class))->name("quiz.verify");
     Route::get('quiz/finished', class_basename(FinishedQuizController::class))->name("quiz.finished");
 });
+
+Route::get("ringkasan/edit", [RingkasanController::class, "edit"])->name("ringkasan.edit");
+Route::put("ringkasan", [RingkasanController::class, "update"])->name("ringkasan.update");
+Route::get("ringkasan", [RingkasanController::class, "show"])->name("ringkasan.show");
 
 Route::resource("materi", class_basename(MateriController::class));
 Route::resource("materi.sub_materi", class_basename(SubMateriController::class))->shallow();

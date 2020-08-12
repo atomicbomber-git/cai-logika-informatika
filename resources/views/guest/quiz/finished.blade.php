@@ -48,8 +48,9 @@
                             <i class="fas fa-book"></i>
                         </a>
                     @else
-
-
+                        <a href="{{ route("ringkasan.show") }}" class="btn btn-primary">
+                            Ringkasan
+                        </a>
                     @endif
                 </div>
             </div>

@@ -5,10 +5,22 @@
 
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-            <a class="nav-link active"
+            <a class="nav-link {{ \Illuminate\Support\Facades\Route::is("materi.*") ? "active" : "" }}"
                href="{{ route("materi.index") }}">
                 Materi
-                <span class="sr-only">(current)</span>
+
+                @if(\Illuminate\Support\Facades\Route::is("materi.*") ? "active" : "")
+                    <span class="sr-only">(current)</span>
+                @endif
+            </a>
+
+            <a class="nav-link {{ \Illuminate\Support\Facades\Route::is("ringkasan.*") ? "active" : ""  }}"
+               href="{{ route("ringkasan.edit") }}">
+                Ringkasan
+
+                @if(\Illuminate\Support\Facades\Route::is("ringkasan.*") ? "active" : "")
+                    <span class="sr-only">(current)</span>
+                @endif
             </a>
         </li>
     </ul>
