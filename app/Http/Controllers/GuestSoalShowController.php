@@ -17,16 +17,22 @@ class GuestSoalShowController extends Controller
     {
         $next_soal = Soal::query()
             ->where("materi_id", $soal->materi_id)
+            ->where("termasuk_quiz", 0)
             ->where("urutan", ">", $soal->urutan)
             ->orderBy("urutan")
             ->first();
 
         $prev_soal = Soal::query()
             ->where("materi_id", $soal->materi_id)
+            ->where("termasuk_quiz", 0)
             ->where("urutan", "<", $soal->urutan)
             ->orderByDesc("urutan")
             ->first();
 
-        return response()->view("guest.soal.show", ['soal' => $soal, 'next_soal' => $next_soal, 'prev_soal' => $prev_soal]);
+        return response()->view("guest.soal.show", [
+            'soal' => $soal,
+            'next_soal' => $next_soal,
+            'prev_soal' => $prev_soal
+        ]);
     }
 }

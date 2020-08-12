@@ -65,24 +65,24 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="termasuk_latihan"> Termasuk Soal Latihan: </label>
+                    <label for="termasuk_quiz"> Termasuk Soal Latihan: </label>
                     <select
-                            id="termasuk_latihan"
+                            id="termasuk_quiz"
                             type="text"
-                            class="form-control @error("termasuk_latihan") is-invalid @enderror"
-                            name="termasuk_latihan"
+                            class="form-control @error("termasuk_quiz") is-invalid @enderror"
+                            name="termasuk_quiz"
                     >
                         <option value="1"
-                                {{ old("termasuk_latihan") == "1" ? "selected" : "" }}
+                                {{ old("termasuk_quiz") == "1" ? "selected" : "" }}
                         > Termasuk
                         </option>
                         <option value="0"
-                                {{ old("termasuk_latihan") == "0" ? "selected" : "" }}
+                                {{ old("termasuk_quiz") == "0" ? "selected" : "" }}
                         > Tidak Termasuk
                         </option>
 
                     </select>
-                    @error("termasuk_latihan")
+                    @error("termasuk_quiz")
                     <span class="invalid-feedback">
                         {{ $message }}
                     </span>

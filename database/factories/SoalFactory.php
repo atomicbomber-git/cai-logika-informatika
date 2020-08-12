@@ -10,5 +10,7 @@ use Illuminate\Database\Eloquent\Factory;
 $factory->define(Soal::class, function (Faker $faker) {
     return [
         "konten" => $faker->realText(1000),
+        "pembahasan" => $faker->realText(1000),
+        "termasuk_quiz" => rand(0, 1),
     ];
 });

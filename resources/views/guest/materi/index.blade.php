@@ -25,6 +25,11 @@
                             </div>
 
                             <div class="d-flex justify-content-end">
+                                <a href="{{ route("guest.belajar_materi", $materi) }}"
+                                   class="btn btn-outline-info btn-sm mr-2">
+                                    Belajar
+                                </a>
+
                                 <a href="{{ route("guest.latihan_soal", $materi) }}"
                                    class="btn btn-outline-info btn-sm mr-2">
                                     Contoh Soal
@@ -33,12 +38,6 @@
                                 <a href="{{ route("guest.quiz.start", $materi) }}"
                                    class="btn btn-outline-info btn-sm mr-2">
                                     Quiz
-                                </a>
-
-                                <a href="{{ route("guest.belajar_materi", $materi) }}"
-                                   class="btn btn-outline-info btn-sm">
-                                    Belajar
-                                    <i class="fas fa-book-open"></i>
                                 </a>
                             </div>
                         </div>

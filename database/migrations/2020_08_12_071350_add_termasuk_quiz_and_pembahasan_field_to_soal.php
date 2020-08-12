@@ -14,7 +14,7 @@ class AddTermasukQuizAndPembahasanFieldToSoal extends Migration
     public function up()
     {
         Schema::table('soal', function (Blueprint $table) {
-            $table->boolean('termasuk_latihan')->default(0)->index();
+            $table->boolean('termasuk_quiz')->default(0)->index();
             $table->text('pembahasan');
         });
     }
@@ -27,7 +27,7 @@ class AddTermasukQuizAndPembahasanFieldToSoal extends Migration
     public function down()
     {
         Schema::table('soal', function (Blueprint $table) {
-            $table->dropColumn('termasuk_latihan');
+            $table->dropColumn('termasuk_quiz');
             $table->dropColumn('pembahasan');
         });
     }

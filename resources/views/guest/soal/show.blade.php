@@ -29,7 +29,7 @@
                     <div data-answer class="d-none">
                         <div class="alert alert-success mt-3">
                             <span class="font-weight-bold d-block"> Jawaban: </span>
-                            {{ $soal->jawaban_benar->konten }}
+                            {{ $soal->jawaban_benar->konten ?? null }}
                         </div>
 
                         <span class="font-weight-bold d-block"> Pembahasan: </span>
@@ -41,7 +41,7 @@
             <div class="card-footer d-flex justify-content-between">
                 <div>
                     @if($prev_soal !== null)
-                        <a disabled
+                        <a
                            class="btn btn-outline-info"
                            href="{{ route("guest.soal.show", $prev_soal) }}">
                             <i class="fas fa-arrow-left"></i>
@@ -52,11 +52,16 @@
 
                 <div>
                     @if($next_soal !== null)
-                        <a disabled
+                        <a
                            class="btn btn-outline-info"
                            href="{{ route("guest.soal.show", $next_soal) }}">
                             Soal Selanjutnya
                             <i class="fas fa-arrow-right"></i>
+                        </a>
+                    @else
+                        <a class="btn btn-outline-primary"
+                           href="{{ route("guest.quiz.start", $soal->materi_id) }}">
+                            Quiz
                         </a>
                     @endif
                 </div>

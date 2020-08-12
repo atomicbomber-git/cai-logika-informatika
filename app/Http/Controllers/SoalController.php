@@ -70,7 +70,7 @@ class SoalController extends Controller
         $data = $this->validate($request, [
             "konten" => "required|string",
             "urutan" => "required|numeric|gte:1",
-            "termasuk_latihan" => ["required", "boolean"],
+            "termasuk_quiz" => ["required", "boolean"],
             "pembahasan" => ["required", "string"],
         ]);
 
@@ -126,7 +126,7 @@ class SoalController extends Controller
         $data = $this->validate($request, [
             "konten" => ["required", "string"],
             "urutan" => ["required", "numeric", "gte:1"],
-            "termasuk_latihan" => ["required", "boolean"],
+            "termasuk_quiz" => ["required", "boolean"],
             "pembahasan" => ["required", "string"],
         ]);
 

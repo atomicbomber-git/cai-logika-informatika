@@ -16,7 +16,7 @@ class LatihanSoalController extends Controller
      */
     public function __invoke(Request $request, Materi $materi)
     {
-        if ($materi->first_soal === null) {
+        if (($first_soal = $materi->latihan_soals()->first()) === null) {
             return back()->with("messages", [
                 [
                     "state" => MessageState::STATE_WARNING,
@@ -26,6 +26,6 @@ class LatihanSoalController extends Controller
         }
 
         return redirect()
-            ->route("guest.soal.show", $materi->first_soal);
+            ->route("guest.soal.show", $first_soal);
     }
 }

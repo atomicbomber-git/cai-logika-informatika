@@ -27,10 +27,17 @@ class Materi extends Model
             ->orderBy("urutan");
     }
 
+    public function latihan_soals(): HasMany
+    {
+        return $this->hasMany(Soal::class)
+            ->where("termasuk_quiz", 0)
+            ->orderBy("urutan");
+    }
+
     public function quiz_soals(): HasMany
     {
         return $this->hasMany(Soal::class)
-            ->where("termasuk_latihan", 1)
+            ->where("termasuk_quiz", 1)
             ->orderBy("urutan");
     }
 

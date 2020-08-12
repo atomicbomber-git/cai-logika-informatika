@@ -55,7 +55,7 @@
                             <td> {{ $soal->urutan }}  </td>
                             <td> {{ $soal->jawaban_benar->konten ?? '-' }}  </td>
                             <td class="text-center">
-                                @if($soal->termasuk_latihan)
+                                @if($soal->termasuk_quiz)
                                     <i class="fas fa-check text-success"></i>
                                 @else
                                     <i class="fas fa-times text-danger"></i>
