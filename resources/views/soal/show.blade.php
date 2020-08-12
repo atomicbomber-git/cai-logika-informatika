@@ -25,14 +25,28 @@
     <div>
         @include("messages")
 
-        <div class="mb-4">
+        <h2> Soal: </h2>
+
+        <div class="my-3">
             {!! $soal->konten !!}
         </div>
 
-        <div class="alert alert-success">
-            <div class="font-weight-bolder"> Jawaban: </div>
-            {{ $soal->jawaban_benar->konten }}
+        <h2> Pembahasan: </h2>
+
+        <div class="my-3">
+            {!! $soal->pembahasan !!}
         </div>
+
+        @isset($soal->jawaban_benar)
+            <div class="alert alert-success">
+                <div class="font-weight-bolder"> Jawaban: </div>
+                {{ $soal->jawaban_benar->konten }}
+            </div>
+        @else
+            <div class="alert alert-warning">
+                Soal belum memiliki jawaban.
+            </div>
+        @endisset
     </div>
 
     <script>

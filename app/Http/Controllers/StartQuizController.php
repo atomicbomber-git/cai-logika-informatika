@@ -18,7 +18,7 @@ class StartQuizController extends Controller
      */
     public function __invoke(Request $request, Materi $materi)
     {
-        if ($materi->first_soal()->count() === 0) {
+        if ($materi->quiz_soals()->count() === 0) {
             return redirect()
                 ->route("guest.materi.index")
                 ->with("messages", [

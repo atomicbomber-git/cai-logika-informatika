@@ -52,7 +52,7 @@
                         <div class="my-2"><i class="fas fa-book "></i></div>
                         Materi
 
-                        <a href="{{ route("guest.belajar_materi", \App\Materi::query()->first()) }}"
+                        <a href="{{ route("guest.materi.index") }}"
                            class="stretched-link"
                         ></a>
                     </div>

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Materi extends Model
@@ -23,6 +24,13 @@ class Materi extends Model
     public function first_sub_materi(): HasOne
     {
         return $this->hasOne(SubMateri::class)
+            ->orderBy("urutan");
+    }
+
+    public function quiz_soals(): HasMany
+    {
+        return $this->hasMany(Soal::class)
+            ->where("termasuk_latihan", 1)
             ->orderBy("urutan");
     }
 

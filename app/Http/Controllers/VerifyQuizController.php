@@ -34,10 +34,17 @@ class VerifyQuizController extends Controller
         QuizEngine::advanceCurrentSoal();
 
         if ($current_soal->jawaban_benar_id !== $data["pilihan_jawaban_id"]) {
-            return response(["status" => "incorrect_answer"]);
+            return response([
+                "status" => "incorrect_answer",
+                "jawaban_benar_id" => $current_soal->jawaban_benar_id,
+            ]);
         }
 
         QuizEngine::incrementTotalCorrect();
-        return response(["status" => "correct_answer"]);
+
+        return response([
+            "status" => "correct_answer"
+
+        ]);
     }
 }

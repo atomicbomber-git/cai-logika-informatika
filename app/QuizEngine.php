@@ -28,7 +28,7 @@ class QuizEngine
     {
         Session::remove(self::QUIZ_DATA_KEY);
         Session::put(self::QUIZ_DATA_KEY . '.' . self::MATERI_KEY, $materi);
-        Session::put(self::QUIZ_DATA_KEY . '.' . self::SOALS_KEY, $materi->soal()->get()->shuffle());
+        Session::put(self::QUIZ_DATA_KEY . '.' . self::SOALS_KEY, $materi->quiz_soals()->get()->shuffle());
         Session::put(self::QUIZ_DATA_KEY . '.' . self::CURRENT_SOAL_INDEX_KEY, 0);
         Session::put(self::QUIZ_DATA_KEY . '.' . self::TOTAL_CORRECT_KEY, 0);
     }

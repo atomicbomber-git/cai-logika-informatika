@@ -23,7 +23,7 @@
 
         <blockquote class="blockquote">
             <p>
-                <span class="font-weight-bold"> Soal: </span> {{ $soal->konten }}
+                <span class="font-weight-bold"> Soal: </span> {!!  $soal->konten !!}
             </p>
         </blockquote>
 

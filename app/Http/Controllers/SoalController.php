@@ -70,6 +70,8 @@ class SoalController extends Controller
         $data = $this->validate($request, [
             "konten" => "required|string",
             "urutan" => "required|numeric|gte:1",
+            "termasuk_latihan" => ["required", "boolean"],
+            "pembahasan" => ["required", "string"],
         ]);
 
         Soal::query()->create(array_merge($data, [
@@ -122,7 +124,10 @@ class SoalController extends Controller
     public function update(Request $request, Soal $soal)
     {
         $data = $this->validate($request, [
-            "konten" => "required|string",
+            "konten" => ["required", "string"],
+            "urutan" => ["required", "numeric", "gte:1"],
+            "termasuk_latihan" => ["required", "boolean"],
+            "pembahasan" => ["required", "string"],
         ]);
 
         $soal->update($data);

@@ -21,14 +21,19 @@
 
                     <div data-toggle-answer class="d-flex justify-content-end">
                         <button type="button" class="btn btn-info">
-                            <span data-toggle-answer-label> Tampilkan Jawaban </span>
+                            <span data-toggle-answer-label> Tampilkan Jawaban & Pembahasan </span>
                             <i class="fas fa-question-circle"></i>
                         </button>
                     </div>
 
-                    <div data-answer class="alert alert-success d-none mt-3">
-                        <span class="font-weight-bold"> Jawaban: </span>
-                        {{ $soal->jawaban_benar->konten }}
+                    <div data-answer class="d-none">
+                        <div class="alert alert-success mt-3">
+                            <span class="font-weight-bold d-block"> Jawaban: </span>
+                            {{ $soal->jawaban_benar->konten }}
+                        </div>
+
+                        <span class="font-weight-bold d-block"> Pembahasan: </span>
+                        {!! $soal->pembahasan !!}
                     </div>
                 </article>
             </div>
@@ -71,10 +76,10 @@
                 answerDisplay.classList.toggle("d-none");
 
                 if (answerDisplay.classList.contains("d-none")) {
-                    toggleAnswerLabel.textContent = "Tampilkan Jawaban"
+                    toggleAnswerLabel.textContent = "Tampilkan Jawaban & Pembahasan"
                 }
                 else {
-                    toggleAnswerLabel.textContent = "Sembunyikan Jawaban"
+                    toggleAnswerLabel.textContent = "Sembunyikan Jawaban & Pembahasan"
                 }
             };
 

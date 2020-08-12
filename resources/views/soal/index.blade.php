@@ -41,8 +41,9 @@
                     <thead>
                     <tr>
                         <th> #</th>
-                        <th> Urutan</th>
+                        <th> Urutan </th>
                         <th> Jawaban</th>
+                        <th class="text-center"> Termasuk Latihan </th>
                         <th style="width: 15rem"> Kendali</th>
                     </tr>
                     </thead>
@@ -53,6 +54,13 @@
                             <td> {{ $loop->iteration }}  </td>
                             <td> {{ $soal->urutan }}  </td>
                             <td> {{ $soal->jawaban_benar->konten ?? '-' }}  </td>
+                            <td class="text-center">
+                                @if($soal->termasuk_latihan)
+                                    <i class="fas fa-check text-success"></i>
+                                @else
+                                    <i class="fas fa-times text-danger"></i>
+                                @endif
+                            </td>
                             <td>
                                 <div class="my-2">
                                     <a class="btn btn-outline-info btn-sm"

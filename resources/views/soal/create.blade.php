@@ -47,6 +47,49 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="pembahasan">
+                        Pembahasan:
+                    </label>
+
+                    <input id="pembahasan"
+                           value="{{ old("pembahasan") }}"
+                           type="hidden"
+                           name="pembahasan"
+                    >
+                    <trix-editor class="{{ $errors->has("pembahasan") ? "is-invalid" : "" }}"
+                                 input="pembahasan"
+                    ></trix-editor>
+                    <span class="invalid-feedback">
+                        {{ $errors->first("pembahasan") }}
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label for="termasuk_latihan"> Termasuk Soal Latihan: </label>
+                    <select
+                            id="termasuk_latihan"
+                            type="text"
+                            class="form-control @error("termasuk_latihan") is-invalid @enderror"
+                            name="termasuk_latihan"
+                    >
+                        <option value="1"
+                                {{ old("termasuk_latihan") == "1" ? "selected" : "" }}
+                        > Termasuk
+                        </option>
+                        <option value="0"
+                                {{ old("termasuk_latihan") == "0" ? "selected" : "" }}
+                        > Tidak Termasuk
+                        </option>
+
+                    </select>
+                    @error("termasuk_latihan")
+                    <span class="invalid-feedback">
+                        {{ $message }}
+                    </span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
                     <label for="urutan"> Urutan: </label>
                     <input
                         id="urutan"
