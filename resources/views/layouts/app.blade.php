@@ -37,6 +37,7 @@
         </div>
     </main>
 </div>
-@yield("footer-script")
+
+@include("sub_materi.footer_script")
 </body>
 </html>

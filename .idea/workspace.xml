@@ -4,13 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestSoalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestSoalShowController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestSubMateriShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestSubMateriShowController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LatihanSoalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LatihanSoalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="d9c06c8a-41a1-4b51-b74a-4f99b3b30ca8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,58 +20,6 @@
     <colors>
       <entry key="75282689-26bf-4ada-a086-66008830c52e" value="DeepPurple" />
     </colors>
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cai_logika_informatika: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="materi: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika_acceptance@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika_acceptance@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cai_logika_informatika_acceptance@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cai_logika_informatika_acceptance: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -223,7 +165,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -266,18 +207,6 @@
       <item itemvalue="PHP Script.Artisan serve" />
       <item itemvalue="PHPUnit.phpunit.xml" />
     </list>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="StructuralSearchPlugin">
     <replaceConfiguration name="user defined" created="1581869588432" text="RouteServiceProvider::HOME" recursive="false" caseInsensitive="true" type="PHP" scope_type="PROJECT" scope_descriptor="" reformatAccordingToStyle="false" shortenFQN="false" replacement="RouteServiceProvider::getHomeRoute()" history="1">
@@ -357,191 +286,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="1" width="1529" height="921" key="#Live_Templates" timestamp="1582024517693">
+    <state x="486" y="112" width="917" height="822" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597225481654">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="0" y="1" width="1358" height="739" key="#Live_Templates/0.0.1366.742@0.0.1366.742" timestamp="1580809236157" />
-    <state x="0" y="1" width="1529" height="921" key="#Live_Templates/0.0.1920.1053@0.0.1920.1053" timestamp="1582024517693" />
-    <state x="391" y="47" width="1223" height="675" key="#Plugins" timestamp="1582298797504">
+    <state x="486" y="112" width="917" height="822" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1597225481654" />
+    <state x="574" y="112" width="742" height="822" key="FileChooserDialogImpl" timestamp="1597221233003">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="278" y="33" width="802" height="676" key="#Plugins/0.0.1366.742@0.0.1366.742" timestamp="1581395762955" />
-    <state x="391" y="47" width="1223" height="675" key="#Plugins/0.0.1920.1053@0.0.1920.1053" timestamp="1582298797504" />
-    <state x="565" y="322" width="1036" height="473" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1581756297988">
+    <state x="574" y="112" width="742" height="822" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1597221233003" />
+    <state x="103" y="0" width="1684" height="1053" key="SettingsEditor" timestamp="1597224731961">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="402" y="227" width="757" height="286" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808563068" />
-    <state x="565" y="322" width="1036" height="473" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581756297988" />
-    <state x="555" y="187" width="852" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582351497179">
+    <state x="103" y="0" width="1684" height="1053" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1597224731961" />
+    <state x="475" y="71" width="945" height="917" key="StructurePopup" timestamp="1597225468062">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="187" width="852" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582351497179" />
-    <state x="520" y="251" width="533" height="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582372643980">
+    <state x="475" y="71" width="945" height="917" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1597225468062" />
+    <state x="298" y="96" width="990" height="765" key="find.popup" timestamp="1597221355763">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="370" y="177" width="639" height="388" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.742@0.0.1366.742" timestamp="1580956385451" />
-    <state x="520" y="251" width="533" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1582372643980" />
-    <state x="598" y="296" width="714" height="456" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1581846439517">
+    <state x="298" y="96" width="990" height="765" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597221355763" />
+    <state x="361" y="227" key="run.anything.popup" timestamp="1597221232039">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="598" y="296" width="714" height="456" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581846439517" />
-    <state x="768" y="244" width="374" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1581869143184">
+    <state x="361" y="227" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597221232039" />
+    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup" timestamp="1597225667929">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="768" y="244" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053@0.0.1920.1053" timestamp="1581869143184" />
-    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584468888386">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="418" y="0" width="522" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.742@0.0.1366.742" timestamp="1580798496308" />
-    <state x="588" y="0" width="476" height="1051" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1584468888386" />
-    <state x="416" y="121" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580806134192">
-      <screen x="0" y="0" width="1366" height="742" />
-    </state>
-    <state x="416" y="121" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.742@0.0.1366.742" timestamp="1580806134192" />
-    <state width="1306" height="721" key="#com.intellij.structuralsearch.plugin.ui.StructuralReplaceDialog" timestamp="1581869588427">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state width="929" height="508" key="#com.intellij.structuralsearch.plugin.ui.StructuralReplaceDialog/0.0.1366.742@0.0.1366.742" timestamp="1580805587788" />
-    <state width="1306" height="721" key="#com.intellij.structuralsearch.plugin.ui.StructuralReplaceDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581869588427" />
-    <state x="472" y="139" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1581869588427">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="336" y="98" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1366.742@0.0.1366.742" timestamp="1580805587788" />
-    <state x="472" y="139" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581869588427" />
-    <state x="798" y="405" width="313" height="239" key="#com.intellij.strucuturalsearch.plugin.replace.ReplacementPreviewDialog" timestamp="1581869599598">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="798" y="405" width="313" height="239" key="#com.intellij.strucuturalsearch.plugin.replace.ReplacementPreviewDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581869599598" />
-    <state x="693" y="283" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582426257697">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="693" y="283" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582426257697" />
-    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1582426646695">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="704" y="134" width="501" height="780" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1920.1053@0.0.1920.1053" timestamp="1582426646695" />
-    <state x="704" y="49" width="501" height="950" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1582027688858">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="704" y="49" width="501" height="950" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/0.0.1920.1053@0.0.1920.1053" timestamp="1582027688858" />
-    <state x="302" y="21" width="768" height="700" key="#phpunit.xml" timestamp="1580808842277">
-      <screen x="0" y="0" width="1366" height="742" />
-    </state>
-    <state x="302" y="21" width="768" height="700" key="#phpunit.xml/0.0.1366.742@0.0.1366.742" timestamp="1580808842277" />
-    <state x="693" y="349" width="503" height="348" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582426563488">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="693" y="349" width="503" height="348" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1053@0.0.1920.1053" timestamp="1582426563488" />
-    <state x="212" y="0" width="933" height="741" key="CommitChangelistDialog2" timestamp="1580955141372">
-      <screen x="0" y="0" width="1366" height="742" />
-    </state>
-    <state x="212" y="0" width="933" height="741" key="CommitChangelistDialog2/0.0.1366.742@0.0.1366.742" timestamp="1580955141372" />
-    <state x="408" y="287" width="542" height="167" key="ComposerInitDialogKey" timestamp="1580798695718">
-      <screen x="0" y="0" width="1366" height="742" />
-    </state>
-    <state x="408" y="287" width="542" height="167" key="ComposerInitDialogKey/0.0.1366.742@0.0.1366.742" timestamp="1580798695718" />
-    <state x="806" y="436" width="298" height="176" key="Create Controller" timestamp="1581865772909">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="806" y="436" width="298" height="176" key="Create Controller/0.0.1920.1053@0.0.1920.1053" timestamp="1581865772909" />
-    <state x="837" y="451" width="236" height="146" key="Create Model" timestamp="1581865878949">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="837" y="451" width="236" height="146" key="Create Model/0.0.1920.1053@0.0.1920.1053" timestamp="1581865878949" />
-    <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl" timestamp="1584467992235">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="743" y="283" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1584467992235" />
-    <state width="1854" height="827" key="GridCell.Tab.0.bottom" timestamp="1584467565882">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1581589787675" />
-    <state width="1854" height="827" key="GridCell.Tab.0.bottom/0.0.1920.1053@0.0.1920.1053" timestamp="1584467565882" />
-    <state width="1854" height="827" key="GridCell.Tab.0.center" timestamp="1584467565882">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="827" key="GridCell.Tab.0.center/0.0.1920.1053@0.0.1920.1053" timestamp="1584467565882" />
-    <state width="1854" height="827" key="GridCell.Tab.0.left" timestamp="1584467565882">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="827" key="GridCell.Tab.0.left/0.0.1920.1053@0.0.1920.1053" timestamp="1584467565882" />
-    <state width="1854" height="827" key="GridCell.Tab.0.right" timestamp="1584467565882">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state width="1356" height="162" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1581589787674" />
-    <state width="1854" height="827" key="GridCell.Tab.0.right/0.0.1920.1053@0.0.1920.1053" timestamp="1584467565882" />
-    <state width="220" height="539" key="HiddenNamespacesPopup" timestamp="1582351264706">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state width="220" height="539" key="HiddenNamespacesPopup/0.0.1920.1053@0.0.1920.1053" timestamp="1582351264706" />
-    <state x="745" y="434" width="314" height="131" key="Laravel.ExtractPartialViewDialog" timestamp="1581827353594">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="530" y="306" width="314" height="131" key="Laravel.ExtractPartialViewDialog/0.0.1366.742@0.0.1366.742" timestamp="1581395552942" />
-    <state x="745" y="434" key="Laravel.ExtractPartialViewDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581827353594" />
-    <state x="124" y="59" width="1094" height="622" key="MergeDialog" timestamp="1581392166939">
-      <screen x="0" y="0" width="1366" height="742" />
-    </state>
-    <state x="124" y="59" width="1094" height="622" key="MergeDialog/0.0.1366.742@0.0.1366.742" timestamp="1581392166939" />
-    <state x="378" y="101" width="593" height="539" key="MultipleFileMergeDialog" timestamp="1582092868934">
-      <screen x="0" y="0" width="1366" height="742" />
-    </state>
-    <state x="378" y="101" width="593" height="539" key="MultipleFileMergeDialog/0.0.1366.742@0.0.1366.742" timestamp="1582092868934" />
-    <state x="531" y="143" key="MultipleFileMergeDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1581608290044" />
-    <state x="409" y="265" width="830" height="367" key="NewPhpClassDialog" timestamp="1582029051378">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="291" y="187" width="830" height="367" key="NewPhpClassDialog/0.0.1366.742@0.0.1366.742" timestamp="1580808034800" />
-    <state x="409" y="265" key="NewPhpClassDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582029051378" />
-    <state x="648" y="421" width="349" height="154" key="NewPhpFileDialog" timestamp="1582426508107">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="461" y="297" width="435" height="147" key="NewPhpFileDialog/0.0.1366.742@0.0.1366.742" timestamp="1580796708070" />
-    <state x="648" y="421" width="349" height="154" key="NewPhpFileDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582426508107" />
-    <state x="588" y="254" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey" timestamp="1581757542457">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="418" y="179" width="631" height="383" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1366.742@0.0.1366.742" timestamp="1580976487942" />
-    <state x="588" y="254" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1920.1053@0.0.1920.1053" timestamp="1581757542457" />
-    <state x="273" y="67" width="1449" height="986" key="SettingsEditor" timestamp="1582374998181">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="164" y="6" width="1136" height="730" key="SettingsEditor/0.0.1366.742@0.0.1366.742" timestamp="1581399746455" />
-    <state x="273" y="67" width="1449" height="986" key="SettingsEditor/0.0.1920.1053@0.0.1920.1053" timestamp="1582374998181" />
-    <state x="578" y="150" width="1139" height="744" key="StructurePopup" timestamp="1582020970851">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="411" y="106" width="810" height="524" key="StructurePopup/0.0.1366.742@0.0.1366.742" timestamp="1581401322951" />
-    <state x="578" y="150" width="1139" height="744" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1582020970851" />
-    <state x="472" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1582444614520">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="336" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.742@0.0.1366.742" timestamp="1582263772281" />
-    <state x="472" y="282" key="com.intellij.ide.util.TipDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1582444614520" />
-    <state x="444" y="150" width="1264" height="841" key="find.popup" timestamp="1582374682462">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="316" y="106" width="899" height="592" key="find.popup/0.0.1366.742@0.0.1366.742" timestamp="1580958811258" />
-    <state x="444" y="150" width="1264" height="841" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1582374682462" />
-    <state x="280" y="164" width="805" height="413" key="git4idea.merge.GitPullDialog" timestamp="1580954916634">
-      <screen x="0" y="0" width="1366" height="742" />
-    </state>
-    <state x="280" y="164" width="805" height="413" key="git4idea.merge.GitPullDialog/0.0.1366.742@0.0.1366.742" timestamp="1580954916634" />
-    <state x="609" y="245" width="700" height="530" key="recent.locations.popup" timestamp="1581823689757">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="609" y="245" width="700" height="530" key="recent.locations.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1581823689757" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup" timestamp="1584468019825">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="346" y="163" width="672" height="677" key="run.anything.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093021749" />
-    <state x="486" y="231" width="945" height="961" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1584468019825" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup" timestamp="1584468997039">
-      <screen x="0" y="0" width="1920" height="1053" />
-    </state>
-    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1582093660443" />
-    <state x="486" y="89" width="945" height="963" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1584468997039" />
+    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597225667929" />
   </component>
 </project>
