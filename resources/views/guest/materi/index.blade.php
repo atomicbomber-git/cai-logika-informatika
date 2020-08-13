@@ -28,6 +28,7 @@
                                 <a href="{{ route("guest.belajar_materi", $materi) }}"
                                    class="btn btn-outline-info btn-sm mr-2">
                                     Belajar
+                                    <i class="fas fa-book-open  "></i>
                                 </a>
 
                                 <a href="{{ route("guest.latihan_soal", $materi) }}"
