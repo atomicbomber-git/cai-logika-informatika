@@ -43,7 +43,7 @@
                 <div>
                     @if($next_materi)
                         <a class="btn btn-primary"
-                           href="{{ route("guest.belajar_materi", $nextMateri->id) }}">
+                           href="{{ route("guest.belajar_materi", $next_materi->id) }}">
                             Materi Selanjutnya
                             <i class="fas fa-book"></i>
                         </a>
