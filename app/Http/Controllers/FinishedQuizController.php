@@ -19,7 +19,7 @@ class FinishedQuizController extends Controller
         $currentMateri = QuizEngine::getAttribute(QuizEngine::MATERI_KEY);
 
         $nextMateri = Materi::query()
-            ->where("urutan", ">=", $currentMateri->urutan)
+            ->where("urutan", ">", $currentMateri->urutan)
             ->orderBy('urutan')
             ->first();
 
