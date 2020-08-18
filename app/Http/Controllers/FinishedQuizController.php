@@ -20,9 +20,7 @@ class FinishedQuizController extends Controller
 
         $nextMateri = Materi::query()
             ->where("urutan", ">=", $currentMateri->urutan)
-            ->where("id", "<>", $currentMateri->id)
             ->orderBy('urutan')
-            ->orderBy('id')
             ->first();
 
         return response()->view("guest.quiz.finished", [

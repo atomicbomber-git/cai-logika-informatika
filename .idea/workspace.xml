@@ -208,6 +208,7 @@
       <item itemvalue="PHPUnit.phpunit.xml" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructuralSearchPlugin">
     <replaceConfiguration name="user defined" created="1581869588432" text="RouteServiceProvider::HOME" recursive="false" caseInsensitive="true" type="PHP" scope_type="PROJECT" scope_descriptor="" reformatAccordingToStyle="false" shortenFQN="false" replacement="RouteServiceProvider::getHomeRoute()" history="1">
       <constraint name="__context__" within="" contains="" />
@@ -265,6 +266,7 @@
       <workItem from="1583253034465" duration="11000" />
       <workItem from="1583662396227" duration="867000" />
       <workItem from="1584467553625" duration="1420000" />
+      <workItem from="1597306121667" duration="1763000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:atomicbomber-git/cai-logika-informatika&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1580955141493</created>
@@ -277,7 +279,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="false" />
@@ -302,17 +304,17 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="475" y="71" width="945" height="917" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1597225468062" />
-    <state x="298" y="96" width="990" height="765" key="find.popup" timestamp="1597221355763">
+    <state x="298" y="96" width="990" height="822" key="find.popup" timestamp="1597306549835">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="298" y="96" width="990" height="765" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597221355763" />
+    <state x="298" y="96" width="990" height="822" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597306549835" />
     <state x="361" y="227" key="run.anything.popup" timestamp="1597221232039">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="361" y="227" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597221232039" />
-    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup" timestamp="1597225667929">
+    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup" timestamp="1597307236107">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597225667929" />
+    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597307236107" />
   </component>
 </project>
