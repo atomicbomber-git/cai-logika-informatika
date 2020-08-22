@@ -15,3 +15,11 @@
         </div>
     </div>
 @endsection
+
+@section("footer-script")
+    <script>
+        jQuery(function () {
+            window.displayTrixAttachments()
+        })
+    </script>
+@endsection

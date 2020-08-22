@@ -28,7 +28,6 @@
                            name="konten"
                     >
                     <trix-editor
-                            style="height: 400px"
                             class="{{ $errors->has("konten") ? "is-invalid" : "" }}"
                                  input="konten"
                     ></trix-editor>
@@ -49,4 +48,12 @@
         </div>
     </div>
 
+@endsection
+
+@section("footer-script")
+    <script>
+        jQuery(function () {
+            window.registerTrixEventHandlers()
+        })
+    </script>
 @endsection

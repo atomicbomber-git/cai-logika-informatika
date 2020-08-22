@@ -11,9 +11,7 @@
 
     <title>{{ config('app.name') }} | @yield("title") </title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"
-            defer></script>
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}"
@@ -30,6 +28,9 @@
         @yield("content")
     </main>
 </div>
+
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
 @yield("footer-script")
 </body>
 </html>

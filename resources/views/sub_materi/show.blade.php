@@ -33,10 +33,12 @@
 
         </div>
     </div>
+@endsection
 
+@section("footer-script")
     <script>
-        window.onload = function () {
+        jQuery(function () {
             window.displayTrixAttachments()
-        }
+        })
     </script>
 @endsection

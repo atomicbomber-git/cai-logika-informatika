@@ -11,9 +11,7 @@
 
     <title>{{ config('app.name') }} | @yield("title") </title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"
-            defer></script>
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}"
@@ -38,6 +36,9 @@
     </main>
 </div>
 
-@include("sub_materi.footer_script")
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
+
+@yield("footer-script")
 </body>
 </html>

@@ -25,7 +25,7 @@
 
         <blockquote class="blockquote">
             <p>
-                <span class="font-weight-bold"> Soal: </span> {{ $pilihan_jawaban->soal->konten }}
+                <span class="font-weight-bold"> Soal: </span>  {!! $pilihan_jawaban->soal->konten !!}
             </p>
         </blockquote>
 
