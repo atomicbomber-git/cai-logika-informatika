@@ -48,7 +48,7 @@
                             <i class="fas fa-book"></i>
                         </a>
                     @else
-                        <a href="{{ route("ringkasan.show") }}" class="btn btn-primary">
+                        <a href="{{ route("informasi.show", \App\Informasi::RINGKASAN) }}" class="btn btn-primary">
                             Ringkasan
                         </a>
                     @endif

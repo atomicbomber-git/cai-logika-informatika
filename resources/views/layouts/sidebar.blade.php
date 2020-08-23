@@ -14,14 +14,24 @@
                 @endif
             </a>
 
-            <a class="nav-link {{ \Illuminate\Support\Facades\Route::is("ringkasan.*") ? "active" : ""  }}"
-               href="{{ route("ringkasan.edit") }}">
-                Ringkasan
+            @foreach (\App\Informasi::query()->get() as $informasiData)
+                <a class="nav-link {{ (\Illuminate\Support\Facades\Route::is("informasi.*") && $informasi->id === $informasiData->id) ? "active" : ""  }}"
+                   href="{{ route("informasi.edit", $informasiData) }}">
+                    {{ \Illuminate\Support\Str::title($informasiData->id) }}
+                    @if((\Illuminate\Support\Facades\Route::is("informasi.*") && $informasi->id === $informasiData->id) ? "active" : "")
+                        <span class="sr-only">(current)</span>
+                    @endif
+                </a>
+            @endforeach
 
-                @if(\Illuminate\Support\Facades\Route::is("ringkasan.*") ? "active" : "")
-                    <span class="sr-only">(current)</span>
-                @endif
-            </a>
+{{--            <a class="nav-link {{ \Illuminate\Support\Facades\Route::is("ringkasan.*") ? "active" : ""  }}"--}}
+{{--               href="{{ route("ringkasan.edit") }}">--}}
+{{--                Ringkasan--}}
+
+{{--                @if(\Illuminate\Support\Facades\Route::is("ringkasan.*") ? "active" : "")--}}
+{{--                    <span class="sr-only">(current)</span>--}}
+{{--                @endif--}}
+{{--            </a>--}}
         </li>
     </ul>
 </nav>

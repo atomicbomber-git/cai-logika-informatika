@@ -38,7 +38,7 @@
                         Pengantar
                     </div>
 
-                    <a href="#"
+                    <a href="{{ route("informasi.show", \App\Informasi::PENGANTAR) }}"
                        class="stretched-link"
                     ></a>
                 </div>
@@ -82,7 +82,7 @@
                         <div class="my-2"><i class="fas fa-question-circle "></i></div>
                         Bantuan
 
-                        <a href="{{ route("guest.bantuan") }}"
+                        <a href="{{ route("informasi.show", \App\Informasi::BANTUAN) }}"
                            class="stretched-link"
                         ></a>
                     </div>

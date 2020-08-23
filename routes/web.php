@@ -18,6 +18,7 @@ use App\Http\Controllers\GuestMateriIndexController;
 use App\Http\Controllers\GuestSoalShowController;
 use App\Http\Controllers\GuestSubMateriShowController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InformasiController;
 use App\Http\Controllers\LatihanSoalController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\PilihanJawabanController;
@@ -53,6 +54,9 @@ Route::group(["prefix" => "guest/", "as" => "guest."], function () {
     Route::post('quiz/verify', class_basename(VerifyQuizController::class))->name("quiz.verify");
     Route::get('quiz/finished', class_basename(FinishedQuizController::class))->name("quiz.finished");
 });
+
+Route::resource("informasi", class_basename(InformasiController::class))
+    ->only(["edit", "update", "show"]);
 
 Route::get("ringkasan/edit", [RingkasanController::class, "edit"])->name("ringkasan.edit");
 Route::put("ringkasan", [RingkasanController::class, "update"])->name("ringkasan.update");

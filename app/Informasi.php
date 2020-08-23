@@ -13,4 +13,7 @@ class Informasi extends Model
 
     const RINGKASAN = "RINGKASAN";
     const KONTAK = "KONTAK";
+    const BANTUAN = "BANTUAN";
+    const PENGANTAR = "PENGANTAR";
+    const PENUTUP = "PENUTUP";
 }

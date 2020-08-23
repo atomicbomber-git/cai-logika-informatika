@@ -1,5 +1,6 @@
 <?php
 
+use App\Informasi;
 use Illuminate\Database\Seeder;
 
 class RingkasanSeeder extends Seeder
@@ -14,8 +15,8 @@ class RingkasanSeeder extends Seeder
         /** @var \Faker\Generator $faker */
         $faker = app(\Faker\Generator::class);
 
-        \App\Informasi::query()->firstOrCreate([
-            "id" => \App\Informasi::RINGKASAN,
+        Informasi::query()->firstOrCreate([
+            "id" => Informasi::RINGKASAN,
         ], [
             "konten" => $faker->realText,
         ]);
