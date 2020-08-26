@@ -64,21 +64,6 @@
             >
                 <div class="card">
                     <div class="card-body">
-                        <div class="my-2"><i class="fas fa-wrench "></i></div>
-                        Pengaturan
-
-                        <a href="#"
-                           class="stretched-link"
-                        ></a>
-                    </div>
-                </div>
-            </div>
-
-            <div :class="{ 'd-none': currentPage !== 'inside' }"
-                 class="col-md-6 my-3 d-none"
-            >
-                <div class="card">
-                    <div class="card-body">
                         <div class="my-2"><i class="fas fa-question-circle "></i></div>
                         Bantuan
 

@@ -173,7 +173,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/videos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pengantar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" />
@@ -183,19 +183,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cypress/videos" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/resources/views/guest/quiz" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/resources/views/guest/soal" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cypress/integration" />
       <recent name="$PROJECT_DIR$/resources/views/guest/sub_materi" />
       <recent name="$PROJECT_DIR$/resources/views/guest/materi" />
       <recent name="$PROJECT_DIR$/resources/postcss" />
       <recent name="$PROJECT_DIR$/resources/sass" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/pengantar" />
+      <recent name="$PROJECT_DIR$/resources/views/penutup" />
+      <recent name="$PROJECT_DIR$/resources/views/bantuan" />
+      <recent name="$PROJECT_DIR$/cypress/videos" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Artisan serve">
@@ -296,6 +296,10 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="574" y="112" width="742" height="822" key="FileChooserDialogImpl/0.0.1920.1053@0.0.1920.1053" timestamp="1597221233003" />
+    <state x="504" y="155" width="881" height="737" key="NewPhpClassDialog" timestamp="1598188502543">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="504" y="155" width="881" height="737" key="NewPhpClassDialog/0.0.1920.1053@0.0.1920.1053" timestamp="1598188502543" />
     <state x="103" y="0" width="1684" height="1053" key="SettingsEditor" timestamp="1597224731961">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -304,17 +308,17 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="475" y="71" width="945" height="917" key="StructurePopup/0.0.1920.1053@0.0.1920.1053" timestamp="1597225468062" />
-    <state x="298" y="96" width="990" height="822" key="find.popup" timestamp="1597306549835">
+    <state x="298" y="96" width="990" height="822" key="find.popup" timestamp="1598188727502">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="298" y="96" width="990" height="822" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597306549835" />
-    <state x="361" y="227" key="run.anything.popup" timestamp="1597221232039">
+    <state x="298" y="96" width="990" height="822" key="find.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1598188727502" />
+    <state x="361" y="227" key="run.anything.popup" timestamp="1598188542733">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="361" y="227" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597221232039" />
-    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup" timestamp="1597307236107">
+    <state x="361" y="227" key="run.anything.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1598188542733" />
+    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup" timestamp="1598189385611">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1597307236107" />
+    <state x="361" y="0" width="1177" height="1976" key="search.everywhere.popup/0.0.1920.1053@0.0.1920.1053" timestamp="1598189385611" />
   </component>
 </project>
