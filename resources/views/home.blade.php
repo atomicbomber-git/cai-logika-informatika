@@ -11,7 +11,7 @@
     >
 
 
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-12"
                  x-show="currentPage === 'front'"
                  x-on:click="currentPage = 'inside'"
