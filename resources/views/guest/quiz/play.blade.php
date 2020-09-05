@@ -52,6 +52,7 @@
                                                         class="badge badge-primary my-2"
                                                         x-show="answered && jawaban_benar_id == {{ $pilihan_jawaban->id }}"
                                                         class="badge"
+                                                        x-cloak
                                                 >
                                                     Jawaban Benar
                                                 </span>
@@ -80,21 +81,27 @@
                     </template>
 
                     <div x-show="answered">
-                        <div x-show="!is_correct"
-                             class="alert alert-danger"
+                        <div
+                                x-cloak
+                                x-show="!is_correct"
+                                class="alert alert-danger"
                         >
                             Maaf, jawaban Anda keliru
                         </div>
 
-                        <div x-show="is_correct"
-                             class="alert alert-success"
+                        <div
+                                x-cloak
+                                x-show="is_correct"
+                                class="alert alert-success"
                         >
                             Selamat, jawaban Anda tepat
                         </div>
                     </div>
 
 
-                    <div x-show="answered">
+                    <div
+                            x-cloak
+                            x-show="answered">
                         <hr>
                         <h4 class="text-uppercase font-weight-bold"> Pembahasan </h4>
                         {!! $soal->pembahasan !!}

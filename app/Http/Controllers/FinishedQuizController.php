@@ -5,14 +5,15 @@ namespace App\Http\Controllers;
 use App\Materi;
 use App\QuizEngine;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class FinishedQuizController extends Controller
 {
     /**
      * Handle the incoming request.
      *
-     * @param \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Response
      */
     public function __invoke(Request $request)
     {
@@ -23,8 +24,12 @@ class FinishedQuizController extends Controller
             ->orderBy('urutan')
             ->first();
 
+        $quizData = QuizEngine::getAllData();
+        $correctPercentage = $quizData["total_correct"] / count($quizData["soals"]) * 100;
+
         return response()->view("guest.quiz.finished", [
-            "quiz_data" => QuizEngine::getAllData(),
+            "quiz_data" => $quizData,
+            "correct_percentage" => $correctPercentage,
             "next_materi" => $nextMateri,
         ]);
     }

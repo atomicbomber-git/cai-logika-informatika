@@ -66,7 +66,7 @@
                                     <i class="fas fa-pencil-alt"></i>
                                 </a>
 
-                                <form class="d-inline-block"
+                                <form class="d-inline-block form-delete"
                                       action="{{ route("sub_materi.destroy", $sub_materi) }}"
                                       method="post">
                                     @csrf

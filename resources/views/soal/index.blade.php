@@ -82,7 +82,7 @@
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
 
-                                    <form class="d-inline-block"
+                                    <form class="d-inline-block form-delete"
                                           action="{{ route("soal.destroy", $soal) }}"
                                           method="post">
                                         @csrf

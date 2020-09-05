@@ -152,5 +152,6 @@ return [
         "content" => "isi",
         "author_first_name" => "nama depan penulis",
         "author_last_name" => "nama belakang penulis",
+        "jawaban_id" => "jawaban",
     ],
 ];

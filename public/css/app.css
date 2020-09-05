@@ -16383,6 +16383,10 @@ trix-editor .attachment__metadata .attachment__size {
   max-width: 50%;
 }
 
+[x-cloak] {
+  display: none;
+}
+
 .table th:first-child,
 .table td:first-child {
   text-align: center;
