@@ -49,10 +49,10 @@
             >
                 <div class="card">
                     <div class="card-body">
-                        <div class="my-2"><i class="fas fa-book "></i></div>
-                        Materi
+                        <div class="my-2"><i class="fas fa-question-circle "></i></div>
+                        Bantuan
 
-                        <a href="{{ route("guest.materi.index") }}"
+                        <a href="{{ route("informasi.show", \App\Informasi::BANTUAN) }}"
                            class="stretched-link"
                         ></a>
                     </div>
@@ -64,10 +64,10 @@
             >
                 <div class="card">
                     <div class="card-body">
-                        <div class="my-2"><i class="fas fa-question-circle "></i></div>
-                        Bantuan
+                        <div class="my-2"><i class="fas fa-book "></i></div>
+                        Materi
 
-                        <a href="{{ route("informasi.show", \App\Informasi::BANTUAN) }}"
+                        <a href="{{ route("guest.materi.index") }}"
                            class="stretched-link"
                         ></a>
                     </div>
