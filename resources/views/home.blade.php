@@ -10,7 +10,7 @@
         <div class="row justify-content-center align-items-center flex-wrap">
 
             <div x-show="currentPage === 'front'">
-                <div  class="jumbotron text-left" style="width: 100%">
+                <div  class="jumbotron text-left" style="width: 100%; font-family: 'Chewy',serif">
                     <h1 class="display-4 text-primary"> Selamat Datang </h1>
                     <p class="lead"> Di situs ini Anda dapat belajar dan mengevaluasi kemampuan Anda dalam materi Logika Informatika </p>
                 </div>
