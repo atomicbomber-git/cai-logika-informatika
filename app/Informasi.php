@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Informasi extends Model
 {
@@ -16,4 +17,10 @@ class Informasi extends Model
     const BANTUAN = "BANTUAN";
     const TENTANG_APLIKASI = "TENTANG_APLIKASI";
     const PENUTUP = "PENUTUP";
+
+    public function getNameAttribute()
+    {
+        return str_replace("_", " ",  Str::title($this->id));
+
+    }
 }

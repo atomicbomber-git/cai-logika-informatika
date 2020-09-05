@@ -5,7 +5,7 @@
 @section("content")
     <div>
         <h1 class="h1 mb-3">
-            Ubah {{ \Illuminate\Support\Str::title($informasi->id) }}
+            Ubah {{ $informasi->name }}
         </h1>
 
         @include("messages")
