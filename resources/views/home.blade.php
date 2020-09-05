@@ -1,30 +1,32 @@
 @extends('layouts.app-guest')
 
 @section('content')
-
-
     <div
             x-data="{
                 currentPage: 'front',
             }"
             class="text-center h1"
     >
+        <div class="row justify-content-center align-items-center flex-wrap">
+
+            <div x-show="currentPage === 'front'">
+                <div  class="jumbotron text-left" style="width: 100%">
+                    <h1 class="display-4 text-primary"> Selamat Datang </h1>
+                    <p class="lead"> Di situs ini Anda dapat belajar dan mengevaluasi kemampuan Anda dalam materi Logika Informatika </p>
+                </div>
 
 
-        <div class="row justify-content-center">
-            <div class="col-md-12"
-                 x-show="currentPage === 'front'"
-                 x-on:click="currentPage = 'inside'"
-            >
-                <h1 class="h2 text-primary text-uppercase font-weight-bold my-3"> CAI Logika Informatika </h1>
+                <div class="col-md-12 d-flex flex-wrap justify-content-center"
 
-
-                <div class="card"
-                     style="cursor: grab"
+                     x-on:click="currentPage = 'inside'"
                 >
-                    <div class="card-body">
-                        <div class="my-2"><i class="fas fa-door-open "></i></div>
-                        Mulai
+                    <div class="card"
+                         style="cursor: grab; width: 300px"
+                    >
+                        <div class="card-body">
+                            <div class="my-2"><i class="fas fa-door-open "></i></div>
+                            Mulai
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,10 +37,10 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="my-2"><i class="fas fa-sign"></i></div>
-                        Pengantar
+                        Tentang Aplikasi
                     </div>
 
-                    <a href="{{ route("informasi.show", \App\Informasi::PENGANTAR) }}"
+                    <a href="{{ route("informasi.show", \App\Informasi::TENTANG_APLIKASI) }}"
                        class="stretched-link"
                     ></a>
                 </div>

@@ -12,10 +12,15 @@
     <title>{{ config('app.name') }} | @yield("title") </title>
 
 
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}"
           rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Kufam', serif
+        }
+    </style>
 </head>
 <body style="height: 100%">
 <div id="app">
@@ -24,8 +29,16 @@
     </header>
 
     <main
-            class="container my-5 d-flex justify-content-center align-items-center">
-        @yield("content")
+            style="
+                    height: 1400px;
+                    background-image: url('{{ asset("images/home.jpg") }}');
+                    "
+            class="p-5"
+    >
+        <div style="filter: grayscale(0%)" class="container d-flex justify-content-center align-items-center flex-wrap">
+            @yield("content")
+        </div>
+
     </main>
 </div>
 

@@ -3,9 +3,9 @@
 @section("title", "Pengantar")
 
 @section("content")
-    <div class="container">
+    <div class="container text-light">
         <h1 class="h1 mb-3">
-            Pengantar
+            Tentang Aplikasi
         </h1>
 
         @include("messages")

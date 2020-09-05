@@ -4,7 +4,7 @@
 
 @section("content")
     <div class="container">
-        <h1 class="h1 mb-3">
+        <h1 class="h1 mb-3 text-light">
             Bantuan
         </h1>
 

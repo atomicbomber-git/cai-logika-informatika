@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class="h2">
+        <h1 class="h2 text-light">
             Daftar Materi
         </h1>
 

@@ -12,7 +12,7 @@ class InformasiSeeder extends Seeder
      */
     public function run()
     {
-        foreach ([Informasi::PENGANTAR, Informasi::BANTUAN, Informasi::PENUTUP] as $informasiId) {
+        foreach ([Informasi::TENTANG_APLIKASI, Informasi::BANTUAN, Informasi::PENUTUP] as $informasiId) {
             Informasi::query()->firstOrCreate([ "id" => $informasiId,
             ], [
                 "konten" => "",
