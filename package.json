@@ -28,7 +28,7 @@
         "sass-loader": "7.*",
         "sweetalert2": "^9.7.2",
         "tailwindcss": "^1.2.0",
-        "tinymce": "^5.1.6",
+        "tinymce": "^5.10.0",
         "trix": "^1.2.2"
     }
 }
